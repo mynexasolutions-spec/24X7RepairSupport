@@ -809,11 +809,17 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Reviews Swiper Carousel & Redesigned Navigation Controls */
+/* Reviews Swiper Carousel & Navigation Controls */
 .reviews-carousel-container {
     position: relative;
-    padding: 10px 58px; /* Ensures buttons sit completely outside the cards with zero overlap */
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.reviews-swiper-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 54px; /* Leaves room for floating buttons outside cards on desktop */
 }
 
 .reviews-swiper {
@@ -822,14 +828,14 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-/* Premium Floating Arrow Buttons */
+/* Floating Arrow Buttons (Vertically centered on the review card) */
 .review-nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 20;
-    width: 48px;
-    height: 48px;
+    z-index: 25;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background: #FFFFFF;
     border: 1.5px solid #E2E8F0;
@@ -839,17 +845,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 14px rgba(10, 37, 64, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 14px rgba(10, 37, 64, 0.12), 0 2px 4px rgba(0, 0, 0, 0.04);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
     user-select: none;
 }
 
-.review-nav-prev.desktop-nav {
+.review-nav-prev {
     left: 0;
 }
 
-.review-nav-next.desktop-nav {
+.review-nav-next {
     right: 0;
 }
 
@@ -869,12 +875,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.35);
 }
 
-/* Bottom Controls Bar (Pagination + Mobile Controls) */
+/* Bottom Controls Bar (Pagination Dots Only) */
 .reviews-bottom-controls {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     margin-top: 25px;
 }
 
@@ -902,10 +907,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #FF5E00;
     opacity: 1;
     border-radius: 4px;
-}
-
-.mobile-nav {
-    display: none;
 }
 
 .swiper-slide {
@@ -1335,24 +1336,27 @@ h1, h2, h3, h4, h5, h6 {
     .reviews-carousel-container {
         padding: 5px 0 10px;
     }
-    .reviews-carousel-container > .desktop-nav {
-        display: none !important;
-    }
-    .mobile-nav {
-        display: flex;
-        position: static;
-        transform: none;
-        width: 42px;
-        height: 42px;
-        font-size: 14px;
-        flex-shrink: 0;
-    }
-    .mobile-nav:hover {
-        transform: scale(1.05);
+    .reviews-swiper-wrapper {
+        padding: 0;
     }
     .reviews-swiper {
         padding: 10px 0 !important;
         margin: 0 !important;
+    }
+    .review-card {
+        padding: 24px 22px;
+    }
+    .review-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        box-shadow: 0 4px 14px rgba(10, 37, 64, 0.16), 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+    .review-nav-prev {
+        left: -10px;
+    }
+    .review-nav-next {
+        right: -10px;
     }
     
     /* Hero Mobile Layout */
@@ -1614,5 +1618,5 @@ h1, h2, h3, h4, h5, h6 {
 .map-container { margin-top: 30px; border-radius: 8px; overflow: hidden; height: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 .map-container iframe { width: 100%; height: 100%; border: none; }
 @media (max-width: 768px) {
-  .contact-page-grid { grid-template-columns: 1fr; }
+  .contact-page-grid { grid-template-columns: 1fr; gap: 35px; }
 }

@@ -118,64 +118,50 @@ export default function ReviewsSwiper() {
 
   return (
     <div className="reviews-carousel-container">
-      {/* Desktop Floating Previous Button */}
-      <button
-        type="button"
-        className="review-nav-btn desktop-nav review-nav-prev"
-        aria-label="Previous review"
-      >
-        <i className="fa-solid fa-chevron-left"></i>
-      </button>
-
-      {/* Swiper Carousel */}
-      <div className="swiper reviews-swiper" ref={swiperRef}>
-        <div className="swiper-wrapper">
-          {reviews.map((review, idx) => (
-            <div className="swiper-slide" key={idx}>
-              <div className="review-card">
-                <StarRating stars={review.stars} />
-                <p className="review-text">{review.text}</p>
-                <div className="reviewer">
-                  <div className="reviewer-avatar">{review.initials}</div>
-                  <div>
-                    <h4>{review.name}</h4>
-                    <p>{review.service}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Desktop Floating Next Button */}
-      <button
-        type="button"
-        className="review-nav-btn desktop-nav review-nav-next"
-        aria-label="Next review"
-      >
-        <i className="fa-solid fa-chevron-right"></i>
-      </button>
-
-      {/* Bottom Controls Bar (Pagination Pills + Mobile Navigation) */}
-      <div className="reviews-bottom-controls">
+      <div className="reviews-swiper-wrapper">
+        {/* Floating Previous Button */}
         <button
           type="button"
-          className="review-nav-btn mobile-nav review-nav-prev"
+          className="review-nav-btn review-nav-prev"
           aria-label="Previous review"
         >
           <i className="fa-solid fa-chevron-left"></i>
         </button>
 
-        <div className="reviews-swiper-pagination"></div>
+        {/* Swiper Carousel */}
+        <div className="swiper reviews-swiper" ref={swiperRef}>
+          <div className="swiper-wrapper">
+            {reviews.map((review, idx) => (
+              <div className="swiper-slide" key={idx}>
+                <div className="review-card">
+                  <StarRating stars={review.stars} />
+                  <p className="review-text">{review.text}</p>
+                  <div className="reviewer">
+                    <div className="reviewer-avatar">{review.initials}</div>
+                    <div>
+                      <h4>{review.name}</h4>
+                      <p>{review.service}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
+        {/* Floating Next Button */}
         <button
           type="button"
-          className="review-nav-btn mobile-nav review-nav-next"
+          className="review-nav-btn review-nav-next"
           aria-label="Next review"
         >
           <i className="fa-solid fa-chevron-right"></i>
         </button>
+      </div>
+
+      {/* Bottom Controls Bar (Pagination Pills) */}
+      <div className="reviews-bottom-controls">
+        <div className="reviews-swiper-pagination"></div>
       </div>
     </div>
   );

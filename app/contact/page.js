@@ -46,7 +46,46 @@ export default function Contact() {
 
           <div className="contact-page-grid">
             
-            {/* Left Side - Details & Map */}
+            {/* Form */}
+            <div className="contact-banner-form" style={{ background: '#fff', border: '1px solid #eaeaea', boxShadow: '0 5px 20px rgba(0,0,0,0.05)' }}>
+              <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px', fontSize: '24px' }}>Book an Appointment</h3>
+              <p style={{ color: 'var(--text-gray)', marginBottom: '30px', fontSize: '15px' }}>Send us a message via WhatsApp and we will confirm your booking instantly.</p>
+              
+              <form id="contactPageForm" onSubmit={handleWhatsAppSubmit}>
+                <div className="form-group">
+                  <label htmlFor="waName">Full Name</label>
+                  <input type="text" id="waName" placeholder="Enter your full name" required />
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="waPhone">Phone Number</label>
+                  <input type="tel" id="waPhone" placeholder="Enter your 10-digit mobile number" required />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="waService">Appliance / Service Required</label>
+                  <select id="waService" defaultValue="" style={{ width: '100%', padding: '12px 15px', border: '1px solid #e5e7eb', borderRadius: '6px', background: '#f9fafb', fontFamily: 'Inter', fontSize: '16px', color: 'var(--text-gray)' }} required>
+                    <option value="" disabled>Select an appliance</option>
+                    <option value="Air Conditioner (AC)">Air Conditioner (AC) Repair &amp; Service</option>
+                    <option value="Refrigerator">Refrigerator / Fridge Repair</option>
+                    <option value="Washing Machine">Washing Machine Repair</option>
+                    <option value="Microwave Oven">Microwave Oven Repair</option>
+                    <option value="Other">Other Service</option>
+                  </select>
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="waMessage">Issue Description (Optional)</label>
+                  <textarea id="waMessage" placeholder="Briefly describe the problem you are facing..." rows="4"></textarea>
+                </div>
+                
+                <button type="submit" className="btn btn-submit" style={{ width: '100%', border: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+                  <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> Book via WhatsApp
+                </button>
+              </form>
+            </div>
+
+            {/* Details & Map */}
             <div className="contact-info-card">
               <h3 style={{ color: 'var(--white)', marginBottom: '30px', fontSize: '24px' }}>Contact Information</h3>
               
@@ -96,45 +135,6 @@ export default function Contact() {
                 </iframe>
               </div>
 
-            </div>
-
-            {/* Right Side - Form */}
-            <div className="contact-banner-form" style={{ background: '#fff', border: '1px solid #eaeaea', boxShadow: '0 5px 20px rgba(0,0,0,0.05)' }}>
-              <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px', fontSize: '24px' }}>Book an Appointment</h3>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '30px', fontSize: '15px' }}>Send us a message via WhatsApp and we will confirm your booking instantly.</p>
-              
-              <form id="contactPageForm" onSubmit={handleWhatsAppSubmit}>
-                <div className="form-group">
-                  <label htmlFor="waName">Full Name</label>
-                  <input type="text" id="waName" placeholder="Enter your full name" required />
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="waPhone">Phone Number</label>
-                  <input type="tel" id="waPhone" placeholder="Enter your 10-digit mobile number" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="waService">Appliance / Service Required</label>
-                  <select id="waService" defaultValue="" style={{ width: '100%', padding: '12px 15px', border: '1px solid #e5e7eb', borderRadius: '6px', background: '#f9fafb', fontFamily: 'Inter', fontSize: '16px', color: 'var(--text-gray)' }} required>
-                    <option value="" disabled>Select an appliance</option>
-                    <option value="Air Conditioner (AC)">Air Conditioner (AC) Repair &amp; Service</option>
-                    <option value="Refrigerator">Refrigerator / Fridge Repair</option>
-                    <option value="Washing Machine">Washing Machine Repair</option>
-                    <option value="Microwave Oven">Microwave Oven Repair</option>
-                    <option value="Other">Other Service</option>
-                  </select>
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="waMessage">Issue Description (Optional)</label>
-                  <textarea id="waMessage" placeholder="Briefly describe the problem you are facing..." rows="4"></textarea>
-                </div>
-                
-                <button type="submit" className="btn btn-submit" style={{ width: '100%', border: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
-                  <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> Book via WhatsApp
-                </button>
-              </form>
             </div>
 
           </div>

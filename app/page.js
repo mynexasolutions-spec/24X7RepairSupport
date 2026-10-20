@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container hero-inner">
 
           <div className="hero-mobile-image">
-            <img src="/phone-banner.webp" alt="Home Care AC & Appliance Repair Service" />
+            <img src="/phone-banner.webp?v=2" alt="Home Care AC & Appliance Repair Service" />
           </div>
 
 
