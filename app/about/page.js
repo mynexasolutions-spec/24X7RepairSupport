@@ -43,16 +43,16 @@ export default function About() {
             {/* Images Grid */}
             <div className="about-images-grid">
               <div className="about-img-wrap">
-                <img src="/ac-service.jpg" alt="Home Care AC Repair Service" />
+                <img src="/ac-repair-clean.jpg" alt="Home Care AC Repair Service" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '30px' }}>
-                <img src="/microwave-service.jpg" alt="Microwave Oven Service in Delhi" />
+                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service in Delhi" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '-30px' }}>
-                <img src="/fridge-repair-pro.jpg" alt="Refrigerator Repair Service" />
+                <img src="/fridge-repair-clean.jpg" alt="Refrigerator Repair Service" />
               </div>
               <div className="about-img-wrap">
-                <img src="/washer-repair-pro.jpg" alt="Washing Machine Repair Service" />
+                <img src="/washer-repair-clean.jpg" alt="Washing Machine Repair Service" />
               </div>
             </div>
 

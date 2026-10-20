@@ -26,7 +26,7 @@ export default function Services() {
             {/* Card 1: AC */}
             <div className="charge-card">
               <div className="card-img">
-                <img src="/ac-service.jpg" alt="Air Conditioner Service" />
+                <img src="/ac-repair-clean.jpg" alt="Air Conditioner Service" />
                 <div className="icon-circle"><i className="fa-solid fa-snowflake"></i></div>
               </div>
               <div className="card-content">
@@ -65,7 +65,7 @@ export default function Services() {
             {/* Card 4: Microwave Oven */}
             <div className="charge-card">
               <div className="card-img">
-                <img src="/microwave-service.jpg" alt="Microwave Oven Service" />
+                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service" />
                 <div className="icon-circle"><i className="fa-solid fa-fire-burner"></i></div>
               </div>
               <div className="card-content">
@@ -113,7 +113,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="appliance-img">
-                <img src="/ac-service.jpg" alt="Air Conditioner Service" />
+                <img src="/ac-repair-clean.jpg" alt="Air Conditioner Service" />
               </div>
             </div>
 
@@ -130,7 +130,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="appliance-img">
-                <img src="/fridge-repair-pro.jpg" alt="Refrigerators Service" />
+                <img src="/fridge-repair-clean.jpg" alt="Refrigerators Service" />
               </div>
             </div>
 
@@ -147,7 +147,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="appliance-img">
-                <img src="/washer-repair-pro.jpg" alt="Washing Machines Service" />
+                <img src="/washer-repair-clean.jpg" alt="Washing Machines Service" />
               </div>
             </div>
 
@@ -164,7 +164,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="appliance-img">
-                <img src="/microwave-service.jpg" alt="Microwave Oven Service" />
+                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service" />
               </div>
             </div>
           </div>

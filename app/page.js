@@ -95,7 +95,7 @@ export default function Home() {
             {/* Card 1: AC */}
             <div className="charge-card">
               <div className="card-img">
-                <img src="/ac-service.jpg" alt="Air Conditioner Service" />
+                <img src="/ac-repair-clean.jpg" alt="Air Conditioner Service" />
                 <div className="icon-circle"><i className="fa-solid fa-snowflake"></i></div>
               </div>
               <div className="card-content">
@@ -134,7 +134,7 @@ export default function Home() {
             {/* Card 4: Microwave Oven */}
             <div className="charge-card">
               <div className="card-img">
-                <img src="/microwave-service.jpg" alt="Microwave Oven Service" />
+                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service" />
                 <div className="icon-circle"><i className="fa-solid fa-fire-burner"></i></div>
               </div>
               <div className="card-content">
@@ -175,7 +175,7 @@ export default function Home() {
                 <p>We service and repair all Split ACs and Window ACs including cooling issues, gas refilling, PCB repair, and deep chemical cleaning.</p>
               </div>
               <div className="appliance-img">
-                <img src="/ac-service.jpg" alt="Air Conditioner Service" />
+                <img src="/ac-repair-clean.jpg" alt="Air Conditioner Service" />
               </div>
             </div>
 
@@ -185,7 +185,7 @@ export default function Home() {
                 <p>We service all types of refrigerators including Double Door, Single Door, Side-by-Side, and Inverter models with genuine parts.</p>
               </div>
               <div className="appliance-img">
-                <img src="/fridge-repair-pro.jpg" alt="Refrigerators Service" />
+                <img src="/fridge-repair-clean.jpg" alt="Refrigerators Service" />
               </div>
             </div>
 
@@ -195,7 +195,7 @@ export default function Home() {
                 <p>Complete repair for Front Load, Top Load, and Semi-Automatic washing machines with drum, motor, and PCB board solutions.</p>
               </div>
               <div className="appliance-img">
-                <img src="/washer-repair-pro.jpg" alt="Washing Machines Service" />
+                <img src="/washer-repair-clean.jpg" alt="Washing Machines Service" />
               </div>
             </div>
 
@@ -205,7 +205,7 @@ export default function Home() {
                 <p>Expert fixing of Solo, Grill, and Convection microwave ovens, resolving heating problems, magnetron issues, and touchpad errors.</p>
               </div>
               <div className="appliance-img">
-                <img src="/microwave-service.jpg" alt="Microwave Oven Service" />
+                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service" />
               </div>
             </div>
           </div>
