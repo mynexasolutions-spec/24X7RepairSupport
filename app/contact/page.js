@@ -9,7 +9,7 @@ export default function Contact() {
     const service = document.getElementById('waService').value;
     const message = document.getElementById('waMessage').value;
 
-    let text = `Hello S.M.S Electronics, I want to book a service.\n\n`;
+    let text = `Hello Home Care AC Service Center, I want to book a service.\n\n`;
     text += `*Name:* ${name}\n`;
     text += `*Phone:* ${phone}\n`;
     text += `*Service Required:* ${service}\n`;
@@ -18,7 +18,7 @@ export default function Contact() {
       text += `*Message:* ${message}`;
     }
 
-    const whatsappNumber = '919071299180';
+    const whatsappNumber = '917428194037';
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -31,7 +31,7 @@ export default function Contact() {
       <section className="page-banner">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>We are always here to help with your appliance repairs</p>
+          <p>Visit us at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi or call for fast doorstep service</p>
         </div>
       </section>
 
@@ -54,17 +54,26 @@ export default function Contact() {
                 <i className="fa-solid fa-location-dot"></i>
                 <div>
                   <h4>Our Location</h4>
-                  <p>No 48, Pantharapalya, Nayandahalli Post,<br/>Mysore Road, Bangalore - 39</p>
+                  <p>Gali No. 21A, Vijay Park, near Maujpur Metro,<br/>Shahdara, Delhi</p>
                 </div>
               </div>
 
               <div className="contact-detail-item">
                 <i className="fa-solid fa-phone-volume"></i>
                 <div>
-                  <h4>Phone Numbers</h4>
+                  <h4>Phone Number</h4>
                   <p>
-                    <a href="tel:9071299180" style={{ color: 'inherit' }}>9071299180</a><br/>
-                    <a href="tel:9740917180" style={{ color: 'inherit' }}>9740917180</a>
+                    <a href="tel:7428194037" style={{ color: 'inherit' }}>7428194037</a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="contact-detail-item">
+                <i className="fa-solid fa-envelope"></i>
+                <div>
+                  <h4>Email Address</h4>
+                  <p>
+                    <a href="mailto:bilalsheak7428@gmail.com" style={{ color: 'inherit' }}>bilalsheak7428@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -80,7 +89,7 @@ export default function Contact() {
               {/* Small Map Overlay */}
               <div className="map-container">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15553.864703598583!2d77.51860645!3d12.941973649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e4334333677%3A0x8cf6b40e791edc02!2sPantharapalya%2C%20Nayanda%20Halli%2C%20Bengaluru%2C%20Karnataka%20560039!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14002.34891465223!2d77.2655385!3d28.6720239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc5e1c8d5045%3A0xd60e5917415bf796!2sMaujpur%20-%20Babarpur%20Metro%20Station!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin" 
                   allowFullScreen="" 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade">
@@ -107,12 +116,12 @@ export default function Contact() {
 
                 <div className="form-group">
                   <label htmlFor="waService">Appliance / Service Required</label>
-                  <select id="waService" style={{ width: '100%', padding: '12px 15px', border: '1px solid #e5e7eb', borderRadius: '6px', background: '#f9fafb', fontFamily: 'Inter', fontSize: '16px', color: 'var(--text-gray)' }} required>
-                    <option value="" disabled selected>Select an appliance</option>
-                    <option value="Refrigerator">Refrigerator Repair</option>
-                    <option value="Front Load Washing Machine">Front Load Washing Machine</option>
-                    <option value="Top Load Washing Machine">Top Load Washing Machine</option>
-                    <option value="LED TV">LED TV Repair</option>
+                  <select id="waService" defaultValue="" style={{ width: '100%', padding: '12px 15px', border: '1px solid #e5e7eb', borderRadius: '6px', background: '#f9fafb', fontFamily: 'Inter', fontSize: '16px', color: 'var(--text-gray)' }} required>
+                    <option value="" disabled>Select an appliance</option>
+                    <option value="Air Conditioner (AC)">Air Conditioner (AC) Repair &amp; Service</option>
+                    <option value="Refrigerator">Refrigerator / Fridge Repair</option>
+                    <option value="Washing Machine">Washing Machine Repair</option>
+                    <option value="Microwave Oven">Microwave Oven Repair</option>
                     <option value="Other">Other Service</option>
                   </select>
                 </div>

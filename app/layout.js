@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "S.M.S Electronics | Appliance Repair",
-  description: "Expert home appliance repair and service in Bangalore. Refrigerator, washing machine, TV repair and more.",
+  title: "Home Care AC Service Center | Vijay Park, Maujpur Metro, Shahdara, Delhi",
+  description: "Expert AC, Refrigerator, Washing Machine & Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Doorstep service with free visiting charge.",
   icons: {
-    icon: '/sms-logo.webp',
+    icon: '/home-care-logo.png',
   },
 };
 

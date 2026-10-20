@@ -18,11 +18,11 @@ const reviews = [
     service: 'Washing Machine Repair',
   },
   {
-    stars: 4.5,
-    text: '"Great experience with S.M.S Electronics. The LED TV repair was done efficiently at my doorstep. The staff is polite and knowledgeable. Highly recommended!"',
+    stars: 5,
+    text: '"Great experience with Home Care AC & Appliance Service Center. The technician was punctual, knowledgeable, and repaired our Split AC and appliances with genuine spare parts. Highly recommended!"',
     initials: 'VK',
     name: 'Vikram K.',
-    service: 'LED TV Repair',
+    service: 'AC & Appliance Repair',
   },
   {
     stars: 5,

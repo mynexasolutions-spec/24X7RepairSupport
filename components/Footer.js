@@ -6,13 +6,13 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-col brand-col">
           <div className="logo">
-            <img src="/sms-logo.webp" alt="S.M.S Electronics Logo" style={{ maxHeight: '50px', width: 'auto', objectFit: 'contain' }} />
+            <img src="/home-care-logo.png" alt="Home Care AC Service Center Logo" style={{ maxHeight: '52px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
             <div>
-              <h3>S.M.S ELECTRONICS</h3>
-              <p>All Electronics Services Done Here</p>
+              <h3>HOME CARE</h3>
+              <p>AC &amp; Appliance Service Center</p>
             </div>
           </div>
-          <p className="brand-desc">We provide reliable and affordable repair services for all types of home appliances. Your satisfaction is our priority.</p>
+          <p className="brand-desc">Professional and reliable doorstep repair for Air Conditioners, Refrigerators, Washing Machines, and Microwave Ovens based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi.</p>
         </div>
         
         <div className="footer-col">
@@ -28,27 +28,27 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Our Services</h4>
           <ul>
+            <li><Link href="/services">AC Service &amp; Repair</Link></li>
             <li><Link href="/services">Refrigerator Repair</Link></li>
             <li><Link href="/services">Washing Machine Repair</Link></li>
-            <li><Link href="/services">LED TV Repair</Link></li>
-            <li><Link href="/services">Appliance Installation</Link></li>
-            <li><Link href="/services">General Service</Link></li>
+            <li><Link href="/services">Microwave Oven Repair</Link></li>
+            <li><Link href="/services">AC Gas Charging &amp; Installation</Link></li>
           </ul>
         </div>
         
         <div className="footer-col contact-col">
           <h4>Contact Us</h4>
           <ul>
-            <li><i className="fa-solid fa-location-dot"></i> No 48, Pantharapalya, Nayandahalli Post, Mysore Road, Bangalore - 39.</li>
-            <li><i className="fa-solid fa-phone"></i> 9071299180</li>
-            <li><i className="fa-solid fa-envelope"></i> smselectronics40@gmail.com</li>
+            <li><i className="fa-solid fa-location-dot"></i> Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi.</li>
+            <li><i className="fa-solid fa-phone"></i> <a href="tel:7428194037" style={{ color: 'inherit' }}>7428194037</a></li>
+            <li><i className="fa-solid fa-envelope"></i> <a href="mailto:bilalsheak7428@gmail.com" style={{ color: 'inherit' }}>bilalsheak7428@gmail.com</a></li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
         <div className="container bottom-inner">
-          <p>&copy; 2024 S.M.S Electronics. All Rights Reserved.</p>
-          <p>Designed with <i className="fa-solid fa-heart" style={{ color: '#C82021' }}></i> for better service</p>
+          <p>&copy; {new Date().getFullYear()} Home Care AC Service Center. All Rights Reserved.</p>
+          <p>Designed with <i className="fa-solid fa-heart" style={{ color: '#d15700' }}></i> for trusted service</p>
         </div>
       </div>
     </footer>

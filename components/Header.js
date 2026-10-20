@@ -10,12 +10,25 @@ export default function Header() {
 
   return (
     <header className="header">
+      <div className="top-bar">
+        <div className="container top-bar-inner">
+          <div className="top-bar-left">
+            <i className="fa-solid fa-location-dot"></i>
+            <span>Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi</span>
+          </div>
+          <div className="top-bar-right">
+            <a href="tel:7428194037"><i className="fa-solid fa-phone"></i> 7428194037</a>
+            <span className="top-bar-divider">•</span>
+            <span><i className="fa-regular fa-clock"></i> Mon - Sun: 8 AM - 9 PM</span>
+          </div>
+        </div>
+      </div>
       <div className="container header-inner">
         <Link href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <img src="/sms-logo.webp" alt="S.M.S Electronics Logo" style={{ maxHeight: '50px', width: 'auto', objectFit: 'contain' }} />
+          <img src="/home-care-logo.png" alt="Home Care AC Service Center" style={{ maxHeight: '52px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
           <div>
-            <h1>S.M.S ELECTRONICS</h1>
-            <p>All Electronics Services Done Here</p>
+            <h1>HOME CARE</h1>
+            <p>AC &amp; Appliance Service Center</p>
           </div>
         </Link>
         <nav className={`nav-links${menuOpen ? ' active' : ''}`}>
@@ -24,13 +37,13 @@ export default function Header() {
           <Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link href="/contact" className={pathname === "/contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>Contact Us</Link>
           <div className="mobile-nav-actions">
-            <a href="tel:9071299180" className="btn btn-dark"><i className="fa-solid fa-phone"></i> Call Now</a>
-            <a href="tel:9071299180" className="btn btn-primary">Book Now</a>
+            <a href="tel:7428194037" className="btn btn-dark"><i className="fa-solid fa-phone"></i> Call Now</a>
+            <a href="tel:7428194037" className="btn btn-primary">Book Now</a>
           </div>
         </nav>
         <div className="header-actions">
-          <a href="tel:9071299180" className="btn btn-dark" style={{ padding: '8px 16px' }}><i className="fa-solid fa-phone"></i> Call Now</a>
-          <a href="tel:9071299180" className="btn btn-primary" style={{ padding: '8px 16px' }}>Book Service</a>
+          <a href="tel:7428194037" className="btn btn-dark" style={{ padding: '8px 16px' }}><i className="fa-solid fa-phone"></i> Call Now</a>
+          <a href="tel:7428194037" className="btn btn-primary" style={{ padding: '8px 16px' }}>Book Service</a>
         </div>
         <div
           className="mobile-menu-btn"
