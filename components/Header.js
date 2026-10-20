@@ -24,11 +24,15 @@ export default function Header() {
         </div>
       </div>
       <div className="container header-inner">
-        <Link href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <img src="/home-care-logo.png" alt="Home Care AC Service Center" style={{ maxHeight: '52px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
-          <div>
-            <h1>HOME CARE</h1>
-            <p>AC &amp; Appliance Service Center</p>
+        <Link href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <img src="/home-care-logo.png" alt="Home Care AC Service Center" style={{ height: '54px', width: 'auto', objectFit: 'contain' }} />
+          <div className="logo-text">
+            <h1 style={{ margin: 0, fontSize: '21px', fontWeight: 800, letterSpacing: '-0.3px', lineHeight: 1.1 }}>
+              <span style={{ color: '#0A2540' }}>HOME</span> <span style={{ color: '#FF5E00' }}>CARE</span>
+            </h1>
+            <p style={{ margin: '2px 0 0', fontSize: '11px', fontWeight: 600, color: '#555555', letterSpacing: '0.4px', textTransform: 'uppercase' }}>
+              AC &amp; Appliance Service Center
+            </p>
           </div>
         </Link>
         <nav className={`nav-links${menuOpen ? ' active' : ''}`}>

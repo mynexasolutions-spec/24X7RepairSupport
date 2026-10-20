@@ -64,64 +64,119 @@ export default function ReviewsSwiper() {
   const swiperRef = useRef(null);
 
   useEffect(() => {
+    let swiperInstance = null;
+
     // Dynamically load Swiper
     const loadSwiper = async () => {
       const { default: Swiper } = await import('swiper');
-      const { Navigation, Autoplay } = await import('swiper/modules');
+      const { Navigation, Autoplay, Pagination } = await import('swiper/modules');
       await import('swiper/css');
       await import('swiper/css/navigation');
+      await import('swiper/css/pagination');
 
       if (swiperRef.current) {
-        new Swiper(swiperRef.current, {
-          modules: [Navigation, Autoplay],
+        swiperInstance = new Swiper(swiperRef.current, {
+          modules: [Navigation, Autoplay, Pagination],
           slidesPerView: 1,
-          spaceBetween: 30,
+          spaceBetween: 24,
           loop: true,
           autoplay: {
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           },
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.review-nav-next',
+            prevEl: '.review-nav-prev',
+          },
+          pagination: {
+            el: '.reviews-swiper-pagination',
+            clickable: true,
           },
           breakpoints: {
             768: {
               slidesPerView: 2,
+              spaceBetween: 24,
             },
             1024: {
               slidesPerView: 3,
+              spaceBetween: 28,
             },
           },
         });
       }
     };
+
     loadSwiper();
+
+    return () => {
+      if (swiperInstance && swiperInstance.destroy) {
+        swiperInstance.destroy(true, true);
+      }
+    };
   }, []);
 
   return (
-    <div className="swiper reviews-swiper" ref={swiperRef}>
-      <div className="swiper-wrapper">
-        {reviews.map((review, idx) => (
-          <div className="swiper-slide" key={idx}>
-            <div className="review-card">
-              <StarRating stars={review.stars} />
-              <p className="review-text">{review.text}</p>
-              <div className="reviewer">
-                <div className="reviewer-avatar">{review.initials}</div>
-                <div>
-                  <h4>{review.name}</h4>
-                  <p>{review.service}</p>
+    <div className="reviews-carousel-container">
+      {/* Desktop Floating Previous Button */}
+      <button
+        type="button"
+        className="review-nav-btn desktop-nav review-nav-prev"
+        aria-label="Previous review"
+      >
+        <i className="fa-solid fa-chevron-left"></i>
+      </button>
+
+      {/* Swiper Carousel */}
+      <div className="swiper reviews-swiper" ref={swiperRef}>
+        <div className="swiper-wrapper">
+          {reviews.map((review, idx) => (
+            <div className="swiper-slide" key={idx}>
+              <div className="review-card">
+                <StarRating stars={review.stars} />
+                <p className="review-text">{review.text}</p>
+                <div className="reviewer">
+                  <div className="reviewer-avatar">{review.initials}</div>
+                  <div>
+                    <h4>{review.name}</h4>
+                    <p>{review.service}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
-      {/* Swiper Navigation */}
-      <div className="swiper-button-next custom-swiper-btn"></div>
-      <div className="swiper-button-prev custom-swiper-btn"></div>
+      {/* Desktop Floating Next Button */}
+      <button
+        type="button"
+        className="review-nav-btn desktop-nav review-nav-next"
+        aria-label="Next review"
+      >
+        <i className="fa-solid fa-chevron-right"></i>
+      </button>
+
+      {/* Bottom Controls Bar (Pagination Pills + Mobile Navigation) */}
+      <div className="reviews-bottom-controls">
+        <button
+          type="button"
+          className="review-nav-btn mobile-nav review-nav-prev"
+          aria-label="Previous review"
+        >
+          <i className="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div className="reviews-swiper-pagination"></div>
+
+        <button
+          type="button"
+          className="review-nav-btn mobile-nav review-nav-next"
+          aria-label="Next review"
+        >
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
   );
 }

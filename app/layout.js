@@ -6,7 +6,26 @@ export const metadata = {
   title: "Home Care AC Service Center | Vijay Park, Maujpur Metro, Shahdara, Delhi",
   description: "Expert AC, Refrigerator, Washing Machine & Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Doorstep service with free visiting charge.",
   icons: {
-    icon: '/home-care-logo.png',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/home-care-icon.png', sizes: '512x512', type: 'image/png' },
+      { url: '/home-care-logo.png', sizes: '868x673', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  openGraph: {
+    title: "Home Care AC Service Center | Vijay Park, Maujpur Metro, Shahdara, Delhi",
+    description: "Expert AC, Refrigerator, Washing Machine & Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Doorstep service with free visiting charge.",
+    images: [
+      {
+        url: '/home-care-logo.png',
+        width: 868,
+        height: 673,
+        alt: 'Home Care AC Service Center Logo',
+      },
+    ],
   },
 };
 

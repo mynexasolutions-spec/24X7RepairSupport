@@ -5,11 +5,17 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-col brand-col">
-          <div className="logo">
-            <img src="/home-care-logo.png" alt="Home Care AC Service Center Logo" style={{ maxHeight: '52px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
+          <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+            <div style={{ background: '#ffffff', padding: '6px 10px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
+              <img src="/home-care-logo.png" alt="Home Care AC Service Center Logo" style={{ height: '46px', width: 'auto', objectFit: 'contain', display: 'block' }} />
+            </div>
             <div>
-              <h3>HOME CARE</h3>
-              <p>AC &amp; Appliance Service Center</p>
+              <h3 style={{ margin: 0, fontSize: '20px', fontWeight: 800, letterSpacing: '-0.3px', lineHeight: 1.1 }}>
+                <span style={{ color: '#ffffff' }}>HOME</span> <span style={{ color: '#FF5E00' }}>CARE</span>
+              </h3>
+              <p style={{ margin: '2px 0 0', fontSize: '11px', fontWeight: 600, color: 'rgba(255, 255, 255, 0.7)', letterSpacing: '0.4px', textTransform: 'uppercase' }}>
+                AC &amp; Appliance Service Center
+              </p>
             </div>
           </div>
           <p className="brand-desc">Professional and reliable doorstep repair for Air Conditioners, Refrigerators, Washing Machines, and Microwave Ovens based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi.</p>
