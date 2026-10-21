@@ -1,6 +1,7 @@
 'use client';
 
 import ReviewsSwiper from '@/components/ReviewsSwiper';
+import ServiceAreas from '@/components/ServiceAreas';
 
 export default function Home() {
 
@@ -33,7 +34,7 @@ export default function Home() {
         <div className="container hero-inner">
 
           <div className="hero-mobile-image">
-            <img src="/phone-banner.webp?v=2" alt="Home Care AC & Appliance Repair Service" />
+            <img src="/phone-banner.webp?v=3" alt="Home Care AC & Appliance Repair Service" />
           </div>
 
 
@@ -100,7 +101,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>Air Conditioner<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -113,7 +114,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>Refrigerator<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -126,7 +127,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>Washing Machine<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -139,7 +140,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>Microwave Oven<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -336,6 +337,9 @@ export default function Home() {
           <ReviewsSwiper />
         </div>
       </section>
+
+      {/* Service Areas */}
+      <ServiceAreas />
 
       {/* FAQ */}
       <section className="faq section-padding">

@@ -79,7 +79,7 @@ export default function About() {
             </div>
             <div className="process-card">
               <h4>Affordable Service Charges</h4>
-              <p>Simple and transparent pricing starting at ₹299 with a 100% FREE visiting charge across Shahdara and nearby neighborhoods.</p>
+              <p>Simple and transparent pricing starting at ₹249 with a 100% FREE visiting charge across Shahdara and nearby neighborhoods.</p>
             </div>
             <div className="process-card">
               <h4>Doorstep Service in 60 Mins</h4>
@@ -202,26 +202,26 @@ export default function About() {
               <div className="pricing-table-container">
                 <div className="pricing-row">
                   <span className="pricing-item">Air Conditioner (AC)</span>
-                  <span className="pricing-cost">₹299</span>
+                  <span className="pricing-cost">₹249</span>
                 </div>
                 <div className="pricing-row">
                   <span className="pricing-item">Refrigerator</span>
-                  <span className="pricing-cost">₹299</span>
+                  <span className="pricing-cost">₹249</span>
                 </div>
                 <div className="pricing-row">
                   <span className="pricing-item">Washing Machine</span>
-                  <span className="pricing-cost">₹299</span>
+                  <span className="pricing-cost">₹249</span>
                 </div>
                 <div className="pricing-row">
                   <span className="pricing-item">Microwave Oven</span>
-                  <span className="pricing-cost">₹299</span>
+                  <span className="pricing-cost">₹249</span>
                 </div>
                 <div className="pricing-row">
                   <span className="pricing-item">Visiting Charge</span>
                   <span className="pricing-cost">FREE</span>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>*Note: ₹299 is the basic service charge. Any spare parts or major component replacements have upfront quoted charges.</p>
+              <p style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>*Note: ₹249 is the basic service charge. Any spare parts or major component replacements have upfront quoted charges.</p>
             </div>
 
             <div>
@@ -265,7 +265,7 @@ export default function About() {
             <details className="faq-item">
               <summary>What is the service charge?</summary>
               <div className="faq-content">
-                <p>Our basic service charge for AC, Refrigerator, Washing Machine, and Microwave Oven is ₹299, with a 100% FREE visiting charge.</p>
+                <p>Our basic service charge for AC, Refrigerator, Washing Machine, and Microwave Oven is ₹249, with a 100% FREE visiting charge.</p>
               </div>
             </details>
             <details className="faq-item">

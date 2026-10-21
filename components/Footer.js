@@ -25,8 +25,9 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
             <li><Link href="/services">Services</Link></li>
+            <li><Link href="/#service-areas">Service Areas</Link></li>
+            <li><Link href="/about">About Us</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
@@ -51,6 +52,21 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
+      {/* Service Areas Quick Strip */}
+      <div className="footer-service-areas">
+        <div className="container">
+          <div className="footer-areas-inner">
+            <span className="footer-areas-title">
+              <i className="fa-solid fa-map-pin" style={{ color: 'var(--primary-red)' }}></i> Service Areas:
+            </span>
+            <div className="footer-areas-list">
+              <span>Vijay Park</span> &bull; <span>Maujpur</span> &bull; <span>Shahdara</span> &bull; <span>Babarpur</span> &bull; <span>Yamuna Vihar</span> &bull; <span>Bhajanpura</span> &bull; <span>Jaffrabad</span> &bull; <span>Seelampur</span> &bull; <span>Dilshad Garden</span> &bull; <span>Rohtas Nagar</span> &bull; <span>Mansarovar Park</span> &bull; <span>Jyoti Nagar</span> &bull; <span>Kabir Nagar</span> &bull; <span>Gokalpuri</span> &bull; <span>Vivek Vihar</span> &bull; <span>Karawal Nagar</span> &bull; <span>Krishna Nagar</span> &bull; <span>Laxmi Nagar</span> &bull; <span>Geeta Colony</span> &bull; <span>Jhilmil</span> &bull; <span>Anand Vihar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="footer-bottom">
         <div className="container bottom-inner">
           <p>&copy; {new Date().getFullYear()} Home Care AC Service Center. All Rights Reserved.</p>

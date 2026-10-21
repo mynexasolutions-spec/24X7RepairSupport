@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ServiceAreas from '@/components/ServiceAreas';
 
 export const metadata = {
   title: "Our Services | Home Care AC Service Center | Delhi",
@@ -31,7 +32,7 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>Air Conditioner<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -44,7 +45,7 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>Refrigerator<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -57,7 +58,7 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>Washing Machine<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -70,7 +71,7 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>Microwave Oven<br />Service Charge</h3>
-                <div className="price">₹299</div>
+                <div className="price">₹249</div>
                 <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
@@ -171,6 +172,9 @@ export default function Services() {
 
         </div>
       </section>
+
+      {/* Service Areas Section */}
+      <ServiceAreas />
 
       {/* CTA Banner */}
       <section className="cta-banner">

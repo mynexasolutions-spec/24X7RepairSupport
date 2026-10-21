@@ -38,6 +38,7 @@ export default function Header() {
         <nav className={`nav-links${menuOpen ? ' active' : ''}`}>
           <Link href="/" className={pathname === "/" ? "active" : ""} onClick={() => setMenuOpen(false)}>Home</Link>
           <Link href="/services" className={pathname === "/services" ? "active" : ""} onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href="/#service-areas" onClick={() => setMenuOpen(false)}>Service Areas</Link>
           <Link href="/about" className={pathname === "/about" ? "active" : ""} onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link href="/contact" className={pathname === "/contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>Contact Us</Link>
           <div className="mobile-nav-actions">
