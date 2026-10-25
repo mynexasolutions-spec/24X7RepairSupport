@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" fill="none">
+  <!-- Carrier Blue Oval Badge -->
+  <g transform="translate(6, 6)">
+    <ellipse cx="64" cy="16" rx="60" ry="14" fill="#00488F"/>
+    <ellipse cx="64" cy="16" rx="56" ry="11.5" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+    <text x="64" y="22" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-style="italic">Carrier</text>
+  </g>
+</svg>

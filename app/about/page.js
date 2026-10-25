@@ -1,18 +1,32 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "About Home Care AC Service Center | AC & Appliance Repair in Delhi",
-  description: "Home Care AC Service Center provides professional AC, Refrigerator, Washing Machine and Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Free visiting charge.",
+  title: "About Us | 24x7 AC Repair & Service Center Hyderabad | All Brands",
+  description: "24x7 AC Repair Support provides professional doorstep AC service, jet pump wash, gas charging & PCB repairs for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star in Hyderabad, Telangana 500023. Free visiting charge.",
 };
 
 export default function About() {
+  const brandList = [
+    { name: 'Hitachi AC', slug: 'hitachi', logo: '/brand-logos/hitachi.svg' },
+    { name: 'LG AC', slug: 'lg', logo: '/brand-logos/lg.svg' },
+    { name: 'Daikin AC', slug: 'daikin', logo: '/brand-logos/daikin.svg' },
+    { name: 'O General AC', slug: 'o-general', logo: '/brand-logos/ogeneral.svg' },
+    { name: 'Voltas AC', slug: 'voltas', logo: '/brand-logos/voltas.svg' },
+    { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
+    { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
+    { name: 'Carrier AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg' },
+    { name: 'Lloyd AC', slug: 'other-brands', logo: '/brand-logos/lloyd.svg' },
+    { name: 'Panasonic AC', slug: 'other-brands', logo: '/brand-logos/panasonic.svg' },
+    { name: '+ All Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg' },
+  ];
+
   return (
     <>
       {/* Top Banner */}
       <section className="page-banner">
         <div className="container">
-          <h1>About Home Care AC Service Center</h1>
-          <p>Reliable AC &amp; Home Appliance Repair Service based in Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi</p>
+          <h1>About 24x7 AC Repair Support</h1>
+          <p>Certified Air Conditioner Repair &amp; Servicing Center based in Hyderabad, Telangana 500023</p>
         </div>
       </section>
 
@@ -22,110 +36,161 @@ export default function About() {
           <div className="about-section-grid">
             
             <div className="about-content-text">
-              <h2>Reliable AC, Refrigerator &amp; Appliance Service in Delhi</h2>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', background: '#F0F7FF', border: '1px solid #D0E4FF', borderRadius: '40px', padding: '6px 16px', marginBottom: '18px' }}>
+                <img src="/logo-icon.png?v=5" alt="24x7 AC Repair Support" style={{ height: '26px', width: 'auto' }} />
+                <span style={{ fontSize: '13px', fontWeight: 700, color: '#023a6e', letterSpacing: '0.2px' }}>
+                  24x7 AC REPAIR SUPPORT • HYDERABAD HUB
+                </span>
+              </div>
+              <h2>Certified Air Conditioner (AC) Service &amp; Repair Specialists in Hyderabad</h2>
               
               <ul className="check-list">
-                <li><i className="fa-solid fa-circle-check"></i> <div>Welcome to <strong>Home Care AC Service Center</strong>, your trusted local destination for reliable, fast, and affordable home appliance repairs in Delhi NCR.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>We specialize in doorstep service for <strong>Air Conditioners (AC), Refrigerators, Washing Machines, and Microwave Ovens</strong> with experienced technicians.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>Conveniently located at <strong>Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi</strong>, we serve homes across Maujpur, Shahdara, and surrounding areas.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>Our commitment is clear: <strong>accurate diagnosis, upfront pricing, genuine spare parts, and dependable doorstep service.</strong></div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>Whether your AC is not cooling, your fridge is leaking, your washing machine drum is stuck, or your microwave is not heating, our team is just a phone call away.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Welcome to <strong>24x7 AC Repair Support</strong>, your dedicated specialist center for all Split, Window, Inverter, and Cassette Air Conditioners across Hyderabad, Telangana.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div><strong>In sabhi companies ki AC ki servicing hoti hai yahan:</strong> Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Carrier, Lloyd, Panasonic, and many more.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Conveniently located in <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Hitec City, Gachibowli, Kukatpally, and surrounding areas in 30 to 60 minutes.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Our commitment is clear: <strong>accurate electronic diagnosis, upfront pricing, genuine factory spares, and 100% satisfaction guarantee.</strong></div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Whether your AC is not cooling, leaking water inside, having error codes, or needing urgent gas refilling, our emergency AC technicians are just a phone call away 24x7.</div></li>
               </ul>
 
-              <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Affordable Doorstep Service with FREE Visiting Charge</h3>
-              <p>At Home Care AC Service Center, we believe repair costs should be transparent and fair. We provide free doorstep inspection across our service areas with zero hidden fees.</p>
+              <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Expert Doorstep AC Service with FREE Visiting Charge</h3>
+              <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide free doorstep inspection across our service areas with zero hidden inspection fees.</p>
               
-              <a href="tel:7428194037" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
-                <i className="fa-solid fa-phone"></i> Call 7428194037
+              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
+                <i className="fa-solid fa-phone"></i> Call 1234561232
               </a>
             </div>
 
             {/* Images Grid */}
             <div className="about-images-grid">
               <div className="about-img-wrap">
-                <img src="/ac-repair-clean.jpg" alt="Home Care AC Repair Service" />
+                <img src="/ac-repair-clean.jpg" alt="24x7 AC Repair Support Service" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '30px' }}>
-                <img src="/microwave-repair-clean.jpg" alt="Microwave Oven Service in Delhi" />
+                <img src="/ac-jet-wash.jpg" alt="AC Jet Pump Foam Cleaning in Hyderabad" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '-30px' }}>
-                <img src="/fridge-repair-clean.jpg" alt="Refrigerator Repair Service" />
+                <img src="/ac-gas-charging.jpg" alt="AC Gas Refill and Leak Repair" />
               </div>
               <div className="about-img-wrap">
-                <img src="/washer-repair-clean.jpg" alt="Washing Machine Repair Service" />
+                <img src="/ac-installation.jpg" alt="AC Installation & Mounting Service" />
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Brands We Service Banner */}
+      <section className="section-padding bg-light" style={{ borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+        <div className="container">
+          <div className="section-title text-center">
+            <span style={{ color: '#FF5E00', fontWeight: 800, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
+              Authorized Quality Standards
+            </span>
+            <h2 style={{ marginTop: '8px' }}>
+              All Top AC Brands Serviced Under One Roof
+            </h2>
+            <p>
+              Hitachi • LG • Daikin • O General • Voltas • Samsung • Blue Star &amp; Many More
+            </p>
+          </div>
+
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center', marginTop: '25px', maxWidth: '900px', margin: '25px auto 0' }}>
+            {brandList.map((brand, idx) => (
+              <Link
+                key={idx}
+                href={`/services/${brand.slug}`}
+                style={{
+                  background: '#ffffff',
+                  border: '1px solid #cbd5e1',
+                  color: '#023a6e',
+                  fontWeight: 700,
+                  fontSize: '13.5px',
+                  padding: '8px 18px',
+                  borderRadius: '30px',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                }}
+                className="about-brand-pill"
+              >
+                <img src={brand.logo} alt={brand.name} style={{ height: '18px', width: 'auto', display: 'block' }} />
+                <span>{brand.name}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-light">
+      <section className="section-padding">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Why Choose <span className="red-text">Home Care AC Service Center?</span></h2>
-            <p>Trusted Doorstep Appliance Repair in Delhi</p>
+            <h2>Why Choose <span className="red-text">24x7 AC Repair Support?</span></h2>
+            <p>Hyderabad&apos;s Most Trusted Air Conditioning Service Engineers</p>
           </div>
 
           <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px', color: 'var(--text-gray)' }}>
-            Choosing the right technician matters. You want skilled technicians who diagnose the root problem, provide lasting fixes with original parts, and charge fair prices. Home Care AC Service Center is dedicated to keeping your home running smoothly.
+            Air conditioners are delicate, high-voltage refrigeration systems. You need skilled HVAC technicians who properly diagnose compressor compression, refrigerant pressure, and PCB micro-circuits with genuine parts.
           </p>
 
           <div className="about-process-grid">
             <div className="process-card">
-              <h4>Experienced Technicians</h4>
-              <p>Our technicians have in-depth expertise in servicing Split &amp; Window ACs, Inverter Refrigerators, Automatic Washers, and Convection Microwave Ovens.</p>
+              <h4>Certified AC Engineers</h4>
+              <p>Our technicians are factory-trained in handling Inverter technology, Dual-Inverter systems, and multi-split cooling circuits.</p>
             </div>
             <div className="process-card">
-              <h4>Affordable Service Charges</h4>
-              <p>Simple and transparent pricing starting at ₹249 with a 100% FREE visiting charge across Shahdara and nearby neighborhoods.</p>
+              <h4>Transparent AC Charges</h4>
+              <p>Competitive rates starting at ₹499 for full jet foam wash and ₹0 completely FREE visiting charge across Greater Hyderabad.</p>
             </div>
             <div className="process-card">
-              <h4>Doorstep Service in 60 Mins</h4>
-              <p>No need to haul bulky appliances anywhere. We bring tools and original parts right to your door within 60 to 90 minutes.</p>
+              <h4>Rapid Arrival in 30-60 Mins</h4>
+              <p>Quick doorstep service dispatch from Hyderabad 500023. Our mobile vans carry essential gauges, brazing tools, and testing equipment.</p>
             </div>
             <div className="process-card">
-              <h4>Genuine Spare Parts</h4>
-              <p>We use only authentic, safety-tested components for all repairs, backed by comprehensive service warranties.</p>
+              <h4>100% Genuine Spare Parts</h4>
+              <p>Authentic brand compressors, fan motors, run capacitors, expansion valves, and copper pipes backed by replacement warranty.</p>
             </div>
             <div className="process-card">
-              <h4>Comprehensive Warranty</h4>
-              <p>We stand behind our work with warranty protection on all replaced spare parts and repair services for your peace of mind.</p>
+              <h4>90-Day Service Warranty</h4>
+              <p>We stand behind every repair and gas refill with warranty protection on labor and replaced components.</p>
             </div>
             <div className="process-card">
-              <h4>7 Days Same-Day Service</h4>
-              <p>Available every day from 8:00 AM to 9:00 PM with fast same-day technician dispatch for urgent appliance repairs and emergencies.</p>
+              <h4>24x7 Summer Emergency Care</h4>
+              <p>Round-the-clock emergency support so you never have to sleep in the sweltering heat when your AC breaks down at night.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Specific Services */}
-      <section className="section-padding">
+      {/* Specific AC Service Categories */}
+      <section className="section-padding bg-light">
         <div className="container">
           
-          {/* AC Service */}
+          {/* Category 1: Jet Wash */}
           <div className="about-content-section">
-            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Air Conditioner (AC) Service in Delhi</h2>
-            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>During Delhi&apos;s extreme summers, an efficient AC is a necessity. Home Care AC Service Center provides comprehensive AC repair, installation, and chemical cleaning for both Split and Window ACs of all major brands.</p>
+            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Power Jet Foam AC Deep Servicing</h2>
+            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Air quality and cooling speed drop drastically when indoor cooling fins and outdoor condenser coils get packed with dust. Our pressurized jet cleaning restores factory airflow.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Split AC &amp; Window AC Repair</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Diagnosis and fast resolution of common cooling issues, noisy operation, water leakage, sensor errors, and outdoor unit faults.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>Indoor Evaporator Jet Wash</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Deep foam spraying on cooling coils, sanitized wash of rotary blower fan, clean drain pan to stop indoor dripping, and antimicrobial treatment.</p>
               </div>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>AC Gas Charging &amp; Leakage Repair</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Nitrogen testing, brazing for refrigerant leak detection, vacuuming, and authentic R32 / R410A / R22 gas refilling with precision pressure gauges.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>Outdoor Unit High-Pressure Rinse</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Clearing mud, birds&apos; nests, and grime from condenser coils to drop compressor head pressure and reduce monthly electricity bills up to 25%.</p>
               </div>
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:7428194037" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/917428194037" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -133,27 +198,27 @@ export default function About() {
 
           <hr style={{ border: 'none', borderTop: '1px solid #eaeaea', margin: '40px 0' }} />
 
-          {/* Refrigerator Service */}
+          {/* Category 2: Gas Refill */}
           <div className="about-content-section">
-            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Refrigerator Service in Delhi</h2>
-            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>A non-cooling refrigerator leads to food spoilage quickly. We provide doorstep inspection and repair for Single Door, Double Door, and Side-by-Side refrigerators across Shahdara and Delhi NCR.</p>
+            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Refrigerant Gas Charging &amp; Leakage Fixing</h2>
+            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Low gas is the #1 reason an AC blows warm air or forms ice on the copper pipes. We locate leaks and restore full cooling capacity safely.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Double Door &amp; Frost-Free Fridge</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Expert fixes for defrost timer failure, bi-metal thermostat defects, heater issues, fan motor noise, and uneven cooling between sections.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>Nitrogen Leak Testing &amp; Copper Brazing</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>We pressurize the system with dry nitrogen up to 300 PSI, find tiny pinhole leaks using bubble testing, and braze high-grade silver copper alloys.</p>
               </div>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Compressor &amp; Gas Refilling</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Genuine inverter and reciprocating compressor replacements, relay/overload replacement, and standard refrigerant top-ups.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>Pure R32, R410A &amp; R22 Gas Charging</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Deep vacuuming with two-stage vacuum pump before gas refilling to avoid moisture, ensuring chill sub-cooling and long compressor life.</p>
               </div>
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:7428194037" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/917428194037" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -161,27 +226,27 @@ export default function About() {
 
           <hr style={{ border: 'none', borderTop: '1px solid #eaeaea', margin: '40px 0' }} />
 
-          {/* Washing Machine & Microwave Oven */}
+          {/* Category 3: Inverter PCB */}
           <div className="about-content-section">
-            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Washing Machine &amp; Microwave Oven Repair</h2>
-            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>From heavy laundry machines to daily microwave ovens, we offer complete electrical, mechanical, and electronic board repairs for all models.</p>
+            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Inverter AC PCB Circuit Board &amp; Electrical Repairs</h2>
+            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Modern 5-star inverter ACs use sophisticated electronic motherboards. Instead of recommending costly full replacements, our chip-level engineers repair existing boards.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Washing Machine Repair</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Front Load, Top Load, and Semi-Automatic repair for drum spinning, inlet water valve, drain pump, belt, bearing, and motherboard PCB.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>Error Code Diagnostic</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Complete troubleshooting for Daikin, Hitachi, LG, Samsung, and Voltas error codes (E1, E2, E6, CH05, etc.), sensor faults, and communication errors.</p>
               </div>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Microwave Oven Repair</h4>
-                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Convection, Grill, and Solo microwave repair for magnetron burnout, capacitor fault, high-voltage diode, turntable motor, and keypad touch panels.</p>
+                <h4 style={{ color: 'var(--primary-red)' }}>IPM &amp; Power Supply Repair</h4>
+                <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Inverter Power Module (IPM) testing, relay replacement, rectifiers, capacitors, and outdoor motherboard protection fixes against voltage spikes.</p>
               </div>
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:7428194037" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/917428194037" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -196,46 +261,46 @@ export default function About() {
           <div className="about-section-grid">
             
             <div>
-              <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Transparent &amp; Affordable Service</h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>We understand that appliance repairs can be unexpected. That&apos;s why Home Care AC Service Center keeps basic inspection and visiting completely FREE.</p>
+              <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Transparent AC Service Rates</h2>
+              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>No hidden charges. We believe in 100% upfront pricing with zero inspection fees across Hyderabad.</p>
               
               <div className="pricing-table-container">
                 <div className="pricing-row">
-                  <span className="pricing-item">Air Conditioner (AC)</span>
-                  <span className="pricing-cost">₹249</span>
+                  <span className="pricing-item">AC Jet Foam Deep Cleaning</span>
+                  <span className="pricing-cost">₹499</span>
                 </div>
                 <div className="pricing-row">
-                  <span className="pricing-item">Refrigerator</span>
-                  <span className="pricing-cost">₹249</span>
+                  <span className="pricing-item">AC Gas Refill &amp; Leak Repair</span>
+                  <span className="pricing-cost">₹1499</span>
                 </div>
                 <div className="pricing-row">
-                  <span className="pricing-item">Washing Machine</span>
-                  <span className="pricing-cost">₹249</span>
+                  <span className="pricing-item">Inverter AC PCB Circuit Repair</span>
+                  <span className="pricing-cost">₹799</span>
                 </div>
                 <div className="pricing-row">
-                  <span className="pricing-item">Microwave Oven</span>
-                  <span className="pricing-cost">₹249</span>
+                  <span className="pricing-item">AC Installation / Relocation</span>
+                  <span className="pricing-cost">₹699</span>
                 </div>
                 <div className="pricing-row">
-                  <span className="pricing-item">Visiting Charge</span>
+                  <span className="pricing-item">Doorstep Visiting &amp; Inspection</span>
                   <span className="pricing-cost">FREE</span>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>*Note: ₹249 is the basic service charge. Any spare parts or major component replacements have upfront quoted charges.</p>
+              <p style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>*Note: Visiting &amp; inspection are completely FREE. All repair spares carry guaranteed warranty.</p>
             </div>
 
             <div>
-              <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Serving Homes Across Delhi NCR</h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Home Care AC Service Center is based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. We provide rapid doorstep visits across:</p>
+              <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Doorstep AC Coverage in Hyderabad</h2>
+              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>24x7 AC Repair Support is based in Hyderabad, Telangana 500023. Our rapid dispatch vans serve:</p>
               
               <ul className="check-list">
-                <li><i className="fa-solid fa-location-dot"></i> <div>Vijay Park &amp; Maujpur</div></li>
-                <li><i className="fa-solid fa-location-dot"></i> <div>Shahdara &amp; Babarpur</div></li>
-                <li><i className="fa-solid fa-location-dot"></i> <div>Yamuna Vihar &amp; Bhajanpura</div></li>
-                <li><i className="fa-solid fa-location-dot"></i> <div>Seelampur, Jaffrabad &amp; Dilshad Garden</div></li>
-                <li><i className="fa-solid fa-location-dot"></i> <div>Surrounding East Delhi &amp; Delhi NCR regions</div></li>
+                <li><i className="fa-solid fa-location-dot"></i> <div>Sanath Nagar &amp; Erragadda (500023)</div></li>
+                <li><i className="fa-solid fa-location-dot"></i> <div>Ameerpet, SR Nagar &amp; Punjagutta</div></li>
+                <li><i className="fa-solid fa-location-dot"></i> <div>Banjara Hills &amp; Jubilee Hills</div></li>
+                <li><i className="fa-solid fa-location-dot"></i> <div>Madhapur, Hitec City, Gachibowli &amp; Kondapur</div></li>
+                <li><i className="fa-solid fa-location-dot"></i> <div>Kukatpally, Begumpet, Secunderabad &amp; Greater Hyderabad</div></li>
               </ul>
-              <p style={{ color: 'var(--primary-red)', fontWeight: 600, fontSize: '14px' }}>Call us directly at 7428194037 to confirm instant technician availability for your location.</p>
+              <p style={{ color: 'var(--primary-red)', fontWeight: 600, fontSize: '14px' }}>Call us directly at 1234561232 for immediate 30-minute arrival in your area.</p>
             </div>
 
           </div>
@@ -243,41 +308,41 @@ export default function About() {
       </section>
 
       {/* FAQs */}
-      <section className="faq section-padding">
+      <section className="faq section-padding bg-light">
         <div className="container faq-inner">
           <div className="section-title text-center" style={{ textAlign: 'center' }}>
             <h2>Frequently Asked <span className="red-text">Questions</span></h2>
-            <p>Find answers to common questions about our services</p>
+            <p>Find answers to common questions about our AC repair &amp; maintenance</p>
           </div>
           <div className="faq-list">
             <details className="faq-item">
+              <summary>Which AC brands do you service and repair?</summary>
+              <div className="faq-content">
+                <p>We service and repair all major brands including Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Carrier, Lloyd, Panasonic, Mitsubishi, and Godrej. In sabhi companies ki AC ki servicing hoti hai yahan!</p>
+              </div>
+            </details>
+            <details className="faq-item">
               <summary>Why is my AC not blowing cool air?</summary>
               <div className="faq-content">
-                <p>Common reasons include low refrigerant gas, a clogged air filter or condenser coil, compressor capacitor failure, or PCB issues. Our technician can check gas pressure and airflow on-site.</p>
+                <p>Common causes include low refrigerant gas due to coil leakage, a choked filter or condenser, failed compressor capacitor, or a faulty inverter PCB board. Our technician checks all 5 parameters on-site with zero visiting charge.</p>
               </div>
             </details>
             <details className="faq-item">
-              <summary>Why is my refrigerator not cooling properly?</summary>
+              <summary>Is the visiting and inspection charge really free?</summary>
               <div className="faq-content">
-                <p>Cooling problems may stem from compressor faults, gas leaks, defective thermostat/defrost sensors, or dirty coils. A technician should inspect the appliance to pinpoint the issue.</p>
+                <p>Yes! Our visiting and basic inspection charge is 100% FREE across all areas of Hyderabad and Telangana. You only pay for repairs or services you approve.</p>
               </div>
             </details>
             <details className="faq-item">
-              <summary>What is the service charge?</summary>
+              <summary>How fast can an AC technician reach my doorstep?</summary>
               <div className="faq-content">
-                <p>Our basic service charge for AC, Refrigerator, Washing Machine, and Microwave Oven is ₹249, with a 100% FREE visiting charge.</p>
+                <p>Our average arrival time is 30 to 60 minutes across Greater Hyderabad, including Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Madhapur, Hitec City, and Kukatpally.</p>
               </div>
             </details>
             <details className="faq-item">
-              <summary>Is the visiting charge really free?</summary>
+              <summary>Where is 24x7 AC Repair Support located?</summary>
               <div className="faq-content">
-                <p>Yes! Visiting and inspection charges are completely FREE across our service areas.</p>
-              </div>
-            </details>
-            <details className="faq-item">
-              <summary>Where is Home Care AC Service Center located?</summary>
-              <div className="faq-content">
-                <p>We are located at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi.</p>
+                <p>We are centrally located in Hyderabad, Telangana 500023, providing round-the-clock emergency AC repair across all Hyderabad neighborhoods.</p>
               </div>
             </details>
           </div>
@@ -288,16 +353,16 @@ export default function About() {
       <section className="cta-banner">
         <div className="container cta-inner">
           <div className="cta-text">
-            <div className="cta-icon"><i className="fa-solid fa-headset"></i></div>
+            <div className="cta-icon"><i className="fa-solid fa-snowflake"></i></div>
             <div>
-              <h3>Need AC or Home Appliance Repair?</h3>
-              <h2>Book Your Technician Today!</h2>
-              <p>Fast doorstep service from Gali No. 21A Vijay Park, near Maujpur Metro, Shahdara &amp; Delhi NCR. Visiting Charge is FREE.</p>
+              <h3>Need Immediate AC Repair in Hyderabad?</h3>
+              <h2>Book Your Certified AC Technician Today!</h2>
+              <p>Fast doorstep service from Hyderabad, Telangana 500023. Visiting Charge is 100% FREE.</p>
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:7428194037" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 7428194037</a>
-            <a href="https://wa.me/917428194037" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
+            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
+            <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
           </div>
         </div>
       </section>

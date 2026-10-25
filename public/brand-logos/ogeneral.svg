@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" fill="none">
+  <!-- O General Red Pill / Badge -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="2" width="28" height="28" rx="6" fill="#E30613"/>
+    <circle cx="14" cy="16" r="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Spark dot / diamond -->
+    <path d="M 14 11 L 16 16 L 14 21 L 12 16 Z" fill="#FFFFFF"/>
+  </g>
+  <!-- Text -->
+  <text x="40" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="900" fill="#E30613" letter-spacing="1.2px">O GENERAL</text>
+  <text x="40" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700" fill="#64748B" letter-spacing="0.5px">HEAVY DUTY COOLING</text>
+</svg>

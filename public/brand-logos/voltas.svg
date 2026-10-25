@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" fill="none">
+  <!-- Voltas V Symbol -->
+  <g transform="translate(6, 6)">
+    <path d="M 4 4 L 14 28 L 24 4 L 19 4 L 14 18 L 9 4 Z" fill="#0054A6"/>
+    <path d="M 14 28 L 19 4 L 24 4 L 16 32 L 12 32 Z" fill="#0072CE"/>
+  </g>
+  <!-- Voltas Wordmark -->
+  <text x="36" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="900" fill="#0054A6" letter-spacing="1.5px">VOLTAS</text>
+  <!-- Tata Enterprise Subtext -->
+  <text x="36" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700" fill="#64748B" letter-spacing="0.4px">A TATA ENTERPRISE</text>
+</svg>

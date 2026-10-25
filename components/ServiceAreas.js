@@ -3,42 +3,42 @@
 export default function ServiceAreas() {
   const primaryHubs = [
     {
-      title: 'Maujpur & Vijay Park (Base Hub)',
+      title: 'Hyderabad Central (Base Hub - 500023)',
       badge: '15-30 Mins Arrival',
       icon: 'fa-solid fa-house-chimney',
-      desc: 'Our central service center location. Instant dispatch for fast doorstep repairs.',
-      areas: ['Vijay Park', 'Maujpur Metro', 'Maujpur Chowk', 'Babarpur (East & West)', 'Kabir Nagar', 'Gorakh Park'],
+      desc: 'Our base service center in Hyderabad Telangana 500023. Instant technician dispatch for fast doorstep repairs.',
+      areas: ['Sanath Nagar', 'Erragadda', 'Ameerpet', 'SR Nagar', 'Balkampet', 'Punjagutta'],
     },
     {
-      title: 'Shahdara & Trans-Yamuna',
+      title: 'Banjara & Jubilee Hills Belt',
       badge: '20-35 Mins Arrival',
       icon: 'fa-solid fa-city',
-      desc: 'Rapid technician visits across all residential colonies and market sectors.',
-      areas: ['Shahdara Metro', 'Naveen Shahdara', 'Rohtas Nagar', 'Mansarovar Park', 'Jyoti Nagar (North & South)', 'Kanti Nagar', 'Jhilmil'],
+      desc: 'Rapid technician visits across all residential apartments, villas, and commercial properties.',
+      areas: ['Banjara Hills', 'Jubilee Hills', 'Somajiguda', 'Film Nagar', 'Panjagutta', 'Khairatabad'],
     },
     {
-      title: 'Yamuna Vihar & Bhajanpura Belt',
+      title: 'Hitec City & Madhapur IT Belt',
       badge: '20-40 Mins Arrival',
-      icon: 'fa-solid fa-location-crosshairs',
-      desc: 'Regular daily routes covering main roads, blocks, and housing complexes.',
-      areas: ['Yamuna Vihar (All Blocks)', 'Bhajanpura Chowk', 'Gokalpuri', 'Khajuri Khas', 'Karawal Nagar', 'Gamri'],
+      icon: 'fa-solid fa-laptop-code',
+      desc: 'Dedicated daily service routes for IT professionals and high-rise gated communities.',
+      areas: ['Madhapur', 'Hitec City', 'Gachibowli', 'Kondapur', 'Kothaguda', 'Raidurg'],
     },
     {
-      title: 'Dilshad Garden & East Delhi NCR',
-      badge: '30-45 Mins Arrival',
+      title: 'Secunderabad & Kukatpally Region',
+      badge: '25-45 Mins Arrival',
       icon: 'fa-solid fa-map-location-dot',
-      desc: 'Comprehensive appliance repair coverage with 100% FREE inspection.',
-      areas: ['Dilshad Garden', 'Dilshad Colony', 'Vivek Vihar', 'Seelampur', 'Jaffrabad', 'Krishna Nagar', 'Geeta Colony', 'Anand Vihar'],
+      desc: 'Comprehensive AC repair and servicing coverage with 100% FREE inspection across Greater Hyderabad.',
+      areas: ['Kukatpally', 'KPHB Colony', 'Miyapur', 'Begumpet', 'Secunderabad', 'Bowenpally'],
     },
   ];
 
   const allAreas = [
-    'Vijay Park', 'Maujpur Metro', 'Shahdara', 'Babarpur', 'Yamuna Vihar',
-    'Bhajanpura', 'Jaffrabad', 'Seelampur', 'Dilshad Garden', 'Rohtas Nagar',
-    'Mansarovar Park', 'Jyoti Nagar', 'Kabir Nagar', 'Gokalpuri', 'Vivek Vihar',
-    'Karawal Nagar', 'Krishna Nagar', 'Laxmi Nagar', 'Geeta Colony', 'Jhilmil',
-    'Anand Vihar', 'Khajuri Khas', 'Dilshad Colony', 'Kanti Nagar', 'Surajmal Vihar',
-    'Bihari Colony', 'Karkardooma', 'Preet Vihar'
+    'Sanath Nagar (500023)', 'Erragadda', 'Ameerpet', 'SR Nagar', 'Banjara Hills',
+    'Jubilee Hills', 'Madhapur', 'Hitec City', 'Gachibowli', 'Kondapur',
+    'Kukatpally', 'KPHB Colony', 'Miyapur', 'Begumpet', 'Secunderabad',
+    'Punjagutta', 'Somajiguda', 'Bowenpally', 'Nizampet', 'Chandanagar',
+    'Mehdipatnam', 'Tolichowki', 'Abids', 'Dilsukhnagar', 'Uppal',
+    'LB Nagar', 'Himayatnagar', 'Manikonda'
   ];
 
   return (
@@ -49,9 +49,9 @@ export default function ServiceAreas() {
           <div className="service-area-pill">
             <i className="fa-solid fa-location-dot"></i> Rapid Doorstep Coverage &bull; 100% FREE Visiting
           </div>
-          <h2>Our <span className="red-text">Service Areas</span> Around Shahdara &amp; Delhi NCR</h2>
+          <h2>Our <span className="red-text">Service Areas</span> Across Hyderabad &amp; Telangana</h2>
           <p>
-            Operating directly from <strong>Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara</strong>, our certified technicians reach your doorstep within 30 to 60 minutes across all nearby neighborhoods.
+            Operating directly from <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach your doorstep within 30 to 60 minutes across all nearby neighborhoods with 24x7 emergency support.
           </p>
         </div>
 
@@ -85,11 +85,11 @@ export default function ServiceAreas() {
         <div className="area-cloud-box">
           <div className="area-cloud-header">
             <div>
-              <h3><i className="fa-solid fa-map-pin red-text"></i> Popular Localities We Serve Daily</h3>
+              <h3><i className="fa-solid fa-map-pin red-text"></i> Popular Localities We Serve Daily in Hyderabad</h3>
               <p>Click any locality to instantly book a technician via WhatsApp or call us</p>
             </div>
-            <a href="tel:7428194037" className="area-cloud-call-btn">
-              <i className="fa-solid fa-phone"></i> 7428194037
+            <a href="tel:1234561232" className="area-cloud-call-btn">
+              <i className="fa-solid fa-phone"></i> 1234561232
             </a>
           </div>
 
@@ -97,11 +97,11 @@ export default function ServiceAreas() {
             {allAreas.map((area, idx) => (
               <a
                 key={idx}
-                href={`https://wa.me/917428194037?text=${encodeURIComponent(`Hello Home Care AC Service Center, I need doorstep repair service in ${area}.`)}`}
+                href={`https://wa.me/911234561232?text=${encodeURIComponent(`Hello 24x7 AC Repair Support, I need doorstep AC service in ${area}, Hyderabad.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="area-chip"
-                title={`Book service in ${area}`}
+                title={`Book AC service in ${area}`}
               >
                 <i className="fa-solid fa-location-dot"></i>
                 <span>{area}</span>
@@ -124,7 +124,7 @@ export default function ServiceAreas() {
             </div>
             <div className="feature-item">
               <i className="fa-solid fa-certificate red-text"></i>
-              <span>Trained Local Experts</span>
+              <span>Trained Local Hyderabad Experts</span>
             </div>
           </div>
         </div>
@@ -133,14 +133,14 @@ export default function ServiceAreas() {
         <div className="area-cta-banner">
           <div className="area-cta-text">
             <h4>Don&apos;t see your locality listed?</h4>
-            <p>We cover almost all surrounding sectors across East Delhi &amp; Delhi NCR. Contact us directly to confirm instant technician availability!</p>
+            <p>We cover almost all localities across Hyderabad and Telangana (Pin 500023 &amp; surrounds). Contact us directly to confirm instant technician availability!</p>
           </div>
           <div className="area-cta-actions">
-            <a href="tel:7428194037" className="btn btn-primary">
-              <i className="fa-solid fa-phone"></i> Call 7428194037
+            <a href="tel:1234561232" className="btn btn-primary">
+              <i className="fa-solid fa-phone"></i> Call 1234561232
             </a>
             <a
-              href="https://wa.me/917428194037?text=Hello%20Home%20Care%20AC%20Service%20Center,%20do%20you%20provide%20service%20in%20my%20area?"
+              href="https://wa.me/911234561232?text=Hello%2024x7%20AC%20Repair%20Support,%20do%20you%20provide%20AC%20service%20in%20my%20area%20in%20Hyderabad?"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-dark"

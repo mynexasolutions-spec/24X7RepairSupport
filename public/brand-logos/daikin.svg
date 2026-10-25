@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" fill="none">
+  <!-- Daikin Triangle Icon -->
+  <g transform="translate(6, 9)">
+    <polygon points="0,26 12,0 26,26" fill="#0097E2"/>
+    <polygon points="12,0 26,26 18,26 9,8" fill="#0066B2"/>
+  </g>
+  <!-- Daikin Wordmark -->
+  <text x="36" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" font-style="italic" fill="#0097E2" letter-spacing="1px">DAIKIN</text>
+  <text x="36" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="700" fill="#004B87" letter-spacing="1px">AIR CONDITIONING</text>
+</svg>

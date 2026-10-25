@@ -3,27 +3,27 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Home Care AC Service Center | Vijay Park, Maujpur Metro, Shahdara, Delhi",
-  description: "Expert AC, Refrigerator, Washing Machine & Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Doorstep service with free visiting charge.",
+  title: "24x7 AC Repair & Service Hyderabad | Hitachi, LG, Daikin, Voltas, O General & More",
+  description: "24x7 AC Repair & Service Center in Hyderabad. Expert doorstep servicing, jet pump cleaning, gas charging & PCB repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, and all brands. Call 1234561232. Free visiting charge.",
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/home-care-icon.png', sizes: '512x512', type: 'image/png' },
-      { url: '/home-care-logo.png', sizes: '868x673', type: 'image/png' },
+      { url: '/favicon.ico?v=5' },
+      { url: '/logo-icon.png?v=5', sizes: '512x512', type: 'image/png' },
+      { url: '/logo.png?v=5', sizes: '949x609', type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png?v=5', sizes: '180x180', type: 'image/png' },
     ],
   },
   openGraph: {
-    title: "Home Care AC Service Center | Vijay Park, Maujpur Metro, Shahdara, Delhi",
-    description: "Expert AC, Refrigerator, Washing Machine & Microwave Oven repair based at Gali No. 21A, Vijay Park, near Maujpur Metro, Shahdara, Delhi. Doorstep service with free visiting charge.",
+    title: "24x7 AC Repair & Service Hyderabad | Hitachi, LG, Daikin, Voltas, O General & More",
+    description: "24x7 AC Repair & Service Center in Hyderabad. Expert doorstep servicing, jet pump cleaning, gas charging & PCB repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, and all brands. Call 1234561232. Free visiting charge.",
     images: [
       {
-        url: '/home-care-logo.png',
-        width: 868,
-        height: 673,
-        alt: 'Home Care AC Service Center Logo',
+        url: '/logo.png?v=5',
+        width: 949,
+        height: 609,
+        alt: '24x7 Repair Support Logo',
       },
     ],
   },
