@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ServiceAreas from '@/components/ServiceAreas';
-import { brandDetails, getBrandData, getRelatedBrands } from '../brandData';
+import { brandDetails, getBrandData, getRelatedBrands, getBrandSeo, SERVICE_LOCALITIES, SITE_URL } from '../brandData';
 
 export async function generateStaticParams() {
   const slugs = [];
@@ -29,9 +29,29 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const seo = getBrandSeo(brand);
+
   return {
-    title: `${brand.brand} AC Service & Repair Center in Hyderabad | Free Visiting Charge`,
-    description: `Specialized doorstep service for ${brand.brand} Split, Window & Inverter ACs in Hyderabad. PCB repair, gas charging, jet foam wash. 100% genuine parts & 90-day warranty.`,
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    // aliases like /services/lg-ac all point search engines at the one real page
+    alternates: { canonical: seo.path },
+    openGraph: {
+      type: 'website',
+      url: seo.path,
+      siteName: '24x7 Repair Support',
+      locale: 'en_IN',
+      title: seo.title,
+      description: seo.description,
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: `${seo.name} AC Service in Hyderabad - 24x7 Repair Support` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: seo.title,
+      description: seo.description,
+      images: ['/og-image.jpg'],
+    },
   };
 }
 
@@ -44,9 +64,75 @@ export default async function BrandServicePage({ params }) {
   }
 
   const relatedBrands = getRelatedBrands(brandSlug);
+  const seo = getBrandSeo(brand);
+  const pageUrl = `${SITE_URL}${seo.path}`;
+
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: `${seo.name} AC Service & Repair in Hyderabad`,
+      serviceType: 'AC repair and service',
+      description: seo.description,
+      url: pageUrl,
+      image: `${SITE_URL}${brand.image}`,
+      areaServed: SERVICE_LOCALITIES.map((place) => ({ '@type': 'Place', name: `${place}, Hyderabad` })),
+      // the same starting prices shown in the "Service Charges" section of this page
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: `${seo.name} AC service prices`,
+        itemListElement: [
+          ['Jet Pump Foam Cleaning', '499'],
+          ['Gas Refill & Leak Repair', '1499'],
+          ['PCB Board & Sensor Repair', '799'],
+          ['Installation & Relocation', '699'],
+        ].map(([service, price]) => ({
+          '@type': 'Offer',
+          priceCurrency: 'INR',
+          price,
+          itemOffered: { '@type': 'Service', name: `${seo.name} ${service}` },
+        })),
+      },
+      provider: {
+        '@type': 'HomeAndConstructionBusiness',
+        name: '24x7 Repair Support',
+        url: SITE_URL,
+        telephone: '+911234561232',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Hyderabad',
+          addressRegion: 'Telangana',
+          postalCode: '500023',
+          addressCountry: 'IN',
+        },
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+        { '@type': 'ListItem', position: 3, name: `${brand.brand} AC Service`, item: pageUrl },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: brand.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+  ];
 
   return (
     <div className="brand-service-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Breadcrumb Strip */}
       <div className="brand-breadcrumb-strip">
         <div className="container">
@@ -454,6 +540,32 @@ export default async function BrandServicePage({ params }) {
                 </h3>
                 <p>{faq.a}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Locality coverage - the text people search for ("<brand> AC service in <area>") */}
+      <section className="brand-local-section section-padding">
+        <div className="container">
+          <div className="section-title text-center">
+            <span style={{ color: '#FF5E00', fontWeight: 800, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
+              Near You
+            </span>
+            <h2 style={{ marginTop: '8px' }}>
+              {seo.name} AC Service Near You in <span className="red-text">Hyderabad</span>
+            </h2>
+            <p>
+              Looking for {seo.name} AC service near you? Our certified technicians provide {seo.name} AC repair,
+              gas charging, jet foam wash and installation in {SERVICE_LOCALITIES.slice(0, 8).join(', ')} and
+              across Hyderabad, Telangana 500023 &mdash; with a free visit, 60-minute arrival and a 90-day warranty.
+            </p>
+          </div>
+          <div className="brand-models-tags brand-local-tags">
+            {SERVICE_LOCALITIES.map((place) => (
+              <span key={place} className="brand-model-tag">
+                <i className="fa-solid fa-location-dot"></i> {seo.name} AC service in {place}
+              </span>
             ))}
           </div>
         </div>

@@ -97,11 +97,11 @@ export default function Contact() {
             <div className="contact-info-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '25px', background: 'rgba(255, 255, 255, 0.08)', padding: '12px 16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
                 <div style={{ background: '#ffffff', padding: '6px 12px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center' }}>
-                  <img src="/logo.png?v=5" alt="24x7 Repair Support" style={{ height: '40px', width: 'auto', display: 'block' }} />
+                  <img src="/navbarlogo-web.png?v=2" alt="24x7 Repair Support" style={{ height: '44px', width: 'auto', display: 'block' }} />
                 </div>
                 <div>
                   <h4 style={{ margin: 0, color: '#ffffff', fontSize: '17px', fontWeight: 800 }}>24x7 REPAIR SUPPORT</h4>
-                  <p style={{ margin: '2px 0 0', color: '#FF7A00', fontSize: '11px', fontWeight: 600, letterSpacing: '0.4px', textTransform: 'uppercase' }}>Hyderabad, Telangana 500023</p>
+                  <p style={{ margin: '2px 0 0', color: 'rgba(255, 255, 255, 0.85)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.4px', textTransform: 'uppercase' }}>Hyderabad, Telangana 500023</p>
                 </div>
               </div>
 

@@ -674,3 +674,34 @@ export function getRelatedBrands(slug) {
     .filter(key => brandDetails[key].slug !== currentSlug)
     .map(key => brandDetails[key]);
 }
+
+export const SITE_URL = 'https://24-7-repair-support.vercel.app';
+
+// Hyderabad localities we serve - kept in sync with components/ServiceAreas.js
+export const SERVICE_LOCALITIES = [
+  'Sanath Nagar', 'Erragadda', 'Ameerpet', 'SR Nagar', 'Banjara Hills',
+  'Jubilee Hills', 'Madhapur', 'Hitec City', 'Gachibowli', 'Kondapur',
+  'Kukatpally', 'KPHB Colony', 'Miyapur', 'Begumpet', 'Secunderabad',
+  'Punjagutta', 'Somajiguda', 'Bowenpally', 'Nizampet', 'Chandanagar',
+  'Mehdipatnam', 'Tolichowki', 'Abids', 'Dilsukhnagar', 'Uppal',
+  'LB Nagar', 'Himayatnagar', 'Manikonda',
+];
+
+// Search-facing text for a brand page: title, description and the name people actually type
+export function getBrandSeo(brand) {
+  const isMulti = brand.slug === 'other-brands';
+  const name = isMulti ? 'Carrier, Panasonic, Lloyd' : brand.brand;
+  const title = isMulti
+    ? 'Carrier, Panasonic, Lloyd AC Service in Hyderabad | 24x7 Repair Support'
+    : `${brand.brand} AC Service & Repair in Hyderabad | 24x7 Repair Support`;
+  const description = `${name} AC service & repair in Hyderabad - Banjara Hills, Madhapur, Kukatpally, Secunderabad & more. Free visit, 60-min arrival, 90-day warranty. Call 1234561232.`;
+  const keywords = [
+    `${name} AC service Hyderabad`,
+    `${name} AC repair Hyderabad`,
+    `${name} AC service near me`,
+    `${name} AC gas charging Hyderabad`,
+    `${name} AC service center Hyderabad`,
+    `${name} AC jet wash Hyderabad`,
+  ];
+  return { name, title, description, keywords, path: `/services/${brand.slug}` };
+}

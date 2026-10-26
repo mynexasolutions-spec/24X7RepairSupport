@@ -1,10 +1,32 @@
 import Link from 'next/link';
 import ServiceAreas from '@/components/ServiceAreas';
 
-export const metadata = {
-  title: "AC Services & Repair Rates | Hitachi, LG, Daikin, Voltas, O General | Hyderabad",
-  description: "Specialized AC repair, jet pump foam wash, gas refilling, and installation in Hyderabad, Telangana 500023. Expert servicing for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star & all brands. 100% Free visiting charge.",
-};
+import { pageMetadata, breadcrumbSchema } from '@/lib/seo';
+import { brandDetails, SITE_URL } from './brandData';
+
+export const metadata = pageMetadata({
+  title: 'AC Repair & Service Rates in Hyderabad | LG, Daikin, Hitachi, Voltas',
+  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung & Blue Star. Free visit. Call 1234561232.',
+  path: '/services',
+});
+
+const servicesSchema = [
+  breadcrumbSchema([
+    { name: 'Home', path: '' },
+    { name: 'Services', path: '/services' },
+  ]),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'AC brands we service in Hyderabad',
+    itemListElement: Object.values(brandDetails).map((brand, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `${brand.brand} AC Service & Repair`,
+      url: `${SITE_URL}/services/${brand.slug}`,
+    })),
+  },
+];
 
 export default function Services() {
   const brandList = [
@@ -183,6 +205,10 @@ export default function Services() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       <section className="page-banner">
         <div className="container">
           <h1>Our AC Services</h1>

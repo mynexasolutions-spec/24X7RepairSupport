@@ -25,6 +25,34 @@ body {
     background-color: var(--white);
 }
 
+/* Scrollbar in the site theme: orange thumb on a light track, navy on hover */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EEF3F8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-red);
+    border-radius: 10px;
+    border: 2px solid #EEF3F8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+/* Firefox has no ::-webkit-scrollbar; Chrome would let this override the rules above */
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary-red) #EEF3F8;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -234,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    padding: 10px 0;
     gap: 20px;
 }
 
@@ -249,7 +277,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 52px;
+    height: 64px;
+    margin: -6px 0;
     width: auto;
     object-fit: contain;
     border-radius: 0;
@@ -310,6 +339,137 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-red) !important;
 }
 
+/* Brands dropdown */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #334155;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.nav-dropdown-toggle i {
+    font-size: 10px;
+    transition: transform 0.2s ease;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown.open .nav-dropdown-toggle {
+    color: var(--primary-red);
+}
+
+.nav-dropdown.open .nav-dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 50%;
+    min-width: 0;
+    width: max-content;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(2, 58, 110, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 100;
+}
+
+/* invisible bridge so the menu doesn't close while the pointer crosses the gap */
+.nav-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    height: 18px;
+}
+
+.nav-dropdown.open .nav-dropdown-menu,
+.nav-dropdown:has(:focus-visible) .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+@media (hover: hover) and (min-width: 769px) {
+    .nav-dropdown:hover .nav-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+    }
+    .nav-dropdown:hover .nav-dropdown-toggle,
+    .nav-dropdown:hover .nav-dropdown-head > a {
+        color: var(--primary-red);
+    }
+    .nav-dropdown:hover .nav-dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+}
+
+.nav-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #023a6e;
+}
+
+.nav-dropdown-menu a:hover {
+    background: #FFF4EC;
+}
+
+.nav-dropdown-menu a img {
+    flex: 0 0 96px;
+    width: 96px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.nav-dropdown-menu a span {
+    flex: 1;
+}
+
+.nav-dropdown-menu .nav-dropdown-all {
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 6px;
+    padding-top: 12px;
+    border-top: 1px solid #E2E8F0;
+    border-radius: 0 0 10px 10px;
+    font-size: 13px;
+    color: var(--primary-red);
+}
+
 .header-phone-link {
     display: inline-flex;
     align-items: center;
@@ -338,6 +498,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-actions {
+    display: none;
+}
+
+.nav-backdrop,
+.nav-close {
+    display: none;
+}
+
+/* sidebar-only icons; the extra class beats Font Awesome's own display rule */
+.nav-links .nav-ico.fa-solid {
     display: none;
 }
 
@@ -1673,6 +1843,26 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px 24px;
+}
+
+.bottom-inner p {
+    overflow-wrap: anywhere;
+}
+
+/* mobile: stack the two lines and centre them instead of squeezing side by side */
+@media (max-width: 768px) {
+    .footer-bottom {
+        padding: 18px 0 22px;
+    }
+    .bottom-inner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 6px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
 }
 
 /* Responsive */
@@ -1707,27 +1897,125 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .header-inner .nav-links,
     .header-inner .header-actions {
         display: none;
     }
-    .nav-links.active {
+
+    /* Mobile menu = right-side sidebar that slides in over a dimmed page */
+    .header-inner .nav-links {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        align-items: stretch;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: min(84vw, 320px);
+        padding: 18px 22px 24px;
+        gap: 0;
         background: var(--white);
-        padding: 20px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-        gap: 15px;
+        box-shadow: -12px 0 40px rgba(2, 24, 48, 0.25);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s;
+        z-index: 1001;
     }
-    .nav-links.active .mobile-nav-logo {
-        display: block !important;
+    .header-inner .nav-links.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+    .nav-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(2, 24, 48, 0.55);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s;
+        z-index: 1000;
+    }
+    .nav-backdrop.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-links .mobile-nav-logo {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        margin-bottom: 6px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-close {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        border: 1px solid #E2E8F0;
+        background: #F1F5F9;
+        color: #023a6e;
+        font-size: 17px;
+        cursor: pointer;
+        padding: 0;
+    }
+    /* left-aligned rows with a hairline between them */
+    .nav-links > a,
+    .nav-dropdown-head {
+        padding: 14px 4px;
+        border-bottom: 1px solid #F1F5F9;
+        font-size: 15px;
+    }
+    .nav-links > a,
+    .nav-dropdown-head > a {
+        display: flex;
+        align-items: center;
+    }
+    /* icons only show in the sidebar, not the desktop navbar */
+    .nav-links .nav-ico.fa-solid {
+        display: inline-block;
+        width: 22px;
+        margin-right: 14px;
+        text-align: center;
+        font-size: 15px;
+        color: var(--primary-red);
+    }
+    /* Brands dropdown becomes an accordion inside the sidebar */
+    .nav-dropdown {
+        width: 100%;
+    }
+    .nav-dropdown-head {
+        justify-content: space-between;
+    }
+    .nav-dropdown-toggle {
+        flex: 1;
+        justify-content: flex-end;
+        padding: 6px 0;
+    }
+    .nav-dropdown-menu {
+        position: static;
+        display: none;
+        min-width: 0;
+        margin-top: 10px;
+        padding: 4px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #F8FAFC;
+    }
+    .nav-dropdown-menu::before {
+        display: none;
+    }
+    .nav-dropdown.open .nav-dropdown-menu {
+        display: block;
+        transform: none;
     }
     .header-inner {
-        padding: 10px 18px !important;
+        padding: 7px 18px !important;
         gap: 12px !important;
     }
 
@@ -1737,7 +2025,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo-img {
-        height: 38px !important;
+        height: 46px !important;
+        margin: -4px 0 !important;
     }
 
     .logo-title {
@@ -1759,9 +2048,8 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin-top: 15px;
-        padding-top: 20px;
-        border-top: 1px solid #eaeaea;
+        margin-top: auto;
+        padding-top: 24px;
     }
     .mobile-nav-actions .btn {
         width: 100%;
@@ -2017,7 +2305,8 @@ h1, h2, h3, h4, h5, h6 {
         gap: 5px !important;
     }
     .logo-img {
-        height: 34px !important;
+        height: 40px !important;
+        margin: -3px 0 !important;
     }
     .logo-title {
         font-size: 13.5px !important;
@@ -2659,10 +2948,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Brands Strip */
 .brands-strip {
-    background: #F8FAFC;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F1F6FB 100%);
     border-top: 1px solid #E2E8F0;
     border-bottom: 1px solid #E2E8F0;
-    padding: 24px 0;
+    padding: 28px 0;
 }
 
 .brands-inner {
@@ -2670,7 +2959,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 12px 16px;
+    gap: 14px 16px;
 }
 
 .brand-pill {
@@ -2678,30 +2967,100 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: #023a6e;
     background: #ffffff;
-    padding: 6px 16px;
-    border-radius: 30px;
+    padding: 8px 18px 8px 14px;
+    border-radius: 40px;
     border: 1px solid #E2E8F0;
-    box-shadow: 0 2px 5px rgba(2, 58, 110, 0.04);
+    box-shadow: 0 1px 2px rgba(2, 58, 110, 0.05), 0 6px 16px rgba(2, 58, 110, 0.06);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     text-decoration: none;
-    transition: all 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 
 .brand-pill:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     border-color: #FF5E00;
-    box-shadow: 0 4px 12px rgba(255, 94, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(255, 94, 0, 0.08), 0 12px 24px rgba(255, 94, 0, 0.18);
     color: #FF5E00;
 }
 
 .brand-pill-logo {
-    height: 18px;
+    height: 26px;
     width: auto;
-    max-width: 60px;
+    max-width: 90px;
     object-fit: contain;
     display: block;
+    transition: transform 0.25s ease;
+}
+
+.brand-pill:hover .brand-pill-logo {
+    transform: scale(1.06);
+}
+
+/* thin divider between the logo and the brand name */
+.brand-pill-logo + span {
+    padding-left: 12px;
+    border-left: 1px solid #E2E8F0;
+    line-height: 22px;
+    transition: border-color 0.25s ease;
+}
+
+.brand-pill:hover .brand-pill-logo + span {
+    border-left-color: rgba(255, 94, 0, 0.35);
+}
+
+/* mobile: two pills per row */
+@media (max-width: 640px) {
+    .brands-inner {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .brands-inner > span {
+        grid-column: 1 / -1;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    .brand-pill {
+        min-width: 0;
+        justify-content: center;
+        padding: 9px 10px;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    /* the logo gives up width first, so the brand name always shows in full */
+    .brand-pill-logo {
+        height: 24px;
+        max-width: 72px;
+        flex: 0 1 auto;
+        min-width: 0;
+    }
+
+    .brand-pill-logo + span {
+        padding-left: 8px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+
+/* locality chips on brand pages */
+.brand-local-section .section-title p {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-local-tags {
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.brand-local-tags .brand-model-tag i {
+    color: #FF5E00;
 }
 
 .home-brand-card:hover {

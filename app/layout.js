@@ -2,9 +2,31 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const SITE_URL = "https://24-7-repair-support.vercel.app";
+const SITE_TITLE = "24x7 AC Repair & Service in Hyderabad | LG, Daikin, Hitachi, Voltas";
+// kept under ~160 characters so Google and WhatsApp don't cut it off
+const SITE_DESCRIPTION = "24x7 doorstep AC repair & service in Hyderabad. Gas charging, jet wash & PCB repair for LG, Daikin, Hitachi, Voltas, O General. Free visit. Call 1234561232.";
+
 export const metadata = {
-  title: "24x7 AC Repair & Service Hyderabad | Hitachi, LG, Daikin, Voltas, O General & More",
-  description: "24x7 AC Repair & Service Center in Hyderabad. Expert doorstep servicing, jet pump cleaning, gas charging & PCB repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, and all brands. Call 1234561232. Free visiting charge.",
+  metadataBase: new URL(SITE_URL),
+  applicationName: "24x7 Repair Support",
+  category: "Home Services",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "AC repair Hyderabad",
+    "AC service Hyderabad",
+    "AC gas charging",
+    "AC jet pump cleaning",
+    "AC PCB repair",
+    "split AC repair",
+    "24x7 AC repair near me",
+  ],
   icons: {
     icon: [
       { url: '/favicon.ico?v=5' },
@@ -16,17 +38,49 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "24x7 AC Repair & Service Hyderabad | Hitachi, LG, Daikin, Voltas, O General & More",
-    description: "24x7 AC Repair & Service Center in Hyderabad. Expert doorstep servicing, jet pump cleaning, gas charging & PCB repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, and all brands. Call 1234561232. Free visiting charge.",
+    type: "website",
+    siteName: "24x7 Repair Support",
+    locale: "en_IN",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [
       {
-        url: '/logo.png?v=5',
-        width: 949,
-        height: 609,
-        alt: '24x7 Repair Support Logo',
+        // logo on a white 1200x630 background (~60KB) so WhatsApp shows it instead of a transparent PNG
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '24x7 Repair Support - AC Repair & Service Hyderabad',
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ['/og-image.jpg'],
+  },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: "24x7 Repair Support",
+  description: SITE_DESCRIPTION,
+  url: SITE_URL,
+  image: `${SITE_URL}/og-image.jpg`,
+  logo: `${SITE_URL}/logo.png`,
+  telephone: "+911234561232",
+  email: "supportxrapair@gmail.com",
+  openingHours: "Mo-Su 00:00-23:59",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Hyderabad",
+    addressRegion: "Telangana",
+    postalCode: "500023",
+    addressCountry: "IN",
+  },
+  areaServed: "Hyderabad",
+  serviceType: ["AC repair", "AC service", "AC gas charging", "AC jet pump cleaning", "AC PCB repair"],
 };
 
 export default function RootLayout({ children }) {
@@ -41,6 +95,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <Header />
         {children}
         <Footer />

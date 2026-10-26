@@ -94,7 +94,7 @@ export default function Home() {
             </div>
 
             <h1 className="hero-modern-title">
-              Quality AC Repair Services
+              Quality AC Repair Services in Hyderabad
             </h1>
 
             <p className="hero-modern-desc">

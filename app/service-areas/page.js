@@ -1,10 +1,12 @@
 import ServiceAreas from '@/components/ServiceAreas';
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "AC Service Areas in Hyderabad | 24x7 Doorstep Repair Coverage",
-  description: "Check 24x7 AC Repair Support service coverage across Hyderabad & Telangana (500023). Rapid 30-60 min doorstep arrival in Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more.",
-};
+export const metadata = pageMetadata({
+  title: 'AC Service Areas in Hyderabad | Banjara Hills, Madhapur, Kukatpally',
+  description: '24x7 AC repair across Hyderabad - Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more. Technician at your door in 30-60 minutes. Free visit.',
+  path: '/service-areas',
+});
 
 export default function ServiceAreasPage() {
   return (

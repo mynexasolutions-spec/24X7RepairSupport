@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "About Us | 24x7 AC Repair & Service Center Hyderabad | All Brands",
-  description: "24x7 AC Repair Support provides professional doorstep AC service, jet pump wash, gas charging & PCB repairs for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star in Hyderabad, Telangana 500023. Free visiting charge.",
-};
+export const metadata = pageMetadata({
+  title: 'About 24x7 Repair Support | AC Service Center in Hyderabad',
+  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts, 90-day warranty and a free visit. Call 1234561232.",
+  path: '/about',
+});
 
 export default function About() {
   const brandList = [

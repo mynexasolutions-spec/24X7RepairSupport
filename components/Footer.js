@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-col brand-col">
-          <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+          <div className="logo" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px 14px', marginBottom: '18px' }}>
             <div style={{ background: '#ffffff', padding: '6px 12px', borderRadius: '10px', display: 'inline-flex', alignItems: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
-              <img src="/logo.png?v=5" alt="24x7 Repair Support Logo" style={{ height: '48px', width: 'auto', objectFit: 'contain', display: 'block' }} />
+              <img src="/navbarlogo-web.png?v=2" alt="24x7 Repair Support Logo" style={{ height: '58px', width: 'auto', objectFit: 'contain', display: 'block' }} />
             </div>
             <div>
               <h3 style={{ margin: 0, fontSize: '20px', fontWeight: 800, letterSpacing: '-0.3px', lineHeight: 1.1 }}>
@@ -82,9 +82,9 @@ export default function Footer() {
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '7px',
+                    gap: '9px',
                     background: '#ffffff',
-                    padding: '4px 12px',
+                    padding: '6px 14px',
                     borderRadius: '20px',
                     textDecoration: 'none',
                     color: '#023a6e',
@@ -95,7 +95,7 @@ export default function Footer() {
                   }}
                   className="footer-brand-chip"
                 >
-                  <img src={b.logo} alt={b.name} style={{ height: '14px', width: 'auto', display: 'block' }} />
+                  <img src={b.logo} alt={b.name} style={{ height: '22px', width: 'auto', maxWidth: '84px', objectFit: 'contain', display: 'block' }} />
                   <span>{b.name}</span>
                 </Link>
               ))}
