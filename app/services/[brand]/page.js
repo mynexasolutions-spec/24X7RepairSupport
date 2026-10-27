@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ServiceAreas from '@/components/ServiceAreas';
-import { brandDetails, getBrandData, getRelatedBrands, getBrandSeo, SERVICE_LOCALITIES, SITE_URL } from '../brandData';
+import BrandBookingForm from '@/components/BrandBookingForm';
+import { brandDetails, getBrandData, getBrandSeo, SERVICE_LOCALITIES, SITE_URL } from '../brandData';
 
 export async function generateStaticParams() {
   const slugs = [];
@@ -63,7 +64,6 @@ export default async function BrandServicePage({ params }) {
     notFound();
   }
 
-  const relatedBrands = getRelatedBrands(brandSlug);
   const seo = getBrandSeo(brand);
   const pageUrl = `${SITE_URL}${seo.path}`;
 
@@ -128,7 +128,7 @@ export default async function BrandServicePage({ params }) {
   ];
 
   return (
-    <div className="brand-service-page">
+    <div className={`brand-service-page brand-page-${brand.slug}`}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -467,57 +467,8 @@ export default async function BrandServicePage({ params }) {
         </div>
       </section>
 
-      {/* Related Brands Section */}
-      <section className="related-brands-section section-padding">
-        <div className="container">
-          <div className="section-title text-center">
-            <span style={{ color: '#FF5E00', fontWeight: 800, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
-              Multi-Brand AC Specialists
-            </span>
-            <h2 style={{ marginTop: '8px' }}>
-              Related AC <span className="red-text">Brands We Service</span>
-            </h2>
-            <p>
-              Looking for service on another air conditioner? We provide factory-grade doorstep repairs for all major brands across Hyderabad.
-            </p>
-          </div>
-
-          <div className="related-brands-grid">
-            {relatedBrands.slice(0, 4).map((rel) => (
-              <div key={rel.slug} className="related-brand-card">
-                <div className="related-brand-media">
-                  <img src={rel.image} alt={rel.imageAlt} loading="lazy" />
-                  <span className="related-brand-badge">{rel.badge}</span>
-                  {rel.logo && (
-                    <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: '#ffffff', padding: '4px 8px', borderRadius: '6px', boxShadow: '0 2px 6px rgba(0,0,0,0.15)', display: 'inline-flex', alignItems: 'center', zIndex: 2 }}>
-                      <img src={rel.logo} alt={rel.brand} style={{ height: '16px', width: 'auto', display: 'block' }} />
-                    </div>
-                  )}
-                </div>
-                <div className="related-brand-info">
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-                    {rel.logo && (
-                      <div style={{ background: '#F8FAFC', border: '1px solid #E2E8F0', borderRadius: '6px', padding: '2px 6px', display: 'inline-flex', alignItems: 'center', flexShrink: 0 }}>
-                        <img src={rel.logo} alt={rel.brand} style={{ height: '16px', width: 'auto', display: 'block' }} />
-                      </div>
-                    )}
-                    <h3 style={{ margin: 0, fontSize: '17px', color: '#023a6e' }}>{rel.brand} AC</h3>
-                  </div>
-                  <p className="related-brand-tagline">{rel.tagline}</p>
-                  <ul className="related-brand-checklist">
-                    <li><i className="fa-solid fa-circle-check"></i> Free Doorstep Inspection</li>
-                    <li><i className="fa-solid fa-circle-check"></i> 60-Minute Fast Arrival</li>
-                    <li><i className="fa-solid fa-circle-check"></i> 90-Day Service Warranty</li>
-                  </ul>
-                  <Link href={`/services/${rel.slug}`} className="btn-related-brand">
-                    View {rel.brand} Service <i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Interactive WhatsApp Booking Form */}
+      <BrandBookingForm brand={brand} />
 
       {/* Brand FAQs */}
       <section className="brand-faqs-section section-padding" style={{ background: '#f8fafc' }}>

@@ -40,8 +40,14 @@ export default function Header() {
   const isAbout = cleanPath === '/about' || cleanPath.startsWith('/about/');
   const isContact = cleanPath === '/contact' || cleanPath.startsWith('/contact/');
 
+  const brandMatch = pathname ? pathname.match(/^\/services\/([^/]+)/) : null;
+  const brandSlug = brandMatch ? brandMatch[1] : null;
+  const currentBrand = (brandSlug && brandSlug !== 'other-brands') ? NAV_BRANDS.find((b) => b.slug === brandSlug) : null;
+
+  const brandThemeClass = currentBrand ? ` header-theme-${currentBrand.slug}` : '';
+
   return (
-    <header className="header">
+    <header className={`header${brandThemeClass}`}>
       <div className="top-bar">
         <div className="container top-bar-inner">
           <div className="top-bar-left">
@@ -76,36 +82,79 @@ export default function Header() {
             </button>
           </div>
           <Link href="/" className={isHome ? "active" : ""} onClick={() => setMenuOpen(false)}><i className="fa-solid fa-house nav-ico"></i>HOME</Link>
-          <div className={`nav-dropdown${brandsOpen ? ' open' : ''}`}>
-            <div className="nav-dropdown-head">
-              <Link href="/services" className={isServices ? "active" : ""} onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}><i className="fa-solid fa-screwdriver-wrench nav-ico"></i>SERVICES</Link>
-              <button
-                type="button"
-                className="nav-dropdown-toggle"
-                aria-label="Show services by brand"
-                aria-haspopup="true"
-                aria-expanded={brandsOpen}
-                onClick={() => setBrandsOpen(!brandsOpen)}
-              >
-                <i className="fa-solid fa-chevron-down"></i>
-              </button>
-            </div>
-            <div className="nav-dropdown-menu">
-              {NAV_BRANDS.map((b) => (
+          {currentBrand ? (
+            <div className={`nav-dropdown${brandsOpen ? ' open' : ''}`}>
+              <div className="nav-dropdown-head">
+                <Link href={`/services/${currentBrand.slug}`} className="active" onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}>
+                  <i className="fa-solid fa-screwdriver-wrench nav-ico"></i>{currentBrand.name.toUpperCase()}
+                </Link>
+                <button
+                  type="button"
+                  className="nav-dropdown-toggle"
+                  aria-label={`Show ${currentBrand.name} options`}
+                  aria-haspopup="true"
+                  aria-expanded={brandsOpen}
+                  onClick={() => setBrandsOpen(!brandsOpen)}
+                >
+                  <i className="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div className="nav-dropdown-menu">
                 <Link
-                  key={b.slug}
-                  href={`/services/${b.slug}`}
+                  href={`/services/${currentBrand.slug}#brand-booking-form`}
                   onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
                 >
-                  <img src={b.logo} alt="" />
-                  <span>{b.name}</span>
+                  <i className="fa-brands fa-whatsapp" style={{ color: '#25D366' }}></i>
+                  <span>Book {currentBrand.name} via WhatsApp</span>
                 </Link>
-              ))}
-              <Link href="/services" className="nav-dropdown-all" onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}>
-                View all services <i className="fa-solid fa-arrow-right"></i>
-              </Link>
+                <Link
+                  href={`/services/${currentBrand.slug}`}
+                  onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
+                >
+                  <i className="fa-solid fa-tag" style={{ color: '#FF5E00' }}></i>
+                  <span>{currentBrand.name} Service Charges</span>
+                </Link>
+                <a
+                  href="tel:1234561232"
+                  onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
+                >
+                  <i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i>
+                  <span>Call {currentBrand.name} Tech (1234561232)</span>
+                </a>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className={`nav-dropdown${brandsOpen ? ' open' : ''}`}>
+              <div className="nav-dropdown-head">
+                <Link href="/services" className={isServices ? "active" : ""} onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}><i className="fa-solid fa-screwdriver-wrench nav-ico"></i>SERVICES</Link>
+                <button
+                  type="button"
+                  className="nav-dropdown-toggle"
+                  aria-label="Show services by brand"
+                  aria-haspopup="true"
+                  aria-expanded={brandsOpen}
+                  onClick={() => setBrandsOpen(!brandsOpen)}
+                >
+                  <i className="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div className="nav-dropdown-menu">
+                {NAV_BRANDS.map((b) => (
+                  <Link
+                    key={b.slug}
+                    href={`/services/${b.slug}`}
+                    onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
+                  >
+                    <img src={b.logo} alt="" />
+                    <span>{b.name}</span>
+                  </Link>
+                ))}
+                <Link href="/services" className="nav-dropdown-all" onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}>
+                  View all services <i className="fa-solid fa-arrow-right"></i>
+                </Link>
+              </div>
+            </div>
+          )}
           <Link href="/about" className={isAbout ? "active" : ""} onClick={() => setMenuOpen(false)}><i className="fa-solid fa-circle-info nav-ico"></i>ABOUT US</Link>
           <Link href="/contact" className={isContact ? "active" : ""} onClick={() => setMenuOpen(false)}><i className="fa-solid fa-headset nav-ico"></i>CONTACT US</Link>
           <div className="mobile-nav-actions">

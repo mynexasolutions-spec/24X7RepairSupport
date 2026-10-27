@@ -3501,9 +3501,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-hero-section {
-    background: linear-gradient(135deg, #022345 0%, #023a6e 100%);
-    color: #ffffff;
-    padding: 60px 0 70px;
+    background: radial-gradient(circle at 85% 20%, rgba(2, 132, 199, 0.14) 0%, transparent 50%),
+                radial-gradient(circle at 10% 85%, rgba(255, 94, 0, 0.08) 0%, transparent 45%),
+                linear-gradient(135deg, #F0F6FC 0%, #E6EFF8 45%, #F8FBFE 100%);
+    color: var(--text-dark);
+    padding: 55px 0 65px;
+    border-bottom: 1px solid #DCE7F2;
+    position: relative;
+    overflow: hidden;
 }
 
 .brand-hero-grid {
@@ -3521,17 +3526,17 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #023a6e;
+    border: 1px solid #023a6e;
     border-radius: 30px;
-    padding: 6px 16px;
+    padding: 7px 18px;
     font-size: 12.5px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 16px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(2, 58, 110, 0.15);
 }
 
 .brand-hero-badge i {
@@ -3541,22 +3546,23 @@ h1, h2, h3, h4, h5, h6 {
 .brand-hero-text h1 {
     font-size: 38px;
     font-weight: 800;
-    color: #ffffff;
+    color: #023a6e;
     line-height: 1.25;
     margin-bottom: 12px;
 }
 
 .brand-hero-tagline {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     color: #FF5E00;
     margin-bottom: 14px;
+    letter-spacing: 0.2px;
 }
 
 .brand-hero-description {
     font-size: 15.5px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.88);
+    color: #475569;
     margin-bottom: 24px;
     max-width: 620px;
 }
@@ -3564,13 +3570,15 @@ h1, h2, h3, h4, h5, h6 {
 .brand-trust-badges {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 28px;
-    padding: 12px 18px;
-    background: rgba(0, 0, 0, 0.15);
+    padding: 10px 18px;
+    background: #ffffff;
+    border: 1.5px solid #E2E8F0;
     border-radius: 12px;
     width: fit-content;
+    box-shadow: 0 4px 14px rgba(2, 58, 110, 0.05);
 }
 
 .trust-badge-item {
@@ -3579,7 +3587,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 7px;
     font-size: 13px;
     font-weight: 700;
-    color: #ffffff;
+    color: #023a6e;
 }
 
 .brand-hero-actions {
@@ -3596,7 +3604,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     font-weight: 700;
     font-size: 15px;
-    box-shadow: 0 4px 15px rgba(255, 94, 0, 0.35);
+    box-shadow: 0 6px 18px rgba(255, 94, 0, 0.35);
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -3606,25 +3614,27 @@ h1, h2, h3, h4, h5, h6 {
 .btn-hero-book:hover {
     background-color: #e05300;
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 94, 0, 0.45);
 }
 
 .btn-hero-call {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: #023a6e;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #023a6e;
     padding: 13px 22px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 15px;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(2, 58, 110, 0.15);
 }
 
 .btn-hero-call:hover {
-    background-color: #ffffff;
-    color: #023a6e !important;
+    background-color: #01284d;
+    color: #ffffff !important;
     transform: translateY(-2px);
 }
 
@@ -3645,8 +3655,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     overflow: hidden;
     aspect-ratio: 4 / 3;
-    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 45px rgba(2, 58, 110, 0.14);
+    border: 4px solid #ffffff;
 }
 
 .brand-hero-img {
@@ -4269,234 +4279,4337 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================================================
-   Related Brands Section
+   Brand Booking Form (WhatsApp Redirect) - Logo Theme
    ========================================================= */
-.related-brands-section {
-    background: #ffffff;
-    padding: 70px 0;
+.brand-booking-section {
+    background: linear-gradient(180deg, #F8FAFD 0%, #EEF6FC 100%);
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
 }
 
-.related-brands-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-top: 36px;
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.related-brand-card {
-    background: #ffffff;
-    border: 1px solid #E2E8F0;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(2, 58, 110, 0.05);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.related-brand-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 35px rgba(2, 58, 110, 0.12);
-    border-color: #CBD5E1;
-}
-
-.related-brand-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
-    background: #F1F5F9;
-}
-
-.related-brand-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.related-brand-card:hover .related-brand-media img {
-    transform: scale(1.05);
-}
-
-.related-brand-badge {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(2, 58, 110, 0.92);
-    backdrop-filter: blur(6px);
-    color: #ffffff;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.related-brand-info {
-    padding: 18px 16px 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.related-brand-info h3 {
-    font-size: 16.5px;
+.booking-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #E8F5E9;
+    color: #16A34A;
+    border: 1px solid #BBF7D0;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 12.5px;
     font-weight: 800;
-    color: #023a6e;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.brand-form-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #D0E4FF;
+    box-shadow: 0 16px 45px rgba(2, 58, 110, 0.08);
+    overflow: hidden;
+}
+
+.brand-form-header {
+    background: linear-gradient(135deg, #023a6e 0%, #034f96 100%);
+    color: #ffffff;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-form-header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-form-logo-box {
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.brand-form-logo-box img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+.brand-form-header h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
     margin: 0 0 4px;
 }
 
-.related-brand-tagline {
-    font-size: 12px;
-    font-weight: 600;
-    color: #FF5E00;
-    margin: 0 0 12px;
-    line-height: 1.35;
+.brand-form-header p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    margin: 0;
 }
 
-.related-brand-checklist {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.related-brand-checklist li {
+.brand-form-header-badge {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
     font-size: 12.5px;
-    color: #4A5568;
-    display: flex;
+    font-weight: 700;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-weight: 500;
 }
 
-.related-brand-checklist li i {
-    color: #10B981;
-    font-size: 12px;
-    flex-shrink: 0;
+.brand-form-header-badge i {
+    color: #FF5E00;
 }
 
-.btn-related-brand {
-    margin-top: auto;
-    background: #F0F7FF;
-    color: #023a6e !important;
-    border: 1px solid #D0E4FF;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 13px;
+.brand-booking-form-inner {
+    padding: 32px 30px 36px;
+}
+
+.form-fields-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 13.5px;
     font-weight: 700;
+    color: #023a6e;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.form-group label i {
+    color: #FF5E00;
+    font-size: 13px;
+}
+
+.form-group .req {
+    color: #EF4444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    font-size: 14.5px;
+    color: #1E293B;
+    background: #F8FAFC;
+    transition: all 0.2s ease;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0284c7;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.select-caret {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748B;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.brand-form-alert {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-form-alert.error {
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    color: #DC2626;
+}
+
+.brand-form-alert.success {
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    color: #16A34A;
+}
+
+.brand-form-submit-row {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn-brand-whatsapp-submit {
+    background: #25D366;
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-size: 16.5px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+    transition: all 0.25s ease;
+    width: 100%;
+    max-width: 480px;
+}
+
+.btn-brand-whatsapp-submit i.fa-whatsapp {
+    font-size: 24px;
+}
+
+.btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #20bd5a;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+}
+
+.btn-brand-whatsapp-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.brand-form-guarantees {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    transition: all 0.2s ease;
-    text-decoration: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.btn-related-brand:hover {
-    background: #FF5E00;
-    color: #ffffff !important;
-    border-color: #FF5E00;
-    transform: translateY(-2px);
+.brand-form-guarantees span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 @media (max-width: 768px) {
-    .related-brands-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+    .brand-form-card {
+        border-radius: 16px;
+    }
+
+    .brand-form-header {
+        padding: 18px 20px;
+    }
+
+    .brand-form-header h3 {
+        font-size: 17px;
+    }
+
+    .brand-booking-form-inner {
+        padding: 22px 18px 26px;
+    }
+
+    .form-fields-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .btn-brand-whatsapp-submit {
+        font-size: 14.5px;
+        padding: 14px 20px;
+    }
+
+    .brand-form-guarantees {
         gap: 12px;
-        margin-top: 24px;
-    }
-
-    .related-brand-card {
-        border-radius: 12px;
-    }
-
-    .related-brand-badge {
-        font-size: 9px;
-        padding: 3px 6px;
-        bottom: 6px;
-        left: 6px;
-    }
-
-    .related-brand-info {
-        padding: 12px 10px 14px;
-    }
-
-    .related-brand-info h3 {
-        font-size: 14px;
-    }
-
-    .related-brand-tagline {
-        font-size: 10.5px;
-        margin-bottom: 8px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .related-brand-checklist {
-        margin-bottom: 10px;
-        gap: 4px;
-    }
-
-    .related-brand-checklist li {
-        font-size: 10px;
-        gap: 4px;
-    }
-
-    .related-brand-checklist li i {
-        font-size: 10px;
-    }
-
-    .btn-related-brand {
-        padding: 8px 8px;
-        font-size: 11.5px;
-        border-radius: 6px;
+        font-size: 12px;
     }
 }
 
-@media (max-width: 480px) {
-    .related-brands-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px;
-    }
+/* =========================================================
+   LG Brand Page Theme: #c40038, Black & White
+   ========================================================= */
 
-    .related-brand-info {
-        padding: 10px 8px 12px;
-    }
-
-    .related-brand-info h3 {
-        font-size: 12.5px;
-    }
-
-    .related-brand-tagline {
-        font-size: 9.5px;
-        margin-bottom: 6px;
-    }
-
-    .related-brand-checklist {
-        margin-bottom: 8px;
-        gap: 3px;
-    }
-
-    .related-brand-checklist li {
-        font-size: 9px;
-    }
-
-    .btn-related-brand {
-        padding: 7px 4px;
-        font-size: 10.5px;
-    }
+/* Header Theme for LG */
+.header-theme-lg .btn-enquiry {
+    background: #c40038 !important;
+    box-shadow: 0 4px 14px rgba(196, 0, 56, 0.35) !important;
 }
+
+.header-theme-lg .btn-enquiry:hover {
+    background: #a3002e !important;
+}
+
+.header-theme-lg .nav-links a.active,
+.header-theme-lg .nav-dropdown-head a.active {
+    color: #c40038 !important;
+}
+
+.header-theme-lg .header-phone-link i,
+.header-theme-lg .top-bar-phone-link i {
+    color: #c40038 !important;
+}
+
+/* Breadcrumb */
+.brand-page-lg .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-lg .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #111111 !important;
+}
+
+.brand-page-lg .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-lg .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #c40038 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-lg .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(196, 0, 56, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 0, 0, 0.04) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #fbfbfc 45%, #f4f4f5 100%) !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+.brand-page-lg .brand-hero-badge {
+    background: #111111 !important;
+    border: 1px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-lg .brand-hero-badge i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .brand-hero-text h1 {
+    color: #111111 !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-lg .brand-hero-tagline {
+    color: #c40038 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-lg .brand-hero-description {
+    color: #374151 !important;
+}
+
+.brand-page-lg .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.brand-page-lg .trust-badge-item {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-lg .trust-badge-item i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .btn-hero-book {
+    background-color: #c40038 !important;
+    border: 2px solid #c40038 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(196, 0, 56, 0.35) !important;
+}
+
+.brand-page-lg .btn-hero-book:hover {
+    background-color: #a3002e !important;
+    border-color: #a3002e !important;
+    box-shadow: 0 8px 26px rgba(196, 0, 56, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-lg .btn-hero-call {
+    background-color: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-lg .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-lg .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+.brand-page-lg .brand-hero-floating-badge {
+    background: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .brand-hero-floating-badge i {
+    color: #c40038 !important;
+}
+
+/* Models Covered Strip */
+.brand-page-lg .brand-models-section {
+    background: #111111 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.brand-page-lg .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-lg .brand-models-title i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .brand-model-tag {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .brand-model-tag i {
+    color: #c40038 !important;
+}
+
+/* Common Problems Section */
+.brand-page-lg .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-lg .section-title h2 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .section-title span[style*="color"],
+.brand-page-lg .section-title span.red-text,
+.brand-page-lg .red-text {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-lg .brand-problem-card:hover {
+    border-color: #c40038 !important;
+    box-shadow: 0 12px 30px rgba(196, 0, 56, 0.12) !important;
+}
+
+.brand-page-lg .brand-problem-card .problem-icon {
+    background: #fdf2f4 !important;
+    color: #c40038 !important;
+}
+
+.brand-page-lg .brand-problem-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .brand-problem-card p {
+    color: #4b5563 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-lg .service-charges {
+    background: #fafafa !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-lg .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-lg .charge-card:hover {
+    border-color: #c40038 !important;
+    box-shadow: 0 12px 30px rgba(196, 0, 56, 0.12) !important;
+}
+
+.brand-page-lg .charge-card .icon-circle {
+    background: #111111 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-lg .charge-card .icon-circle i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .charge-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .charge-card .price {
+    color: #111111 !important;
+}
+
+.brand-page-lg .charge-card .free-text strong {
+    background: #c40038 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .service-charges .btn-primary {
+    background: #c40038 !important;
+    border: 2px solid #c40038 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(196, 0, 56, 0.35) !important;
+}
+
+.brand-page-lg .service-charges .btn-primary:hover {
+    background: #a3002e !important;
+    border-color: #a3002e !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-lg .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-lg .check-icon-circle {
+    background: #fdf2f4 !important;
+    color: #c40038 !important;
+}
+
+.brand-page-lg .feature-check-row h4 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #111111 !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-lg .booking-box-header i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .booking-box-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .booking-feature-pill {
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-lg .booking-feature-pill i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .btn-booking-wa {
+    background: #c40038 !important;
+    border: 2px solid #c40038 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(196, 0, 56, 0.35) !important;
+}
+
+.brand-page-lg .btn-booking-wa:hover {
+    background: #a3002e !important;
+    border-color: #a3002e !important;
+}
+
+.brand-page-lg .btn-booking-call {
+    background: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .btn-booking-call:hover {
+    background: #000000 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-lg .brand-booking-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #f4f4f5 100%) !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-lg .booking-pill-badge {
+    background: #fdf2f4 !important;
+    color: #c40038 !important;
+    border: 1px solid #fecdd6 !important;
+}
+
+.brand-page-lg .brand-form-card {
+    border: 2px solid #111111 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-lg .brand-form-header {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-lg .brand-form-header-badge i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .form-group label {
+    color: #111111 !important;
+}
+
+.brand-page-lg .form-group label i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .form-group input:focus,
+.brand-page-lg .form-group select:focus,
+.brand-page-lg .form-group textarea:focus {
+    border-color: #c40038 !important;
+    box-shadow: 0 0 0 3px rgba(196, 0, 56, 0.15) !important;
+}
+
+.brand-page-lg .btn-brand-whatsapp-submit {
+    background: #c40038 !important;
+    box-shadow: 0 8px 24px rgba(196, 0, 56, 0.35) !important;
+}
+
+.brand-page-lg .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #a3002e !important;
+    box-shadow: 0 12px 30px rgba(196, 0, 56, 0.45) !important;
+}
+
+.brand-page-lg .brand-form-guarantees i {
+    color: #c40038 !important;
+}
+
+/* FAQs Section */
+.brand-page-lg .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-lg .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-lg .brand-faq-item:hover {
+    border-color: #111111 !important;
+}
+
+.brand-page-lg .brand-faq-item h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .brand-faq-item h3 i {
+    color: #c40038 !important;
+}
+
+/* Locality Section */
+.brand-page-lg .brand-local-section {
+    background: #fafafa !important;
+}
+
+.brand-page-lg .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-lg .brand-local-tags .brand-model-tag i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .brand-local-tags .brand-model-tag:hover {
+    border-color: #c40038 !important;
+    color: #c40038 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-lg .cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-lg .cta-icon {
+    background: #c40038 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .cta-buttons .btn-dark {
+    background: #c40038 !important;
+    border-color: #c40038 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .cta-buttons .btn-dark:hover {
+    background: #a3002e !important;
+    border-color: #a3002e !important;
+}
+
+/* Footer Theme for LG */
+.footer-theme-lg .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-lg .footer-service-areas span[style*="#10B981"],
+.footer-theme-lg .footer-service-areas span[style*="#38BDF8"] {
+    color: #c40038 !important;
+}
+
+/* Service Areas Section under LG Page Theme */
+.brand-page-lg .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-lg .service-areas .service-area-pill {
+    background: #fdf2f4 !important;
+    color: #c40038 !important;
+    border: 1px solid #fecdd6 !important;
+}
+
+.brand-page-lg .service-areas .service-area-pill i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .service-areas-header h2 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .service-areas-header h2 span.red-text {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-lg .area-hub-card:hover {
+    border-color: #c40038 !important;
+    box-shadow: 0 14px 35px rgba(196, 0, 56, 0.12) !important;
+}
+
+.brand-page-lg .area-hub-icon {
+    background: #fdf2f4 !important;
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-hub-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-hub-tags .hub-tag {
+    background: #f3f4f6 !important;
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-hub-tags .hub-tag i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.brand-page-lg .area-cloud-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-cloud-header h3 i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-cloud-call-btn {
+    background: #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .area-cloud-call-btn:hover {
+    background: #c40038 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-lg .area-chip {
+    background: #f9fafb !important;
+    border: 1.5px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-chip i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-chip:hover {
+    background: #c40038 !important;
+    border-color: #c40038 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(196, 0, 56, 0.3) !important;
+}
+
+.brand-page-lg .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-lg .area-features-strip .feature-item {
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-features-strip .feature-item i {
+    color: #c40038 !important;
+}
+
+.brand-page-lg .area-cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+    border: 1px solid #374151 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-lg .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-lg .area-cta-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.brand-page-lg .area-cta-actions .btn-primary {
+    background: #c40038 !important;
+    border: 2px solid #c40038 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(196, 0, 56, 0.35) !important;
+}
+
+.brand-page-lg .area-cta-actions .btn-primary:hover {
+    background: #a3002e !important;
+    border-color: #a3002e !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(196, 0, 56, 0.45) !important;
+}
+
+.brand-page-lg .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #111111 !important;
+}
+
+.brand-page-lg .area-cta-actions .btn-dark:hover {
+    background: #f3f4f6 !important;
+    color: #000000 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Hitachi Brand Page Theme: #de0029, Black & White
+   ========================================================= */
+
+/* Header Theme for Hitachi */
+.header-theme-hitachi .btn-enquiry {
+    background: #de0029 !important;
+    box-shadow: 0 4px 14px rgba(222, 0, 41, 0.35) !important;
+}
+
+.header-theme-hitachi .btn-enquiry:hover {
+    background: #b80022 !important;
+}
+
+.header-theme-hitachi .nav-links a.active,
+.header-theme-hitachi .nav-dropdown-head a.active {
+    color: #de0029 !important;
+}
+
+.header-theme-hitachi .header-phone-link i,
+.header-theme-hitachi .top-bar-phone-link i {
+    color: #de0029 !important;
+}
+
+/* Breadcrumb */
+.brand-page-hitachi .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-hitachi .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #de0029 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-hitachi .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(222, 0, 41, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 0, 0, 0.04) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #fbfbfc 45%, #f4f4f5 100%) !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .brand-hero-badge {
+    background: #111111 !important;
+    border: 1px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-hitachi .brand-hero-badge i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .brand-hero-text h1 {
+    color: #111111 !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-hitachi .brand-hero-tagline {
+    color: #de0029 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-hitachi .brand-hero-description {
+    color: #374151 !important;
+}
+
+.brand-page-hitachi .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.brand-page-hitachi .trust-badge-item {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-hitachi .trust-badge-item i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .btn-hero-book {
+    background-color: #de0029 !important;
+    border: 2px solid #de0029 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(222, 0, 41, 0.35) !important;
+}
+
+.brand-page-hitachi .btn-hero-book:hover {
+    background-color: #b80022 !important;
+    border-color: #b80022 !important;
+    box-shadow: 0 8px 26px rgba(222, 0, 41, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-hitachi .btn-hero-call {
+    background-color: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-hitachi .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-hitachi .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+.brand-page-hitachi .brand-hero-floating-badge {
+    background: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .brand-hero-floating-badge i {
+    color: #de0029 !important;
+}
+
+/* Models Covered Strip */
+.brand-page-hitachi .brand-models-section {
+    background: #111111 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.brand-page-hitachi .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .brand-models-title i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .brand-model-tag {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .brand-model-tag i {
+    color: #de0029 !important;
+}
+
+/* Common Problems Section */
+.brand-page-hitachi .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-hitachi .section-title h2 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .section-title span[style*="color"],
+.brand-page-hitachi .section-title span.red-text,
+.brand-page-hitachi .red-text {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-hitachi .brand-problem-card:hover {
+    border-color: #de0029 !important;
+    box-shadow: 0 12px 30px rgba(222, 0, 41, 0.12) !important;
+}
+
+.brand-page-hitachi .brand-problem-card .problem-icon {
+    background: #fef2f2 !important;
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .brand-problem-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .brand-problem-card p {
+    color: #4b5563 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-hitachi .service-charges {
+    background: #fafafa !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .charge-card:hover {
+    border-color: #de0029 !important;
+    box-shadow: 0 12px 30px rgba(222, 0, 41, 0.12) !important;
+}
+
+.brand-page-hitachi .charge-card .icon-circle {
+    background: #111111 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-hitachi .charge-card .icon-circle i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .charge-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .charge-card .price {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .charge-card .free-text strong {
+    background: #de0029 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .service-charges .btn-primary {
+    background: #de0029 !important;
+    border: 2px solid #de0029 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(222, 0, 41, 0.35) !important;
+}
+
+.brand-page-hitachi .service-charges .btn-primary:hover {
+    background: #b80022 !important;
+    border-color: #b80022 !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-hitachi .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-hitachi .check-icon-circle {
+    background: #fef2f2 !important;
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .feature-check-row h4 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #111111 !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-hitachi .booking-box-header i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .booking-box-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .booking-feature-pill {
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .booking-feature-pill i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .btn-booking-wa {
+    background: #de0029 !important;
+    border: 2px solid #de0029 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(222, 0, 41, 0.35) !important;
+}
+
+.brand-page-hitachi .btn-booking-wa:hover {
+    background: #b80022 !important;
+    border-color: #b80022 !important;
+}
+
+.brand-page-hitachi .btn-booking-call {
+    background: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .btn-booking-call:hover {
+    background: #000000 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-hitachi .brand-booking-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #f4f4f5 100%) !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .booking-pill-badge {
+    background: #fef2f2 !important;
+    color: #de0029 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-hitachi .brand-form-card {
+    border: 2px solid #111111 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-hitachi .brand-form-header {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-hitachi .brand-form-header-badge i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .form-group label {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .form-group label i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .form-group input:focus,
+.brand-page-hitachi .form-group select:focus,
+.brand-page-hitachi .form-group textarea:focus {
+    border-color: #de0029 !important;
+    box-shadow: 0 0 0 3px rgba(222, 0, 41, 0.15) !important;
+}
+
+.brand-page-hitachi .btn-brand-whatsapp-submit {
+    background: #de0029 !important;
+    box-shadow: 0 8px 24px rgba(222, 0, 41, 0.35) !important;
+}
+
+.brand-page-hitachi .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #b80022 !important;
+    box-shadow: 0 12px 30px rgba(222, 0, 41, 0.45) !important;
+}
+
+.brand-page-hitachi .brand-form-guarantees i {
+    color: #de0029 !important;
+}
+
+/* FAQs Section */
+.brand-page-hitachi .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-hitachi .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-hitachi .brand-faq-item:hover {
+    border-color: #111111 !important;
+}
+
+.brand-page-hitachi .brand-faq-item h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .brand-faq-item h3 i {
+    color: #de0029 !important;
+}
+
+/* Locality Section */
+.brand-page-hitachi .brand-local-section {
+    background: #fafafa !important;
+}
+
+.brand-page-hitachi .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .brand-local-tags .brand-model-tag i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .brand-local-tags .brand-model-tag:hover {
+    border-color: #de0029 !important;
+    color: #de0029 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-hitachi .cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-hitachi .cta-icon {
+    background: #de0029 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .cta-buttons .btn-dark {
+    background: #de0029 !important;
+    border-color: #de0029 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .cta-buttons .btn-dark:hover {
+    background: #b80022 !important;
+    border-color: #b80022 !important;
+}
+
+/* Footer Theme for Hitachi */
+.footer-theme-hitachi .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-hitachi .footer-service-areas span[style*="#10B981"],
+.footer-theme-hitachi .footer-service-areas span[style*="#38BDF8"] {
+    color: #de0029 !important;
+}
+
+/* Service Areas Section under Hitachi Page Theme */
+.brand-page-hitachi .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-hitachi .service-areas .service-area-pill {
+    background: #fef2f2 !important;
+    color: #de0029 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-hitachi .service-areas .service-area-pill i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .service-areas-header h2 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .service-areas-header h2 span.red-text {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-hitachi .area-hub-card:hover {
+    border-color: #de0029 !important;
+    box-shadow: 0 14px 35px rgba(222, 0, 41, 0.12) !important;
+}
+
+.brand-page-hitachi .area-hub-icon {
+    background: #fef2f2 !important;
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-hub-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-hub-tags .hub-tag {
+    background: #f3f4f6 !important;
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-hub-tags .hub-tag i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.brand-page-hitachi .area-cloud-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-cloud-header h3 i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-cloud-call-btn {
+    background: #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .area-cloud-call-btn:hover {
+    background: #de0029 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .area-chip {
+    background: #f9fafb !important;
+    border: 1.5px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-chip i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-chip:hover {
+    background: #de0029 !important;
+    border-color: #de0029 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(222, 0, 41, 0.3) !important;
+}
+
+.brand-page-hitachi .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .area-features-strip .feature-item {
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-features-strip .feature-item i {
+    color: #de0029 !important;
+}
+
+.brand-page-hitachi .area-cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+    border: 1px solid #374151 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-hitachi .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-hitachi .area-cta-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.brand-page-hitachi .area-cta-actions .btn-primary {
+    background: #de0029 !important;
+    border: 2px solid #de0029 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(222, 0, 41, 0.35) !important;
+}
+
+.brand-page-hitachi .area-cta-actions .btn-primary:hover {
+    background: #b80022 !important;
+    border-color: #b80022 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(222, 0, 41, 0.45) !important;
+}
+
+.brand-page-hitachi .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #111111 !important;
+}
+
+.brand-page-hitachi .area-cta-actions .btn-dark:hover {
+    background: #f3f4f6 !important;
+    color: #000000 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Daikin Brand Page Theme: #0097e3, #0065b3 & White
+   ========================================================= */
+
+/* Header Theme for Daikin */
+.header-theme-daikin .btn-enquiry {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.35) !important;
+}
+
+.header-theme-daikin .btn-enquiry:hover {
+    background: #0065b3 !important;
+}
+
+.header-theme-daikin .nav-links a.active,
+.header-theme-daikin .nav-dropdown-head a.active {
+    color: #0097e3 !important;
+}
+
+.header-theme-daikin .header-phone-link i,
+.header-theme-daikin .top-bar-phone-link i {
+    color: #0097e3 !important;
+}
+
+/* Breadcrumb */
+.brand-page-daikin .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e0f2fe !important;
+}
+
+.brand-page-daikin .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-daikin .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #0097e3 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-daikin .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(0, 151, 227, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 101, 179, 0.08) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #e6f4fe 100%) !important;
+    border-bottom: 2px solid #bae6fd !important;
+}
+
+.brand-page-daikin .brand-hero-badge {
+    background: #0065b3 !important;
+    border: 1px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-daikin .brand-hero-badge i {
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .brand-hero-text h1 {
+    color: #0f172a !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-daikin .brand-hero-tagline {
+    color: #0065b3 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-daikin .brand-hero-description {
+    color: #334155 !important;
+}
+
+.brand-page-daikin .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.08) !important;
+}
+
+.brand-page-daikin .trust-badge-item {
+    color: #0065b3 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-daikin .trust-badge-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .btn-hero-book {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-daikin .btn-hero-book:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    box-shadow: 0 8px 26px rgba(0, 101, 179, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-daikin .btn-hero-call {
+    background-color: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-daikin .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-daikin .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 101, 179, 0.18) !important;
+}
+
+.brand-page-daikin .brand-hero-floating-badge {
+    background: #0065b3 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .brand-hero-floating-badge i {
+    color: #ffffff !important;
+}
+
+/* Models Covered Strip */
+.brand-page-daikin .brand-models-section {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border-bottom: 2px solid #003866 !important;
+}
+
+.brand-page-daikin .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .brand-models-title i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .brand-model-tag {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+/* Common Problems Section */
+.brand-page-daikin .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-daikin .section-title h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-daikin .section-title span[style*="color"],
+.brand-page-daikin .section-title span.red-text,
+.brand-page-daikin .red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-daikin .brand-problem-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-daikin .brand-problem-card .problem-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .brand-problem-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .brand-problem-card p {
+    color: #475569 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-daikin .service-charges {
+    background: #f0f9ff !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-daikin .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+}
+
+.brand-page-daikin .charge-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.18) !important;
+}
+
+.brand-page-daikin .charge-card .icon-circle {
+    background: #0065b3 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-daikin .charge-card .icon-circle i {
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .charge-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .charge-card .price {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .charge-card .free-text strong {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .service-charges .btn-primary {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-daikin .service-charges .btn-primary:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-daikin .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-daikin .check-icon-circle {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .feature-check-row h4 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 14px 40px rgba(0, 101, 179, 0.1) !important;
+}
+
+.brand-page-daikin .booking-box-header i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .booking-box-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .booking-feature-pill {
+    background: #f0f9ff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .booking-feature-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .btn-booking-wa {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-daikin .btn-booking-wa:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+.brand-page-daikin .btn-booking-call {
+    background: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .btn-booking-call:hover {
+    background: #004b87 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-daikin .brand-booking-section {
+    background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-daikin .booking-pill-badge {
+    background: #ffffff !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-daikin .brand-form-card {
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 18px 45px rgba(0, 101, 179, 0.12) !important;
+}
+
+.brand-page-daikin .brand-form-header {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-daikin .brand-form-header-badge i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .form-group label {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .form-group label i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .form-group input:focus,
+.brand-page-daikin .form-group select:focus,
+.brand-page-daikin .form-group textarea:focus {
+    border-color: #0097e3 !important;
+    box-shadow: 0 0 0 3px rgba(0, 151, 227, 0.2) !important;
+}
+
+.brand-page-daikin .btn-brand-whatsapp-submit {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    box-shadow: 0 8px 24px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-daikin .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #0065b3 !important;
+    box-shadow: 0 12px 30px rgba(0, 101, 179, 0.45) !important;
+}
+
+.brand-page-daikin .brand-form-guarantees i {
+    color: #0097e3 !important;
+}
+
+/* FAQs Section */
+.brand-page-daikin .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-daikin .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+}
+
+.brand-page-daikin .brand-faq-item:hover {
+    border-color: #0097e3 !important;
+}
+
+.brand-page-daikin .brand-faq-item h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .brand-faq-item h3 i {
+    color: #0097e3 !important;
+}
+
+/* Locality Section */
+.brand-page-daikin .brand-local-section {
+    background: #f0f9ff !important;
+}
+
+.brand-page-daikin .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .brand-local-tags .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .brand-local-tags .brand-model-tag:hover {
+    border-color: #0097e3 !important;
+    color: #0097e3 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-daikin .cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-daikin .cta-icon {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .cta-buttons .btn-dark {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .cta-buttons .btn-dark:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+/* Footer Theme for Daikin */
+.footer-theme-daikin .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-daikin .footer-service-areas span[style*="#10B981"],
+.footer-theme-daikin .footer-service-areas span[style*="#38BDF8"] {
+    color: #0097e3 !important;
+}
+
+/* Service Areas Section under Daikin Page Theme */
+.brand-page-daikin .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-daikin .service-areas .service-area-pill {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-daikin .service-areas .service-area-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .service-areas-header h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-daikin .service-areas-header h2 span.red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 18px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-daikin .area-hub-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 14px 35px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-daikin .area-hub-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-hub-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-hub-tags .hub-tag {
+    background: #f0f9ff !important;
+    color: #0065b3 !important;
+    border: 1px solid #e0f2fe !important;
+}
+
+.brand-page-daikin .area-hub-tags .hub-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 8px 30px rgba(0, 101, 179, 0.06) !important;
+}
+
+.brand-page-daikin .area-cloud-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-cloud-header h3 i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .area-cloud-call-btn {
+    background: #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .area-cloud-call-btn:hover {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .area-chip {
+    background: #f0f9ff !important;
+    border: 1.5px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-chip i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .area-chip:hover {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.3) !important;
+}
+
+.brand-page-daikin .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .area-features-strip .feature-item {
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-features-strip .feature-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-daikin .area-cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border: 1px solid #004b87 !important;
+    box-shadow: 0 10px 30px rgba(0, 101, 179, 0.2) !important;
+}
+
+.brand-page-daikin .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-daikin .area-cta-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.brand-page-daikin .area-cta-actions .btn-primary {
+    background: #0097e3 !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-daikin .area-cta-actions .btn-primary:hover {
+    background: #004b87 !important;
+    border-color: #004b87 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 75, 135, 0.45) !important;
+}
+
+.brand-page-daikin .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-daikin .area-cta-actions .btn-dark:hover {
+    background: #e0f2fe !important;
+    color: #004b87 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   O General Brand Page Theme: #e30715 & White
+   ========================================================= */
+
+/* Header Theme for O General */
+.header-theme-o-general .btn-enquiry {
+    background: #e30715 !important;
+    box-shadow: 0 4px 14px rgba(227, 7, 21, 0.35) !important;
+}
+
+.header-theme-o-general .btn-enquiry:hover {
+    background: #ba000d !important;
+}
+
+.header-theme-o-general .nav-links a.active,
+.header-theme-o-general .nav-dropdown-head a.active {
+    color: #e30715 !important;
+}
+
+.header-theme-o-general .header-phone-link i,
+.header-theme-o-general .top-bar-phone-link i {
+    color: #e30715 !important;
+}
+
+/* Breadcrumb */
+.brand-page-o-general .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-o-general .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #e30715 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-o-general .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(227, 7, 21, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 0, 0, 0.04) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #fbfbfc 45%, #f4f4f5 100%) !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .brand-hero-badge {
+    background: #111111 !important;
+    border: 1px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-o-general .brand-hero-badge i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .brand-hero-text h1 {
+    color: #111111 !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-o-general .brand-hero-tagline {
+    color: #e30715 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-o-general .brand-hero-description {
+    color: #374151 !important;
+}
+
+.brand-page-o-general .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.brand-page-o-general .trust-badge-item {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-o-general .trust-badge-item i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .btn-hero-book {
+    background-color: #e30715 !important;
+    border: 2px solid #e30715 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(227, 7, 21, 0.35) !important;
+}
+
+.brand-page-o-general .btn-hero-book:hover {
+    background-color: #ba000d !important;
+    border-color: #ba000d !important;
+    box-shadow: 0 8px 26px rgba(227, 7, 21, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-o-general .btn-hero-call {
+    background-color: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-o-general .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-o-general .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+.brand-page-o-general .brand-hero-floating-badge {
+    background: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .brand-hero-floating-badge i {
+    color: #e30715 !important;
+}
+
+/* Models Covered Strip */
+.brand-page-o-general .brand-models-section {
+    background: #111111 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.brand-page-o-general .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .brand-models-title i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .brand-model-tag {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .brand-model-tag i {
+    color: #e30715 !important;
+}
+
+/* Common Problems Section */
+.brand-page-o-general .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-o-general .section-title h2 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .section-title span[style*="color"],
+.brand-page-o-general .section-title span.red-text,
+.brand-page-o-general .red-text {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-o-general .brand-problem-card:hover {
+    border-color: #e30715 !important;
+    box-shadow: 0 12px 30px rgba(227, 7, 21, 0.12) !important;
+}
+
+.brand-page-o-general .brand-problem-card .problem-icon {
+    background: #fef2f2 !important;
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .brand-problem-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .brand-problem-card p {
+    color: #4b5563 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-o-general .service-charges {
+    background: #fafafa !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .charge-card:hover {
+    border-color: #e30715 !important;
+    box-shadow: 0 12px 30px rgba(227, 7, 21, 0.12) !important;
+}
+
+.brand-page-o-general .charge-card .icon-circle {
+    background: #111111 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-o-general .charge-card .icon-circle i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .charge-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .charge-card .price {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .charge-card .free-text strong {
+    background: #e30715 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .service-charges .btn-primary {
+    background: #e30715 !important;
+    border: 2px solid #e30715 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(227, 7, 21, 0.35) !important;
+}
+
+.brand-page-o-general .service-charges .btn-primary:hover {
+    background: #ba000d !important;
+    border-color: #ba000d !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-o-general .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-o-general .check-icon-circle {
+    background: #fef2f2 !important;
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .feature-check-row h4 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #111111 !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-o-general .booking-box-header i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .booking-box-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .booking-feature-pill {
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-o-general .booking-feature-pill i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .btn-booking-wa {
+    background: #e30715 !important;
+    border: 2px solid #e30715 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(227, 7, 21, 0.35) !important;
+}
+
+.brand-page-o-general .btn-booking-wa:hover {
+    background: #ba000d !important;
+    border-color: #ba000d !important;
+}
+
+.brand-page-o-general .btn-booking-call {
+    background: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .btn-booking-call:hover {
+    background: #000000 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-o-general .brand-booking-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #f4f4f5 100%) !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .booking-pill-badge {
+    background: #fef2f2 !important;
+    color: #e30715 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-o-general .brand-form-card {
+    border: 2px solid #111111 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-o-general .brand-form-header {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-o-general .brand-form-header-badge i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .form-group label {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .form-group label i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .form-group input:focus,
+.brand-page-o-general .form-group select:focus,
+.brand-page-o-general .form-group textarea:focus {
+    border-color: #e30715 !important;
+    box-shadow: 0 0 0 3px rgba(227, 7, 21, 0.15) !important;
+}
+
+.brand-page-o-general .btn-brand-whatsapp-submit {
+    background: #e30715 !important;
+    box-shadow: 0 8px 24px rgba(227, 7, 21, 0.35) !important;
+}
+
+.brand-page-o-general .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #ba000d !important;
+    box-shadow: 0 12px 30px rgba(227, 7, 21, 0.45) !important;
+}
+
+.brand-page-o-general .brand-form-guarantees i {
+    color: #e30715 !important;
+}
+
+/* FAQs Section */
+.brand-page-o-general .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-o-general .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-o-general .brand-faq-item:hover {
+    border-color: #111111 !important;
+}
+
+.brand-page-o-general .brand-faq-item h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .brand-faq-item h3 i {
+    color: #e30715 !important;
+}
+
+/* Locality Section */
+.brand-page-o-general .brand-local-section {
+    background: #fafafa !important;
+}
+
+.brand-page-o-general .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-o-general .brand-local-tags .brand-model-tag i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .brand-local-tags .brand-model-tag:hover {
+    border-color: #e30715 !important;
+    color: #e30715 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-o-general .cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-o-general .cta-icon {
+    background: #e30715 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .cta-buttons .btn-dark {
+    background: #e30715 !important;
+    border-color: #e30715 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .cta-buttons .btn-dark:hover {
+    background: #ba000d !important;
+    border-color: #ba000d !important;
+}
+
+/* Footer Theme for O General */
+.footer-theme-o-general .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-o-general .footer-service-areas span[style*="#10B981"],
+.footer-theme-o-general .footer-service-areas span[style*="#38BDF8"] {
+    color: #e30715 !important;
+}
+
+/* Service Areas Section under O General Page Theme */
+.brand-page-o-general .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-o-general .service-areas .service-area-pill {
+    background: #fef2f2 !important;
+    color: #e30715 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-o-general .service-areas .service-area-pill i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .service-areas-header h2 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .service-areas-header h2 span.red-text {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-o-general .area-hub-card:hover {
+    border-color: #e30715 !important;
+    box-shadow: 0 14px 35px rgba(227, 7, 21, 0.12) !important;
+}
+
+.brand-page-o-general .area-hub-icon {
+    background: #fef2f2 !important;
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-hub-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-hub-tags .hub-tag {
+    background: #f3f4f6 !important;
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-hub-tags .hub-tag i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.brand-page-o-general .area-cloud-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-cloud-header h3 i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-cloud-call-btn {
+    background: #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .area-cloud-call-btn:hover {
+    background: #e30715 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .area-chip {
+    background: #f9fafb !important;
+    border: 1.5px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-chip i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-chip:hover {
+    background: #e30715 !important;
+    border-color: #e30715 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(227, 7, 21, 0.3) !important;
+}
+
+.brand-page-o-general .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .area-features-strip .feature-item {
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-features-strip .feature-item i {
+    color: #e30715 !important;
+}
+
+.brand-page-o-general .area-cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+    border: 1px solid #374151 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-o-general .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-o-general .area-cta-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.brand-page-o-general .area-cta-actions .btn-primary {
+    background: #e30715 !important;
+    border: 2px solid #e30715 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(227, 7, 21, 0.35) !important;
+}
+
+.brand-page-o-general .area-cta-actions .btn-primary:hover {
+    background: #ba000d !important;
+    border-color: #ba000d !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(227, 7, 21, 0.45) !important;
+}
+
+.brand-page-o-general .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #111111 !important;
+}
+
+.brand-page-o-general .area-cta-actions .btn-dark:hover {
+    background: #f3f4f6 !important;
+    color: #000000 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Voltas Brand Page Theme: #0097e3, #0065b3 & White
+   ========================================================= */
+
+/* Header Theme for Voltas */
+.header-theme-voltas .btn-enquiry {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.35) !important;
+}
+
+.header-theme-voltas .btn-enquiry:hover {
+    background: #0065b3 !important;
+}
+
+.header-theme-voltas .nav-links a.active,
+.header-theme-voltas .nav-dropdown-head a.active {
+    color: #0097e3 !important;
+}
+
+.header-theme-voltas .header-phone-link i,
+.header-theme-voltas .top-bar-phone-link i {
+    color: #0097e3 !important;
+}
+
+/* Breadcrumb */
+.brand-page-voltas .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e0f2fe !important;
+}
+
+.brand-page-voltas .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-voltas .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #0097e3 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-voltas .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(0, 151, 227, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 101, 179, 0.08) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #e6f4fe 100%) !important;
+    border-bottom: 2px solid #bae6fd !important;
+}
+
+.brand-page-voltas .brand-hero-badge {
+    background: #0065b3 !important;
+    border: 1px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-voltas .brand-hero-badge i {
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .brand-hero-text h1 {
+    color: #0f172a !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-voltas .brand-hero-tagline {
+    color: #0065b3 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-voltas .brand-hero-description {
+    color: #334155 !important;
+}
+
+.brand-page-voltas .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.08) !important;
+}
+
+.brand-page-voltas .trust-badge-item {
+    color: #0065b3 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-voltas .trust-badge-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .btn-hero-book {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-voltas .btn-hero-book:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    box-shadow: 0 8px 26px rgba(0, 101, 179, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-voltas .btn-hero-call {
+    background-color: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-voltas .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-voltas .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 101, 179, 0.18) !important;
+}
+
+.brand-page-voltas .brand-hero-floating-badge {
+    background: #0065b3 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .brand-hero-floating-badge i {
+    color: #ffffff !important;
+}
+
+/* Models Covered Strip */
+.brand-page-voltas .brand-models-section {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border-bottom: 2px solid #003866 !important;
+}
+
+.brand-page-voltas .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .brand-models-title i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .brand-model-tag {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+/* Common Problems Section */
+.brand-page-voltas .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-voltas .section-title h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-voltas .section-title span[style*="color"],
+.brand-page-voltas .section-title span.red-text,
+.brand-page-voltas .red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-voltas .brand-problem-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-voltas .brand-problem-card .problem-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .brand-problem-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .brand-problem-card p {
+    color: #475569 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-voltas .service-charges {
+    background: #f0f9ff !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-voltas .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+}
+
+.brand-page-voltas .charge-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.18) !important;
+}
+
+.brand-page-voltas .charge-card .icon-circle {
+    background: #0065b3 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-voltas .charge-card .icon-circle i {
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .charge-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .charge-card .price {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .charge-card .free-text strong {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .service-charges .btn-primary {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-voltas .service-charges .btn-primary:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-voltas .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-voltas .check-icon-circle {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .feature-check-row h4 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 14px 40px rgba(0, 101, 179, 0.1) !important;
+}
+
+.brand-page-voltas .booking-box-header i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .booking-box-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .booking-feature-pill {
+    background: #f0f9ff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .booking-feature-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .btn-booking-wa {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-voltas .btn-booking-wa:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+.brand-page-voltas .btn-booking-call {
+    background: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .btn-booking-call:hover {
+    background: #004b87 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-voltas .brand-booking-section {
+    background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-voltas .booking-pill-badge {
+    background: #ffffff !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-voltas .brand-form-card {
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 18px 45px rgba(0, 101, 179, 0.12) !important;
+}
+
+.brand-page-voltas .brand-form-header {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-voltas .brand-form-header-badge i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .form-group label {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .form-group label i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .form-group input:focus,
+.brand-page-voltas .form-group select:focus,
+.brand-page-voltas .form-group textarea:focus {
+    border-color: #0097e3 !important;
+    box-shadow: 0 0 0 3px rgba(0, 151, 227, 0.2) !important;
+}
+
+.brand-page-voltas .btn-brand-whatsapp-submit {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    box-shadow: 0 8px 24px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-voltas .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #0065b3 !important;
+    box-shadow: 0 12px 30px rgba(0, 101, 179, 0.45) !important;
+}
+
+.brand-page-voltas .brand-form-guarantees i {
+    color: #0097e3 !important;
+}
+
+/* FAQs Section */
+.brand-page-voltas .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-voltas .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+}
+
+.brand-page-voltas .brand-faq-item:hover {
+    border-color: #0097e3 !important;
+}
+
+.brand-page-voltas .brand-faq-item h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .brand-faq-item h3 i {
+    color: #0097e3 !important;
+}
+
+/* Locality Section */
+.brand-page-voltas .brand-local-section {
+    background: #f0f9ff !important;
+}
+
+.brand-page-voltas .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .brand-local-tags .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .brand-local-tags .brand-model-tag:hover {
+    border-color: #0097e3 !important;
+    color: #0097e3 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-voltas .cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-voltas .cta-icon {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .cta-buttons .btn-dark {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .cta-buttons .btn-dark:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+/* Footer Theme for Voltas */
+.footer-theme-voltas .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-voltas .footer-service-areas span[style*="#10B981"],
+.footer-theme-voltas .footer-service-areas span[style*="#38BDF8"] {
+    color: #0097e3 !important;
+}
+
+/* Service Areas Section under Voltas Page Theme */
+.brand-page-voltas .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-voltas .service-areas .service-area-pill {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-voltas .service-areas .service-area-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .service-areas-header h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-voltas .service-areas-header h2 span.red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 18px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-voltas .area-hub-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 14px 35px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-voltas .area-hub-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-hub-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-hub-tags .hub-tag {
+    background: #f0f9ff !important;
+    color: #0065b3 !important;
+    border: 1px solid #e0f2fe !important;
+}
+
+.brand-page-voltas .area-hub-tags .hub-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 8px 30px rgba(0, 101, 179, 0.06) !important;
+}
+
+.brand-page-voltas .area-cloud-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-cloud-header h3 i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .area-cloud-call-btn {
+    background: #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .area-cloud-call-btn:hover {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .area-chip {
+    background: #f0f9ff !important;
+    border: 1.5px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-chip i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .area-chip:hover {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.3) !important;
+}
+
+.brand-page-voltas .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .area-features-strip .feature-item {
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-features-strip .feature-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-voltas .area-cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border: 1px solid #004b87 !important;
+    box-shadow: 0 10px 30px rgba(0, 101, 179, 0.2) !important;
+}
+
+.brand-page-voltas .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-voltas .area-cta-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.brand-page-voltas .area-cta-actions .btn-primary {
+    background: #0097e3 !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-voltas .area-cta-actions .btn-primary:hover {
+    background: #004b87 !important;
+    border-color: #004b87 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 75, 135, 0.45) !important;
+}
+
+.brand-page-voltas .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-voltas .area-cta-actions .btn-dark:hover {
+    background: #e0f2fe !important;
+    color: #004b87 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Samsung Brand Page Theme: #034ea3 & White
+   ========================================================= */
+
+/* Header Theme for Samsung */
+.header-theme-samsung .btn-enquiry {
+    background: #034ea3 !important;
+    box-shadow: 0 4px 14px rgba(3, 78, 163, 0.35) !important;
+}
+
+.header-theme-samsung .btn-enquiry:hover {
+    background: #023877 !important;
+}
+
+.header-theme-samsung .nav-links a.active,
+.header-theme-samsung .nav-dropdown-head a.active {
+    color: #034ea3 !important;
+}
+
+.header-theme-samsung .header-phone-link i,
+.header-theme-samsung .top-bar-phone-link i {
+    color: #034ea3 !important;
+}
+
+/* Breadcrumb */
+.brand-page-samsung .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #111111 !important;
+}
+
+.brand-page-samsung .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-samsung .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #034ea3 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-samsung .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(3, 78, 163, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 0, 0, 0.04) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #f4f8fd 45%, #eaf2fb 100%) !important;
+    border-bottom: 2px solid #cce0f5 !important;
+}
+
+.brand-page-samsung .brand-hero-badge {
+    background: #034ea3 !important;
+    border: 1px solid #034ea3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(3, 78, 163, 0.25) !important;
+}
+
+.brand-page-samsung .brand-hero-badge i {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .brand-hero-text h1 {
+    color: #0f172a !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-samsung .brand-hero-tagline {
+    color: #034ea3 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-samsung .brand-hero-description {
+    color: #374151 !important;
+}
+
+.brand-page-samsung .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+    box-shadow: 0 4px 16px rgba(3, 78, 163, 0.08) !important;
+}
+
+.brand-page-samsung .trust-badge-item {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-samsung .trust-badge-item i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .btn-hero-book {
+    background-color: #034ea3 !important;
+    border: 2px solid #034ea3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(3, 78, 163, 0.35) !important;
+}
+
+.brand-page-samsung .btn-hero-book:hover {
+    background-color: #023877 !important;
+    border-color: #023877 !important;
+    box-shadow: 0 8px 26px rgba(3, 78, 163, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-samsung .btn-hero-call {
+    background-color: #0f172a !important;
+    border: 2px solid #0f172a !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-samsung .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-samsung .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(3, 78, 163, 0.16) !important;
+}
+
+.brand-page-samsung .brand-hero-floating-badge {
+    background: #034ea3 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .brand-hero-floating-badge i {
+    color: #ffffff !important;
+}
+
+/* Models Covered Strip */
+.brand-page-samsung .brand-models-section {
+    background: #034ea3 !important;
+    border-bottom: 2px solid #023877 !important;
+}
+
+.brand-page-samsung .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .brand-models-title i {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .brand-model-tag {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .brand-model-tag i {
+    color: #ffffff !important;
+}
+
+/* Common Problems Section */
+.brand-page-samsung .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-samsung .section-title h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-samsung .section-title span[style*="color"],
+.brand-page-samsung .section-title span.red-text,
+.brand-page-samsung .red-text {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+    box-shadow: 0 4px 16px rgba(3, 78, 163, 0.05) !important;
+}
+
+.brand-page-samsung .brand-problem-card:hover {
+    border-color: #034ea3 !important;
+    box-shadow: 0 12px 30px rgba(3, 78, 163, 0.15) !important;
+}
+
+.brand-page-samsung .brand-problem-card .problem-icon {
+    background: #e6effa !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-problem-card h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-problem-card p {
+    color: #475569 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-samsung .service-charges {
+    background: #f4f8fd !important;
+    border-top: 1px solid #d8e6f7 !important;
+    border-bottom: 1px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .charge-card:hover {
+    border-color: #034ea3 !important;
+    box-shadow: 0 12px 30px rgba(3, 78, 163, 0.15) !important;
+}
+
+.brand-page-samsung .charge-card .icon-circle {
+    background: #034ea3 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-samsung .charge-card .icon-circle i {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .charge-card h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .charge-card .price {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .charge-card .free-text strong {
+    background: #034ea3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .service-charges .btn-primary {
+    background: #034ea3 !important;
+    border: 2px solid #034ea3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(3, 78, 163, 0.35) !important;
+}
+
+.brand-page-samsung .service-charges .btn-primary:hover {
+    background: #023877 !important;
+    border-color: #023877 !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-samsung .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-samsung .check-icon-circle {
+    background: #e6effa !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .feature-check-row h4 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #034ea3 !important;
+    box-shadow: 0 14px 40px rgba(3, 78, 163, 0.1) !important;
+}
+
+.brand-page-samsung .booking-box-header i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .booking-box-header h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .booking-feature-pill {
+    background: #f4f8fd !important;
+    border: 1px solid #d8e6f7 !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .booking-feature-pill i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .btn-booking-wa {
+    background: #034ea3 !important;
+    border: 2px solid #034ea3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(3, 78, 163, 0.35) !important;
+}
+
+.brand-page-samsung .btn-booking-wa:hover {
+    background: #023877 !important;
+    border-color: #023877 !important;
+}
+
+.brand-page-samsung .btn-booking-call {
+    background: #0f172a !important;
+    border: 2px solid #0f172a !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .btn-booking-call:hover {
+    background: #000000 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-samsung .brand-booking-section {
+    background: linear-gradient(180deg, #f4f8fd 0%, #e6effa 100%) !important;
+    border-top: 1px solid #d8e6f7 !important;
+    border-bottom: 1px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .booking-pill-badge {
+    background: #ffffff !important;
+    color: #034ea3 !important;
+    border: 1px solid #cce0f5 !important;
+}
+
+.brand-page-samsung .brand-form-card {
+    border: 2px solid #034ea3 !important;
+    box-shadow: 0 18px 45px rgba(3, 78, 163, 0.12) !important;
+}
+
+.brand-page-samsung .brand-form-header {
+    background: linear-gradient(135deg, #034ea3 0%, #022f64 100%) !important;
+}
+
+.brand-page-samsung .brand-form-header-badge i {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .form-group label {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .form-group label i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .form-group input:focus,
+.brand-page-samsung .form-group select:focus,
+.brand-page-samsung .form-group textarea:focus {
+    border-color: #034ea3 !important;
+    box-shadow: 0 0 0 3px rgba(3, 78, 163, 0.2) !important;
+}
+
+.brand-page-samsung .btn-brand-whatsapp-submit {
+    background: #034ea3 !important;
+    box-shadow: 0 8px 24px rgba(3, 78, 163, 0.35) !important;
+}
+
+.brand-page-samsung .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #023877 !important;
+    box-shadow: 0 12px 30px rgba(3, 78, 163, 0.45) !important;
+}
+
+.brand-page-samsung .brand-form-guarantees i {
+    color: #034ea3 !important;
+}
+
+/* FAQs Section */
+.brand-page-samsung .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-samsung .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .brand-faq-item:hover {
+    border-color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-faq-item h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-faq-item h3 i {
+    color: #034ea3 !important;
+}
+
+/* Locality Section */
+.brand-page-samsung .brand-local-section {
+    background: #f4f8fd !important;
+}
+
+.brand-page-samsung .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #d8e6f7 !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-local-tags .brand-model-tag i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .brand-local-tags .brand-model-tag:hover {
+    border-color: #034ea3 !important;
+    color: #034ea3 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-samsung .cta-banner {
+    background: linear-gradient(135deg, #034ea3 0%, #022f64 100%) !important;
+}
+
+.brand-page-samsung .cta-icon {
+    background: #ffffff !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .cta-buttons .btn-dark {
+    background: #034ea3 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .cta-buttons .btn-dark:hover {
+    background: #023877 !important;
+    border-color: #ffffff !important;
+}
+
+/* Footer Theme for Samsung */
+.footer-theme-samsung .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-samsung .footer-service-areas span[style*="#10B981"],
+.footer-theme-samsung .footer-service-areas span[style*="#38BDF8"] {
+    color: #034ea3 !important;
+}
+
+/* Service Areas Section under Samsung Page Theme */
+.brand-page-samsung .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-samsung .service-areas .service-area-pill {
+    background: #e6effa !important;
+    color: #034ea3 !important;
+    border: 1px solid #cce0f5 !important;
+}
+
+.brand-page-samsung .service-areas .service-area-pill i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .service-areas-header h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-samsung .service-areas-header h2 span.red-text {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+    box-shadow: 0 4px 18px rgba(3, 78, 163, 0.05) !important;
+}
+
+.brand-page-samsung .area-hub-card:hover {
+    border-color: #034ea3 !important;
+    box-shadow: 0 14px 35px rgba(3, 78, 163, 0.15) !important;
+}
+
+.brand-page-samsung .area-hub-icon {
+    background: #e6effa !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-hub-card h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-hub-tags .hub-tag {
+    background: #f4f8fd !important;
+    color: #034ea3 !important;
+    border: 1px solid #d8e6f7 !important;
+}
+
+.brand-page-samsung .area-hub-tags .hub-tag i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #d8e6f7 !important;
+    box-shadow: 0 8px 30px rgba(3, 78, 163, 0.06) !important;
+}
+
+.brand-page-samsung .area-cloud-header h3 {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-cloud-header h3 i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-cloud-call-btn {
+    background: #034ea3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .area-cloud-call-btn:hover {
+    background: #023877 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .area-chip {
+    background: #f4f8fd !important;
+    border: 1.5px solid #d8e6f7 !important;
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-chip i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-chip:hover {
+    background: #034ea3 !important;
+    border-color: #034ea3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(3, 78, 163, 0.3) !important;
+}
+
+.brand-page-samsung .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .area-features-strip .feature-item {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-features-strip .feature-item i {
+    color: #034ea3 !important;
+}
+
+.brand-page-samsung .area-cta-banner {
+    background: linear-gradient(135deg, #034ea3 0%, #022f64 100%) !important;
+    border: 1px solid #022f64 !important;
+    box-shadow: 0 10px 30px rgba(3, 78, 163, 0.2) !important;
+}
+
+.brand-page-samsung .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .area-cta-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.brand-page-samsung .area-cta-actions .btn-primary {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #034ea3 !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-samsung .area-cta-actions .btn-primary:hover {
+    background: #e6effa !important;
+    border-color: #e6effa !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-samsung .area-cta-actions .btn-dark {
+    background: transparent !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.brand-page-samsung .area-cta-actions .btn-dark:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Blue Star Brand Page Theme: #0097e3, #0065b3 & White
+   ========================================================= */
+
+/* Header Theme for Blue Star */
+.header-theme-blue-star .btn-enquiry {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.35) !important;
+}
+
+.header-theme-blue-star .btn-enquiry:hover {
+    background: #0065b3 !important;
+}
+
+.header-theme-blue-star .nav-links a.active,
+.header-theme-blue-star .nav-dropdown-head a.active {
+    color: #0097e3 !important;
+}
+
+.header-theme-blue-star .header-phone-link i,
+.header-theme-blue-star .top-bar-phone-link i {
+    color: #0097e3 !important;
+}
+
+/* Breadcrumb */
+.brand-page-blue-star .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e0f2fe !important;
+}
+
+.brand-page-blue-star .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-blue-star .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #0097e3 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-blue-star .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(0, 151, 227, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 101, 179, 0.08) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #e6f4fe 100%) !important;
+    border-bottom: 2px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .brand-hero-badge {
+    background: #0065b3 !important;
+    border: 1px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-blue-star .brand-hero-badge i {
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .brand-hero-text h1 {
+    color: #0f172a !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-blue-star .brand-hero-tagline {
+    color: #0065b3 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-blue-star .brand-hero-description {
+    color: #334155 !important;
+}
+
+.brand-page-blue-star .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.08) !important;
+}
+
+.brand-page-blue-star .trust-badge-item {
+    color: #0065b3 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-blue-star .trust-badge-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .btn-hero-book {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-blue-star .btn-hero-book:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    box-shadow: 0 8px 26px rgba(0, 101, 179, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-blue-star .btn-hero-call {
+    background-color: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 101, 179, 0.25) !important;
+}
+
+.brand-page-blue-star .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-blue-star .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 101, 179, 0.18) !important;
+}
+
+.brand-page-blue-star .brand-hero-floating-badge {
+    background: #0065b3 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .brand-hero-floating-badge i {
+    color: #ffffff !important;
+}
+
+/* Models Covered Strip */
+.brand-page-blue-star .brand-models-section {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border-bottom: 2px solid #003866 !important;
+}
+
+.brand-page-blue-star .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .brand-models-title i {
+    color: #0097e3 !important;
+}
+
+.brand-model-tag {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+/* Common Problems Section */
+.brand-page-blue-star .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-blue-star .section-title h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-blue-star .section-title span[style*="color"],
+.brand-page-blue-star .section-title span.red-text,
+.brand-page-blue-star .red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 16px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-blue-star .brand-problem-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-blue-star .brand-problem-card .problem-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .brand-problem-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .brand-problem-card p {
+    color: #475569 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-blue-star .service-charges {
+    background: #f0f9ff !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .charge-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 12px 30px rgba(0, 151, 227, 0.18) !important;
+}
+
+.brand-page-blue-star .charge-card .icon-circle {
+    background: #0065b3 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-blue-star .charge-card .icon-circle i {
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .charge-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .charge-card .price {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .charge-card .free-text strong {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .service-charges .btn-primary {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-blue-star .service-charges .btn-primary:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-blue-star .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-blue-star .check-icon-circle {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .feature-check-row h4 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 14px 40px rgba(0, 101, 179, 0.1) !important;
+}
+
+.brand-page-blue-star .booking-box-header i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .booking-box-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .booking-feature-pill {
+    background: #f0f9ff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .booking-feature-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .btn-booking-wa {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-blue-star .btn-booking-wa:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+.brand-page-blue-star .btn-booking-call {
+    background: #0065b3 !important;
+    border: 2px solid #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .btn-booking-call:hover {
+    background: #004b87 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-blue-star .brand-booking-section {
+    background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+    border-top: 1px solid #bae6fd !important;
+    border-bottom: 1px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .booking-pill-badge {
+    background: #ffffff !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .brand-form-card {
+    border: 2px solid #0065b3 !important;
+    box-shadow: 0 18px 45px rgba(0, 101, 179, 0.12) !important;
+}
+
+.brand-page-blue-star .brand-form-header {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-blue-star .brand-form-header-badge i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .form-group label {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .form-group label i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .form-group input:focus,
+.brand-page-blue-star .form-group select:focus,
+.brand-page-blue-star .form-group textarea:focus {
+    border-color: #0097e3 !important;
+    box-shadow: 0 0 0 3px rgba(0, 151, 227, 0.2) !important;
+}
+
+.brand-page-blue-star .btn-brand-whatsapp-submit {
+    background: linear-gradient(135deg, #0097e3 0%, #0065b3 100%) !important;
+    box-shadow: 0 8px 24px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-blue-star .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #0065b3 !important;
+    box-shadow: 0 12px 30px rgba(0, 101, 179, 0.45) !important;
+}
+
+.brand-page-blue-star .brand-form-guarantees i {
+    color: #0097e3 !important;
+}
+
+/* FAQs Section */
+.brand-page-blue-star .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-blue-star .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+}
+
+.brand-page-blue-star .brand-faq-item:hover {
+    border-color: #0097e3 !important;
+}
+
+.brand-page-blue-star .brand-faq-item h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .brand-faq-item h3 i {
+    color: #0097e3 !important;
+}
+
+/* Locality Section */
+.brand-page-blue-star .brand-local-section {
+    background: #f0f9ff !important;
+}
+
+.brand-page-blue-star .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .brand-local-tags .brand-model-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .brand-local-tags .brand-model-tag:hover {
+    border-color: #0097e3 !important;
+    color: #0097e3 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-blue-star .cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+}
+
+.brand-page-blue-star .cta-icon {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .cta-buttons .btn-dark {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .cta-buttons .btn-dark:hover {
+    background: #0065b3 !important;
+    border-color: #0065b3 !important;
+}
+
+/* Footer Theme for Blue Star */
+.footer-theme-blue-star .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-blue-star .footer-service-areas span[style*="#10B981"],
+.footer-theme-blue-star .footer-service-areas span[style*="#38BDF8"] {
+    color: #0097e3 !important;
+}
+
+/* Service Areas Section under Blue Star Page Theme */
+.brand-page-blue-star .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-blue-star .service-areas .service-area-pill {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+    border: 1px solid #bae6fd !important;
+}
+
+.brand-page-blue-star .service-areas .service-area-pill i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .service-areas-header h2 {
+    color: #0f172a !important;
+}
+
+.brand-page-blue-star .service-areas-header h2 span.red-text {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e0f2fe !important;
+    box-shadow: 0 4px 18px rgba(0, 101, 179, 0.05) !important;
+}
+
+.brand-page-blue-star .area-hub-card:hover {
+    border-color: #0097e3 !important;
+    box-shadow: 0 14px 35px rgba(0, 151, 227, 0.15) !important;
+}
+
+.brand-page-blue-star .area-hub-icon {
+    background: #e0f2fe !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-hub-card h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-hub-tags .hub-tag {
+    background: #f0f9ff !important;
+    color: #0065b3 !important;
+    border: 1px solid #e0f2fe !important;
+}
+
+.brand-page-blue-star .area-hub-tags .hub-tag i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 8px 30px rgba(0, 101, 179, 0.06) !important;
+}
+
+.brand-page-blue-star .area-cloud-header h3 {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-cloud-header h3 i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .area-cloud-call-btn {
+    background: #0065b3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .area-cloud-call-btn:hover {
+    background: #0097e3 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .area-chip {
+    background: #f0f9ff !important;
+    border: 1.5px solid #bae6fd !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-chip i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .area-chip:hover {
+    background: #0097e3 !important;
+    border-color: #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 151, 227, 0.3) !important;
+}
+
+.brand-page-blue-star .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .area-features-strip .feature-item {
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-features-strip .feature-item i {
+    color: #0097e3 !important;
+}
+
+.brand-page-blue-star .area-cta-banner {
+    background: linear-gradient(135deg, #0065b3 0%, #004b87 100%) !important;
+    border: 1px solid #004b87 !important;
+    box-shadow: 0 10px 30px rgba(0, 101, 179, 0.2) !important;
+}
+
+.brand-page-blue-star .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-blue-star .area-cta-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.brand-page-blue-star .area-cta-actions .btn-primary {
+    background: #0097e3 !important;
+    border: 2px solid #0097e3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 151, 227, 0.35) !important;
+}
+
+.brand-page-blue-star .area-cta-actions .btn-primary:hover {
+    background: #004b87 !important;
+    border-color: #004b87 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 75, 135, 0.45) !important;
+}
+
+.brand-page-blue-star .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #0065b3 !important;
+}
+
+.brand-page-blue-star .area-cta-actions .btn-dark:hover {
+    background: #e0f2fe !important;
+    color: #004b87 !important;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
 
 
 

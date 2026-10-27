@@ -1,8 +1,18 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { getBrandData } from '@/app/services/brandData';
 
 export default function Footer() {
+  const pathname = usePathname();
+  const brandMatch = pathname ? pathname.match(/^\/services\/([^/]+)/) : null;
+  const brandSlug = brandMatch ? brandMatch[1] : null;
+  const currentBrand = brandSlug && brandSlug !== 'other-brands' ? getBrandData(brandSlug) : null;
+  const footerThemeClass = currentBrand ? ` footer-theme-${currentBrand.slug}` : '';
+
   return (
-    <footer className="footer">
+    <footer className={`footer${footerThemeClass}`}>
       <div className="container footer-inner">
         <div className="footer-col brand-col">
           <div className="logo" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px 14px', marginBottom: '18px' }}>
@@ -18,9 +28,16 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <p className="brand-desc footer-desc" style={{ color: 'rgba(255, 255, 255, 0.88)', fontSize: '14px', lineHeight: '1.65', marginTop: '14px', maxWidth: '360px' }}>
-            Professional and reliable 24x7 doorstep service and repair for Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. Specialized servicing for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star and all leading AC brands.
-          </p>
+          
+          {currentBrand ? (
+            <p className="brand-desc footer-desc" style={{ color: 'rgba(255, 255, 255, 0.88)', fontSize: '14px', lineHeight: '1.65', marginTop: '14px', maxWidth: '360px' }}>
+              Professional and certified 24x7 doorstep repair and servicing for {currentBrand.brand} Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. Fast 60-minute arrival with 100% genuine {currentBrand.brand} replacement parts, zero inspection fee, and 90-day warranty.
+            </p>
+          ) : (
+            <p className="brand-desc footer-desc" style={{ color: 'rgba(255, 255, 255, 0.88)', fontSize: '14px', lineHeight: '1.65', marginTop: '14px', maxWidth: '360px' }}>
+              Professional and reliable 24x7 doorstep service and repair for Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. Fast 60-minute arrival, zero visiting charge, and 90-day post-service warranty.
+            </p>
+          )}
         </div>
         
         <div className="footer-col">
@@ -35,13 +52,13 @@ export default function Footer() {
         </div>
         
         <div className="footer-col">
-          <h4>AC Services</h4>
+          <h4>{currentBrand ? `${currentBrand.brand} Services` : 'AC Services'}</h4>
           <ul>
-            <li><Link href="/services">AC Jet Pump Foam Wash</Link></li>
-            <li><Link href="/services">AC Gas Refill &amp; Leak Repair</Link></li>
-            <li><Link href="/services">AC Breakdown &amp; Cooling Diagnosis</Link></li>
-            <li><Link href="/services">AC Installation &amp; Uninstallation</Link></li>
-            <li><Link href="/services">All Brands AC Servicing</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Jet Pump Foam Wash</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Gas Refill &amp; Leak Repair</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>Inverter PCB &amp; Cooling Repair</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Installation &amp; Relocation</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}#brand-booking-form` : '/services'}>{currentBrand ? `Book ${currentBrand.brand} Visit` : 'Doorstep Inspection (FREE)'}</Link></li>
           </ul>
         </div>
         
@@ -55,54 +72,86 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Brands Quick Strip */}
-      <div className="footer-service-areas" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', padding: '16px 0', background: 'rgba(0, 20, 45, 0.35)' }}>
-        <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '13px', fontWeight: 800, color: '#FF5E00', letterSpacing: '0.5px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-              <i className="fa-solid fa-snowflake"></i> AC Brands We Service:
-            </span>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-              {[
-                { name: 'LG AC', slug: 'lg', logo: '/brand-logos/lg.svg' },
-                { name: 'Voltas AC', slug: 'voltas', logo: '/brand-logos/voltas.svg' },
-                { name: 'Daikin AC', slug: 'daikin', logo: '/brand-logos/daikin.svg' },
-                { name: 'Hitachi AC', slug: 'hitachi', logo: '/brand-logos/hitachi.svg' },
-                { name: 'O General AC', slug: 'o-general', logo: '/brand-logos/ogeneral.svg' },
-                { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
-                { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
-                { name: 'Carrier AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg' },
-                { name: 'Lloyd AC', slug: 'other-brands', logo: '/brand-logos/lloyd.svg' },
-                { name: 'Panasonic AC', slug: 'other-brands', logo: '/brand-logos/panasonic.svg' },
-                { name: '+ All Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg' },
-              ].map((b, i) => (
-                <Link
-                  key={i}
-                  href={`/services/${b.slug}`}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '9px',
-                    background: '#ffffff',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    textDecoration: 'none',
-                    color: '#023a6e',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
-                    transition: 'all 0.2s ease',
-                  }}
-                  className="footer-brand-chip"
-                >
-                  <img src={b.logo} alt={b.name} style={{ height: '22px', width: 'auto', maxWidth: '84px', objectFit: 'contain', display: 'block' }} />
-                  <span>{b.name}</span>
-                </Link>
-              ))}
+      {/* Brands Strip - Brand Specific or Multi-Brand */}
+      {currentBrand ? (
+        <div className="footer-service-areas" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', padding: '16px 0', background: 'rgba(0, 20, 45, 0.35)' }}>
+          <div className="container">
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '14px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px' }}>
+                {currentBrand.logo && (
+                  <div style={{ background: '#ffffff', padding: '4px 10px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center' }}>
+                    <img src={currentBrand.logo} alt={currentBrand.brand} style={{ height: '20px', width: 'auto' }} />
+                  </div>
+                )}
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#ffffff', letterSpacing: '0.4px', textTransform: 'uppercase' }}>
+                  {currentBrand.brand} AC Doorstep Specialist &bull; Hyderabad 500023
+                </span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '12.5px', color: '#10B981', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <i className="fa-solid fa-bolt"></i> 60-Min Arrival
+                </span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
+                <span style={{ fontSize: '12.5px', color: '#FF5E00', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <i className="fa-solid fa-shield-halved"></i> 90-Day Warranty
+                </span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
+                <span style={{ fontSize: '12.5px', color: '#38BDF8', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <i className="fa-solid fa-certificate"></i> 100% Genuine {currentBrand.brand} Spares
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="footer-service-areas" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', padding: '16px 0', background: 'rgba(0, 20, 45, 0.35)' }}>
+          <div className="container">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: '13px', fontWeight: 800, color: '#FF5E00', letterSpacing: '0.5px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                <i className="fa-solid fa-snowflake"></i> AC Brands We Service:
+              </span>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
+                {[
+                  { name: 'LG AC', slug: 'lg', logo: '/brand-logos/lg.svg' },
+                  { name: 'Voltas AC', slug: 'voltas', logo: '/brand-logos/voltas.svg' },
+                  { name: 'Daikin AC', slug: 'daikin', logo: '/brand-logos/daikin.svg' },
+                  { name: 'Hitachi AC', slug: 'hitachi', logo: '/brand-logos/hitachi.svg' },
+                  { name: 'O General AC', slug: 'o-general', logo: '/brand-logos/ogeneral.svg' },
+                  { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
+                  { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
+                  { name: 'Carrier AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg' },
+                  { name: 'Lloyd AC', slug: 'other-brands', logo: '/brand-logos/lloyd.svg' },
+                  { name: 'Panasonic AC', slug: 'other-brands', logo: '/brand-logos/panasonic.svg' },
+                  { name: '+ All Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg' },
+                ].map((b, i) => (
+                  <Link
+                    key={i}
+                    href={`/services/${b.slug}`}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '9px',
+                      background: '#ffffff',
+                      padding: '6px 14px',
+                      borderRadius: '20px',
+                      textDecoration: 'none',
+                      color: '#023a6e',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+                      transition: 'all 0.2s ease',
+                    }}
+                    className="footer-brand-chip"
+                  >
+                    <img src={b.logo} alt={b.name} style={{ height: '22px', width: 'auto', maxWidth: '84px', objectFit: 'contain', display: 'block' }} />
+                    <span>{b.name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Service Areas Quick Strip */}
       <div className="footer-service-areas">
