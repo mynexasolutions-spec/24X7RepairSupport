@@ -1,15 +1,30 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { getBrandData } from '@/app/services/brandData';
+
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
 
 export default function Footer() {
   const pathname = usePathname();
+  const router = useRouter();
   const brandMatch = pathname ? pathname.match(/^\/services\/([^/]+)/) : null;
   const brandSlug = brandMatch ? brandMatch[1] : null;
   const currentBrand = brandSlug && brandSlug !== 'other-brands' ? getBrandData(brandSlug) : null;
   const footerThemeClass = currentBrand ? ` footer-theme-${currentBrand.slug}` : '';
+
+  const handleBrandClick = (e, slug) => {
+    if (slug === 'other-brands' || slug === 'other' || slug === 'other-brand' || slug === 'other-brand-ac') {
+      e.preventDefault();
+      const current = (pathname && pathname.startsWith('/services/')) ? pathname.split('/')[2] : null;
+      const candidates = current && SEVEN_BRANDS.includes(current)
+        ? SEVEN_BRANDS.filter((b) => b !== current)
+        : SEVEN_BRANDS;
+      const picked = candidates[Math.floor(Math.random() * candidates.length)] || SEVEN_BRANDS[0];
+      router.push(`/services/${picked}`);
+    }
+  };
 
   return (
     <footer className={`footer${footerThemeClass}`}>
@@ -127,6 +142,7 @@ export default function Footer() {
                   <Link
                     key={i}
                     href={`/services/${b.slug}`}
+                    onClick={(e) => handleBrandClick(e, b.slug)}
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',

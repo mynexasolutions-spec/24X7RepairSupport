@@ -1,16 +1,30 @@
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import ServiceAreas from '@/components/ServiceAreas';
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { brandDetails, getBrandData, getBrandSeo, SERVICE_LOCALITIES, SITE_URL } from '../brandData';
 
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+
+const isOtherBrand = (slug) =>
+  !slug ||
+  slug === 'other-brands' ||
+  slug === 'other' ||
+  slug === 'other-brand' ||
+  slug === 'other-brand-ac' ||
+  slug === 'carrier' ||
+  slug === 'lloyd' ||
+  slug === 'panasonic' ||
+  slug === 'all-brands';
+
 export async function generateStaticParams() {
   const slugs = [];
   for (const key of Object.keys(brandDetails)) {
+    if (key === 'other-brands' || isOtherBrand(key)) continue;
     slugs.push({ brand: key });
     if (brandDetails[key].aliases) {
       for (const alias of brandDetails[key].aliases) {
-        if (alias !== key) {
+        if (alias !== key && !isOtherBrand(alias)) {
           slugs.push({ brand: alias });
         }
       }
@@ -21,6 +35,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { brand: brandSlug } = await params;
+  if (isOtherBrand(brandSlug)) {
+    return {};
+  }
   const brand = getBrandData(brandSlug);
 
   if (!brand) {
@@ -58,6 +75,12 @@ export async function generateMetadata({ params }) {
 
 export default async function BrandServicePage({ params }) {
   const { brand: brandSlug } = await params;
+
+  if (isOtherBrand(brandSlug)) {
+    const randomBrand = SEVEN_BRANDS[Math.floor(Math.random() * SEVEN_BRANDS.length)];
+    redirect(`/services/${randomBrand}`);
+  }
+
   const brand = getBrandData(brandSlug);
 
   if (!brand) {

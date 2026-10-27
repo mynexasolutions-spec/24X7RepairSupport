@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
 
 const NAV_BRANDS = [
   { name: 'Hitachi', slug: 'hitachi', logo: '/brand-logos/hitachi.svg' },
@@ -19,6 +21,21 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [brandsOpen, setBrandsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleBrandClick = (e, slug) => {
+    setMenuOpen(false);
+    setBrandsOpen(false);
+    if (slug === 'other-brands' || slug === 'other' || slug === 'other-brand' || slug === 'other-brand-ac') {
+      e.preventDefault();
+      const current = (pathname && pathname.startsWith('/services/')) ? pathname.split('/')[2] : null;
+      const candidates = current && SEVEN_BRANDS.includes(current)
+        ? SEVEN_BRANDS.filter((b) => b !== current)
+        : SEVEN_BRANDS;
+      const picked = candidates[Math.floor(Math.random() * candidates.length)] || SEVEN_BRANDS[0];
+      router.push(`/services/${picked}`);
+    }
+  };
 
   // while the sidebar is open: stop the page behind it from scrolling, and let Escape close it
   useEffect(() => {
@@ -143,7 +160,7 @@ export default function Header() {
                   <Link
                     key={b.slug}
                     href={`/services/${b.slug}`}
-                    onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
+                    onClick={(e) => handleBrandClick(e, b.slug)}
                   >
                     <img src={b.logo} alt="" />
                     <span>{b.name}</span>

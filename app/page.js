@@ -1,10 +1,20 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import ReviewsSwiper from '@/components/ReviewsSwiper';
 import ServiceAreas from '@/components/ServiceAreas';
 
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+
 export default function Home() {
+  const router = useRouter();
+
+  const handleOtherBrandClick = (e) => {
+    e.preventDefault();
+    const picked = SEVEN_BRANDS[Math.floor(Math.random() * SEVEN_BRANDS.length)];
+    router.push(`/services/${picked}`);
+  };
 
   const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
@@ -175,15 +185,15 @@ export default function Home() {
               <img src="/brand-logos/bluestar.svg" alt="Blue Star AC" className="brand-pill-logo" />
               <span>Blue Star</span>
             </Link>
-            <Link href="/services/other-brands" className="brand-pill">
+            <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="brand-pill">
               <img src="/brand-logos/carrier.svg" alt="Carrier AC" className="brand-pill-logo" />
               <span>Carrier</span>
             </Link>
-            <Link href="/services/other-brands" className="brand-pill">
+            <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="brand-pill">
               <img src="/brand-logos/lloyd.svg" alt="Lloyd AC" className="brand-pill-logo" />
               <span>Lloyd</span>
             </Link>
-            <Link href="/services/other-brands" className="brand-pill">
+            <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="brand-pill">
               <img src="/brand-logos/panasonic.svg" alt="Panasonic AC" className="brand-pill-logo" />
               <span>Panasonic</span>
             </Link>
@@ -429,6 +439,11 @@ export default function Home() {
                   </p>
                   <Link
                     href={`/services/${item.slug}`}
+                    onClick={(e) => {
+                      if (item.slug === 'other-brands') {
+                        handleOtherBrandClick(e);
+                      }
+                    }}
                     className="btn btn-primary"
                     style={{ width: '100%', textAlign: 'center', justifyContent: 'center', padding: '10px', fontSize: '13.5px', borderRadius: '8px' }}
                   >
@@ -450,7 +465,7 @@ export default function Home() {
                 Split, Window, Multi-Split, Inverter &amp; Cassette ACs of any brand serviced in 60 minutes across Hyderabad.
               </p>
             </div>
-            <Link href="/services/other-brands" className="btn btn-dark" style={{ whiteSpace: 'nowrap' }}>
+            <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="btn btn-dark" style={{ whiteSpace: 'nowrap' }}>
               <i className="fa-solid fa-certificate"></i> All Other Brands AC
             </Link>
           </div>
