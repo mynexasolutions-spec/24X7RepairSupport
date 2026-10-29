@@ -18,7 +18,7 @@ export default function Contact() {
       text += `*Message:* ${message}`;
     }
 
-    const whatsappNumber = '911234561232';
+    const whatsappNumber = '919014998582';
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -121,7 +121,7 @@ export default function Contact() {
                 <div>
                   <h4>Phone Number</h4>
                   <p>
-                    <a href="tel:1234561232" style={{ color: 'inherit' }}>1234561232</a>
+                    <a href="tel:9014998582" style={{ color: 'inherit' }}>9014998582</a>
                   </p>
                 </div>
               </div>

@@ -109,7 +109,7 @@ export default async function BrandServicePage({ params }) {
         logo: `${SITE_URL}/logo.png`,
         priceRange: '₹₹',
         openingHours: 'Mo-Su 00:00-23:59',
-        telephone: '+911234561232',
+        telephone: '+919014998582',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Hyderabad',
@@ -207,15 +207,15 @@ export default async function BrandServicePage({ params }) {
               {/* Hero Action Buttons */}
               <div className="brand-hero-actions">
                 <a
-                  href={`https://wa.me/911234561232?text=${encodeURIComponent(brand.whatsappMsg)}`}
+                  href={`https://wa.me/919014998582?text=${encodeURIComponent(brand.whatsappMsg)}`}
                   className="btn btn-hero-book"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fa-brands fa-whatsapp"></i> Book {brand.brand} Service
                 </a>
-                <a href="tel:1234561232" className="btn btn-hero-call">
-                  <i className="fa-solid fa-phone"></i> Call 1234561232
+                <a href="tel:9014998582" className="btn btn-hero-call">
+                  <i className="fa-solid fa-phone"></i> Call 9014998582
                 </a>
               </div>
             </div>
@@ -328,15 +328,15 @@ export default async function BrandServicePage({ params }) {
                 </div>
                 <div className="booking-box-actions">
                   <a
-                    href={`https://wa.me/911234561232?text=${encodeURIComponent(brand.whatsappMsg)}`}
+                    href={`https://wa.me/919014998582?text=${encodeURIComponent(brand.whatsappMsg)}`}
                     className="btn btn-booking-wa"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="fa-brands fa-whatsapp"></i> Instant WhatsApp Booking
                   </a>
-                  <a href="tel:1234561232" className="btn btn-booking-call">
-                    <i className="fa-solid fa-phone"></i> Call 1234561232
+                  <a href="tel:9014998582" className="btn btn-booking-call">
+                    <i className="fa-solid fa-phone"></i> Call 9014998582
                   </a>
                 </div>
               </div>
@@ -415,7 +415,7 @@ export default async function BrandServicePage({ params }) {
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
+            <a href="tel:9014998582" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 9014998582</a>
             <Link href="/contact" className="btn btn-dark" style={{ border: '2px solid white' }}>Book Appointment</Link>
           </div>
         </div>

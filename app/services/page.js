@@ -6,7 +6,7 @@ import { brandDetails, SITE_URL } from './brandData';
 
 export const metadata = pageMetadata({
   title: 'AC Repair & Service Rates in Hyderabad | LG, Daikin, Hitachi, Voltas',
-  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 1234561232.',
+  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 9014998582.',
   path: '/services',
 });
 
@@ -561,7 +561,7 @@ export default function Services() {
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
+            <a href="tel:9014998582" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 9014998582</a>
             <Link href="/contact" className="btn btn-dark" style={{ border: '2px solid white' }}>Book Appointment</Link>
           </div>
         </div>

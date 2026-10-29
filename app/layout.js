@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const SITE_URL = "https://24-7-repair-support.vercel.app";
 const SITE_TITLE = "24x7 AC Repair & Service in Hyderabad | Doorstep Cooling Care";
 // kept under ~160 characters so Google and WhatsApp don't cut it off
-const SITE_DESCRIPTION = "24x7 doorstep AC repair & service in Hyderabad. Gas charging, jet wash, PCB repair with genuine spare parts. Call 1234561232.";
+const SITE_DESCRIPTION = "24x7 doorstep AC repair & service in Hyderabad. Gas charging, jet wash, PCB repair with genuine spare parts. Call 9014998582.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -69,7 +69,7 @@ const structuredData = {
   url: SITE_URL,
   image: `${SITE_URL}/og-image.jpg`,
   logo: `${SITE_URL}/logo.png`,
-  telephone: "+911234561232",
+  telephone: "+919014998582",
   email: "supportxrapair@gmail.com",
   openingHours: "Mo-Su 00:00-23:59",
   address: {

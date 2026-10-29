@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: 'About 24x7 Repair Support | AC Service Center in Hyderabad',
-  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts. Call 1234561232.",
+  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts. Call 9014998582.",
   path: '/about',
 });
 
@@ -58,8 +58,8 @@ export default function About() {
               <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Expert Doorstep AC Service in Hyderabad</h3>
               <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide doorstep service across our service areas with upfront pricing and no hidden charges.</p>
               
-              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
-                <i className="fa-solid fa-phone"></i> Call 1234561232
+              <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
+                <i className="fa-solid fa-phone"></i> Call 9014998582
               </a>
             </div>
 
@@ -182,10 +182,10 @@ export default function About() {
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -210,10 +210,10 @@ export default function About() {
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -238,10 +238,10 @@ export default function About() {
             </div>
             
             <div style={{ display: 'flex', gap: '15px', marginTop: '25px' }}>
-              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '10px 25px' }}>
+              <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '10px 25px' }}>
                 <i className="fa-solid fa-phone"></i> Call Now
               </a>
-              <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
+              <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn" style={{ padding: '10px 25px', background: '#25D366', color: '#fff', border: 'none' }}>
                 <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> WhatsApp Us
               </a>
             </div>
@@ -290,7 +290,7 @@ export default function About() {
                 <li><i className="fa-solid fa-location-dot"></i> <div>Madhapur, Hitec City, Gachibowli &amp; Kondapur</div></li>
                 <li><i className="fa-solid fa-location-dot"></i> <div>Kukatpally, Begumpet, Secunderabad &amp; Greater Hyderabad</div></li>
               </ul>
-              <p style={{ color: 'var(--primary-red)', fontWeight: 600, fontSize: '14px' }}>Call us directly at 1234561232 for immediate 30-minute arrival in your area.</p>
+              <p style={{ color: 'var(--primary-red)', fontWeight: 600, fontSize: '14px' }}>Call us directly at 9014998582 for immediate 30-minute arrival in your area.</p>
             </div>
 
           </div>
@@ -339,8 +339,8 @@ export default function About() {
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
-            <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
+            <a href="tel:9014998582" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 9014998582</a>
+            <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
           </div>
         </div>
       </section>

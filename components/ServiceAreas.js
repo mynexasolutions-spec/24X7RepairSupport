@@ -88,8 +88,8 @@ export default function ServiceAreas() {
               <h3><i className="fa-solid fa-map-pin red-text"></i> Popular Localities We Serve Daily in Hyderabad</h3>
               <p>Click any locality to instantly book a technician via WhatsApp or call us</p>
             </div>
-            <a href="tel:1234561232" className="area-cloud-call-btn">
-              <i className="fa-solid fa-phone"></i> 1234561232
+            <a href="tel:9014998582" className="area-cloud-call-btn">
+              <i className="fa-solid fa-phone"></i> 9014998582
             </a>
           </div>
 
@@ -97,7 +97,7 @@ export default function ServiceAreas() {
             {allAreas.map((area, idx) => (
               <a
                 key={idx}
-                href={`https://wa.me/911234561232?text=${encodeURIComponent(`Hello 24x7 AC Repair Support, I need doorstep AC service in ${area}, Hyderabad.`)}`}
+                href={`https://wa.me/919014998582?text=${encodeURIComponent(`Hello 24x7 AC Repair Support, I need doorstep AC service in ${area}, Hyderabad.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="area-chip"
@@ -128,11 +128,11 @@ export default function ServiceAreas() {
             <p>We cover almost all localities across Hyderabad and Telangana (Pin 500023 &amp; surrounds). Contact us directly to confirm instant technician availability!</p>
           </div>
           <div className="area-cta-actions">
-            <a href="tel:1234561232" className="btn btn-primary">
-              <i className="fa-solid fa-phone"></i> Call 1234561232
+            <a href="tel:9014998582" className="btn btn-primary">
+              <i className="fa-solid fa-phone"></i> Call 9014998582
             </a>
             <a
-              href="https://wa.me/911234561232?text=Hello%2024x7%20AC%20Repair%20Support,%20do%20you%20provide%20AC%20service%20in%20my%20area%20in%20Hyderabad?"
+              href="https://wa.me/919014998582?text=Hello%2024x7%20AC%20Repair%20Support,%20do%20you%20provide%20AC%20service%20in%20my%20area%20in%20Hyderabad?"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-dark"

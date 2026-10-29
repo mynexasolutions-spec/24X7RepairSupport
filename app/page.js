@@ -31,7 +31,7 @@ export default function Home() {
       text += `*Message:* ${message}`;
     }
 
-    const whatsappNumber = '911234561232';
+    const whatsappNumber = '919014998582';
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -114,7 +114,7 @@ export default function Home() {
             {/* CTAs matching reference button style */}
             <div className="hero-modern-cta">
               <a
-                href="https://wa.me/911234561232?text=Hello%2024x7%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry%20for%20AC%20Service%20in%20Hyderabad."
+                href="https://wa.me/919014998582?text=Hello%2024x7%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry%20for%20AC%20Service%20in%20Hyderabad."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-enquiry"
@@ -122,8 +122,8 @@ export default function Home() {
                 Send Enquiry
               </a>
 
-              <a href="tel:1234561232" className="btn-call-modern">
-                <i className="fa-solid fa-phone"></i> Call 1234561232
+              <a href="tel:9014998582" className="btn-call-modern">
+                <i className="fa-solid fa-phone"></i> Call 9014998582
               </a>
             </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Jet Pump<br />Foam Wash</h3>
-                <a href="https://wa.me/911234561232?text=Hello,%20I%20want%20to%20book%20AC%20Jet%20Pump%20Foam%20Wash%20for%20Rs%20249" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://wa.me/919014998582?text=Hello,%20I%20want%20to%20book%20AC%20Jet%20Pump%20Foam%20Wash%20for%20Rs%20249" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Jet Wash
                 </a>
               </div>
@@ -234,7 +234,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Gas Refill<br />&amp; Leak Repair</h3>
-                <a href="https://wa.me/911234561232?text=Hello,%20I%20want%20to%20book%20AC%20Gas%20Charging%20Service" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://wa.me/919014998582?text=Hello,%20I%20want%20to%20book%20AC%20Gas%20Charging%20Service" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Gas Refill
                 </a>
               </div>
@@ -248,7 +248,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Breakdown<br />&amp; Diagnosis</h3>
-                <a href="https://wa.me/911234561232?text=Hello,%20my%20AC%20is%20not%20cooling,%20need%20diagnosis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://wa.me/919014998582?text=Hello,%20my%20AC%20is%20not%20cooling,%20need%20diagnosis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Diagnosis
                 </a>
               </div>
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Installation<br />&amp; Relocation</h3>
-                <a href="https://wa.me/911234561232?text=Hello,%20I%20need%20AC%20Installation%20or%20Uninstallation" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://wa.me/919014998582?text=Hello,%20I%20need%20AC%20Installation%20or%20Uninstallation" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Install
                 </a>
               </div>
@@ -288,7 +288,7 @@ export default function Home() {
                   <p>Blowing normal warm air due to low gas, faulty run capacitor, or choked filter.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20AC%20is%20not%20cooling%20at%20all,%20please%20send%20technician" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20AC%20is%20not%20cooling%20at%20all,%20please%20send%20technician" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Fix Cooling Issue</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -301,7 +301,7 @@ export default function Home() {
                   <p>Drain line blocked with dust sludge, cracked drain pan, or icy evaporator coil.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20indoor%20AC%20unit%20is%20leaking%20water,%20need%20repair" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20indoor%20AC%20unit%20is%20leaking%20water,%20need%20repair" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Fix Water Leak</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -314,7 +314,7 @@ export default function Home() {
                   <p>Blower motor bearing worn out, loose outdoor unit mounting, or fan blade imbalance.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20AC%20is%20making%20loud%20noise,%20need%20technician" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20AC%20is%20making%20loud%20noise,%20need%20technician" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Fix Noise Issue</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -327,7 +327,7 @@ export default function Home() {
                   <p>Compressor grounding, shorted wiring, capacitor overload, or high power surge.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20AC%20is%20tripping%20the%20MCB/power,%20need%20urgent%20fix" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20AC%20is%20tripping%20the%20MCB/power,%20need%20urgent%20fix" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Fix Power Trip</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -340,7 +340,7 @@ export default function Home() {
                   <p>Mold and mildew build-up inside the blower wheel requiring chemical jet cleaning.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20AC%20has%20bad%20odor/smell,%20need%20deep%20cleaning" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20AC%20has%20bad%20odor/smell,%20need%20deep%20cleaning" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Book Jet Wash</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -353,7 +353,7 @@ export default function Home() {
                   <p>E1, E2, E6 or blinking timer light indicating inverter PCB communication fault.</p>
                 </div>
               </div>
-              <a href="https://wa.me/911234561232?text=My%20AC%20is%20showing%20an%20error%20code,%20need%20PCB%20repair" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
+              <a href="https://wa.me/919014998582?text=My%20AC%20is%20showing%20an%20error%20code,%20need%20PCB%20repair" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
                 <span>Fix Error Code</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
@@ -646,7 +646,7 @@ export default function Home() {
             <div className="contact-banner-text">
               <h2>Need Fast Doorstep AC Repair?</h2>
               <p>Book your certified AC technician visit now and get quick doorstep cooling repair.</p>
-              <a href="tel:1234561232" className="btn btn-white call-btn"><i className="fa-solid fa-phone"></i> Call Now: 1234561232</a>
+              <a href="tel:9014998582" className="btn btn-white call-btn"><i className="fa-solid fa-phone"></i> Call Now: 9014998582</a>
             </div>
             <div className="contact-banner-form">
               <form id="whatsappForm" className="contact-form" onSubmit={handleWhatsAppSubmit}>
@@ -681,8 +681,8 @@ export default function Home() {
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call Now</a>
-            <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
+            <a href="tel:9014998582" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call Now</a>
+            <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
           </div>
         </div>
       </section>

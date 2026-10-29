@@ -84,7 +84,7 @@ export default function BrandBookingForm({ brand }) {
 
     message += `\nPlease assign a verified ${brandName} technician for a doorstep visit.`;
 
-    const whatsappNumber = '911234561232';
+    const whatsappNumber = '919014998582';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     setIsRedirecting(true);
@@ -289,7 +289,7 @@ export default function BrandBookingForm({ brand }) {
               </button>
 
               <div className="brand-form-guarantees">
-                <span><i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i> Direct Call: <strong>1234561232</strong></span>
+                <span><i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i> Direct Call: <strong>9014998582</strong></span>
               </div>
             </div>
           </form>

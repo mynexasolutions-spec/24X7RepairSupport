@@ -77,7 +77,7 @@ export default function Header() {
             </a>
           </div>
           <div className="top-bar-right">
-            <a href="tel:1234561232" className="top-bar-phone-link"><i className="fa-solid fa-phone"></i> 1234561232</a>
+            <a href="tel:9014998582" className="top-bar-phone-link"><i className="fa-solid fa-phone"></i> 9014998582</a>
             <span className="top-bar-divider top-bar-hide-mobile">•</span>
             <span className="top-bar-hide-mobile"><i className="fa-regular fa-clock"></i> 24x7 Doorstep AC Service &amp; Repair</span>
           </div>
@@ -133,11 +133,11 @@ export default function Header() {
                   <span>{currentBrand.name} Service Charges</span>
                 </Link>
                 <a
-                  href="tel:1234561232"
+                  href="tel:9014998582"
                   onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
                 >
                   <i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i>
-                  <span>Call {currentBrand.name} Tech (1234561232)</span>
+                  <span>Call {currentBrand.name} Tech (9014998582)</span>
                 </a>
               </div>
             </div>
@@ -176,15 +176,15 @@ export default function Header() {
           <Link href="/about" className={isAbout ? "active" : ""} onClick={() => setMenuOpen(false)}><i className="fa-solid fa-circle-info nav-ico"></i>ABOUT US</Link>
           <Link href="/contact" className={isContact ? "active" : ""} onClick={() => setMenuOpen(false)}><i className="fa-solid fa-headset nav-ico"></i>CONTACT US</Link>
           <div className="mobile-nav-actions">
-            <a href="tel:1234561232" className="btn btn-dark"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
-            <a href="https://wa.me/911234561232?text=Hello%2024x7%20AC%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry" target="_blank" rel="noopener noreferrer" className="btn btn-enquiry">Send Enquiry</a>
+            <a href="tel:9014998582" className="btn btn-dark"><i className="fa-solid fa-phone"></i> Call 9014998582</a>
+            <a href="https://wa.me/919014998582?text=Hello%2024x7%20AC%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry" target="_blank" rel="noopener noreferrer" className="btn btn-enquiry">Send Enquiry</a>
           </div>
         </nav>
         <div className="header-actions">
-          <a href="tel:1234561232" className="header-phone-link">
-            <i className="fa-solid fa-phone"></i> 1234561232
+          <a href="tel:9014998582" className="header-phone-link">
+            <i className="fa-solid fa-phone"></i> 9014998582
           </a>
-          <a href="https://wa.me/911234561232?text=Hello%2024x7%20AC%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry" target="_blank" rel="noopener noreferrer" className="btn-enquiry header-enquiry-btn">
+          <a href="https://wa.me/919014998582?text=Hello%2024x7%20AC%20Repair%20Support,%20I%20want%20to%20send%20an%20enquiry" target="_blank" rel="noopener noreferrer" className="btn-enquiry header-enquiry-btn">
             Send Enquiry
           </a>
         </div>

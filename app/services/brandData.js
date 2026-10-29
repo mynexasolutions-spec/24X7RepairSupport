@@ -670,7 +670,7 @@ export const brandDetails = {
       },
       {
         q: 'How do I book an appointment for my brand?',
-        a: 'Simply call 1234561232 or click the Book Service button to schedule a doorstep visit.',
+        a: 'Simply call 9014998582 or click the Book Service button to schedule a doorstep visit.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my AC in Hyderabad. Please book a technician.',
@@ -723,7 +723,7 @@ export function getBrandSeo(brand) {
   const title = isMulti
     ? 'Carrier, Panasonic, Lloyd AC Service in Hyderabad | 24x7 Repair Support'
     : `${brand.brand} AC Service Center in Hyderabad | 24x7 Repair Support`;
-  const description = `${name} AC service center in Hyderabad - repair, gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 1234561232.`;
+  const description = `${name} AC service center in Hyderabad - repair, gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 9014998582.`;
   const keywords = [
     `${name} AC service in Hyderabad`,
     `${name} AC service Hyderabad`,

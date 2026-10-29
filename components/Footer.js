@@ -81,7 +81,7 @@ export default function Footer() {
           <h4>Contact Us</h4>
           <ul>
             <li><i className="fa-solid fa-location-dot"></i> Hyderabad, Telangana 500023</li>
-            <li><i className="fa-solid fa-phone"></i> <a href="tel:1234561232" style={{ color: 'inherit' }}>1234561232</a></li>
+            <li><i className="fa-solid fa-phone"></i> <a href="tel:9014998582" style={{ color: 'inherit' }}>9014998582</a></li>
             <li><i className="fa-solid fa-envelope"></i> <a href="mailto:supportxrapair@gmail.com" style={{ color: 'inherit' }}>supportxrapair@gmail.com</a></li>
           </ul>
         </div>

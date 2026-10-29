@@ -48,8 +48,8 @@ export default function ServiceAreasPage() {
               Whether you are located in Central Hyderabad, the IT corridor of Hitec City &amp; Gachibowli, or Secunderabad suburbs, our certified AC engineers reach you on time with genuine tools and factory spares.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
-              <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '12px 28px' }}>
-                <i className="fa-solid fa-phone"></i> Call 1234561232
+              <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '12px 28px' }}>
+                <i className="fa-solid fa-phone"></i> Call 9014998582
               </a>
               <Link href="/contact" className="btn btn-dark" style={{ padding: '12px 28px' }}>
                 Book Online
@@ -71,8 +71,8 @@ export default function ServiceAreasPage() {
             </div>
           </div>
           <div className="cta-buttons">
-            <a href="tel:1234561232" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 1234561232</a>
-            <a href="https://wa.me/911234561232" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
+            <a href="tel:9014998582" className="btn btn-white"><i className="fa-solid fa-phone"></i> Call 9014998582</a>
+            <a href="https://wa.me/919014998582" target="_blank" rel="noopener noreferrer" className="btn btn-white"><i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '20px' }}></i> WhatsApp Us</a>
           </div>
         </div>
       </section>
