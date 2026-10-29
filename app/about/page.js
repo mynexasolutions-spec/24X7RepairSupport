@@ -165,14 +165,14 @@ export default function About() {
       <section className="section-padding bg-light">
         <div className="container">
           
-          {/* Category 1: Jet Wash */}
+          {/* Category 1: General Service */}
           <div className="about-content-section">
             <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>General AC Service & Deep Servicing</h2>
-            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Air quality and cooling speed drop drastically when indoor cooling fins and outdoor condenser coils get packed with dust. Our pressurized jet cleaning restores factory airflow.</p>
+            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Air quality and cooling speed drop drastically when indoor cooling fins and outdoor condenser coils get packed with dust. Our thorough general service restores factory airflow.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
               <div style={{ flex: '1 1 300px' }}>
-                <h4 style={{ color: 'var(--primary-red)' }}>Indoor Evaporator Jet Wash</h4>
+                <h4 style={{ color: 'var(--primary-red)' }}>Indoor Evaporator General Service</h4>
                 <p style={{ color: 'var(--text-gray)', fontSize: '14px' }}>Deep foam spraying on cooling coils, sanitized wash of rotary blower fan, clean drain pan to stop indoor dripping, and antimicrobial treatment.</p>
               </div>
               <div style={{ flex: '1 1 300px' }}>

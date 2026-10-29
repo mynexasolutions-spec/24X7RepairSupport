@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
   if (!brand) {
     return {
       title: 'AC Service & Repair Center in Hyderabad | 24x7 Repair Support',
-      description: 'Expert air conditioner servicing, repair, jet cleaning and gas refilling across Hyderabad.',
+      description: 'Expert air conditioner servicing, repair, general service and gas refilling across Hyderabad.',
     };
   }
 

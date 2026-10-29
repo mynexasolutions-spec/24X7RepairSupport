@@ -7,7 +7,7 @@ export const brandDetails = {
     logo: '/brand-logos/lg.svg',
     badge: 'LG Dual Inverter Specialist',
     tagline: 'Dual Inverter Care That Brings Back the Chill',
-    title: 'LG Air Conditioner Repair & Jet Servicing in Hyderabad',
+    title: 'LG Air Conditioner Repair & General Service in Hyderabad',
     heroDesc: 'AC not cooling, leaking or showing an error? Our certified engineers fix LG Dual Inverter, AI DUALCOOL and Smart ThinQ ACs right at your doorstep, with genuine LG parts.',
     shortDesc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean general servicing.',
     features: [
@@ -78,7 +78,7 @@ export const brandDetails = {
     badge: 'Voltas All-Weather Expert',
     tagline: 'Beat the Hyderabad Heat with a Perfectly Tuned Voltas',
     title: 'Voltas Air Conditioner Doorstep Service & Repair in Hyderabad',
-    heroDesc: 'Weak cooling, water dripping or a noisy outdoor unit? Get your Voltas Maha-Adjustable, All-Weather or Inverter AC repaired and jet-washed at home by certified engineers, using genuine parts.',
+    heroDesc: 'Weak cooling, water dripping or a noisy outdoor unit? Get your Voltas Maha-Adjustable, All-Weather or Inverter AC repaired and serviced at home by certified engineers, using genuine parts.',
     shortDesc: 'Quick and reliable service for all Voltas Inverter, Split, and Window AC models. We resolve low cooling problems, noisy outdoor units, capacitor replacements, copper tube welding, and precision R32/R410A refrigerant charging with high cooling performance guaranteed.',
     features: [
       'Original Voltas Spare Parts with Warranty',
@@ -290,7 +290,7 @@ export const brandDetails = {
       },
       {
         q: 'Do you service Hitachi Window AC units?',
-        a: 'Yes, we provide full pull-out servicing, pressure jet wash, motor greasing, and gas charging for all Hitachi window AC models.',
+        a: 'Yes, we provide full pull-out servicing, general service, motor greasing, and gas charging for all Hitachi window AC models.',
       },
       {
         q: 'Do you provide emergency same-day Hitachi AC service?',
@@ -309,7 +309,7 @@ export const brandDetails = {
     badge: 'O General Heavy Duty Cooling',
     tagline: 'Built for Tough Summers, Serviced by Experts',
     title: 'O General AC Tropical Repair & Overhaul in Hyderabad',
-    heroDesc: 'Powerful cooling needs powerful care. We service O General tropical split and window ACs with heavy-duty compressor diagnostics, copper flare sealing and deep jet cleaning, so your AC keeps up with the hottest days.',
+    heroDesc: 'Powerful cooling needs powerful care. We service O General tropical split and window ACs with heavy-duty compressor diagnostics, copper flare sealing and a deep general service, so your AC keeps up with the hottest days.',
     shortDesc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep general servicing.',
     features: [
       'Heavy Duty Compressor Diagnostics',
@@ -422,7 +422,7 @@ export const brandDetails = {
       {
         icon: 'fa-solid fa-soap',
         title: 'General Service & Deep Cleaning',
-        desc: 'Pressure jet washing of the evaporator coil, blower and filters to restore airflow and remove bad odour.',
+        desc: 'General servicing of the evaporator coil, blower and filters to restore airflow and remove bad odour.',
       },
       {
         icon: 'fa-solid fa-gauge-high',
@@ -469,7 +469,7 @@ export const brandDetails = {
     shortDesc: 'Comprehensive repair service for Samsung WindFree, Convertible, and Digital Inverter models. Certified repair for clogged micro-holes, error codes (E1, E2, E4, C1), indoor blower servicing, motherboard replacement, and whisper-quiet cooling restoration.',
     features: [
       'Original Samsung Electronic Parts & Sensors',
-      'Specialized WindFree Micro-Hole Jet Wash',
+      'Specialized WindFree Micro-Hole General Service',
       'Verified & Certified Technicians',
     ],
     image: '/brands/samsung-ac.jpg',
@@ -518,7 +518,7 @@ export const brandDetails = {
     faqs: [
       {
         q: 'How do you clean Samsung WindFree AC micro-holes without damaging them?',
-        a: 'We use a specialized soft foam applicator combined with controlled low-pressure water jet that dissolves stubborn dust and mold trapped inside the 23,000 micro-holes without touching the delicate louvre mechanisms.',
+        a: 'We use a specialized soft foam applicator combined with controlled low-pressure water flow that dissolves stubborn dust and mold trapped inside the 23,000 micro-holes without touching the delicate louvre mechanisms.',
       },
       {
         q: 'Do you repair Samsung digital inverter motherboard PCBs?',
@@ -536,9 +536,9 @@ export const brandDetails = {
     logo: '/brand-logos/bluestar.svg',
     badge: 'Blue Star Precision Air Expert',
     tagline: 'Precision Cooling, Perfectly Restored',
-    title: 'Blue Star Air Conditioner Repair & Jet Wash in Hyderabad',
+    title: 'Blue Star Air Conditioner Repair & General Service in Hyderabad',
     heroDesc: 'Home split or commercial cassette, we bring your Blue Star back to peak cooling with nitrogen leak testing, coil care and original spares, handled by certified doorstep engineers across Hyderabad.',
-    shortDesc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and jet cleaning for maximum energy efficiency.',
+    shortDesc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and general service for maximum energy efficiency.',
     features: [
       'Original Blue Star Spares & Filter Elements',
     ],
@@ -608,7 +608,7 @@ export const brandDetails = {
     tagline: 'Any Brand, Any AC, Expert Doorstep Fix',
     title: 'Multi-Brand AC Repair & Doorstep Servicing in Hyderabad',
     heroDesc: 'Carrier, Panasonic, Lloyd, Godrej, Whirlpool, IFB, Haier, Onida or Kelvinator, whichever AC you own, our certified engineers repair, service and install it at your doorstep in Hyderabad.',
-    shortDesc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, high-pressure jet cleaning, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
+    shortDesc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, general service, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
     features: [
       'Genuine OEM-Grade Spare Parts',
     ],
@@ -719,7 +719,7 @@ export function getBrandSeo(brand) {
   const title = isMulti
     ? 'Carrier, Panasonic, Lloyd AC Service in Hyderabad | 24x7 Repair Support'
     : `${brand.brand} AC Service Center in Hyderabad | 24x7 Repair Support`;
-  const description = `${name} AC service center in Hyderabad - repair, gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 9014998582.`;
+  const description = `${name} AC service center in Hyderabad - repair, gas refill, general service & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 9014998582.`;
   const keywords = [
     `${name} AC service in Hyderabad`,
     `${name} AC service Hyderabad`,
@@ -733,7 +733,7 @@ export function getBrandSeo(brand) {
     `${name} AC service near me`,
     `${name} AC gas charging Hyderabad`,
     `${name} AC service center Hyderabad`,
-    `${name} AC jet wash Hyderabad`,
+    `${name} AC general service Hyderabad`,
   ];
   return { name, title, description, keywords, path: `/services/${brand.slug}` };
 }

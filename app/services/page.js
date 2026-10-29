@@ -6,7 +6,7 @@ import { brandDetails, SITE_URL } from './brandData';
 
 export const metadata = pageMetadata({
   title: 'AC Repair & Service in Hyderabad | LG, Daikin, Hitachi, Voltas',
-  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 9014998582.',
+  description: 'AC repair, general service, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 9014998582.',
   path: '/services',
 });
 
@@ -49,7 +49,7 @@ export default function Services() {
       logo: '/brand-logos/lg.svg',
       badge: 'LG Dual Inverter Specialist',
       tagline: 'Dual Inverter Care That Brings Back the Chill',
-      title: 'LG Air Conditioner Repair & Jet Servicing',
+      title: 'LG Air Conditioner Repair & General Service',
       desc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean general servicing.',
       features: [
         '100% Genuine LG Compressor & PCB Parts',
@@ -164,7 +164,7 @@ export default function Services() {
       desc: 'Comprehensive repair service for Samsung WindFree, Convertible, and Digital Inverter models. Certified repair for clogged micro-holes, error codes (E1, E2, E4, C1), indoor blower servicing, motherboard replacement, and whisper-quiet cooling restoration.',
       features: [
         'Original Samsung Electronic Parts & Sensors',
-        'Specialized WindFree Micro-Hole Jet Wash',
+        'Specialized WindFree Micro-Hole General Service',
         'Verified & Certified Technicians',
       ],
       image: '/brands/samsung-ac.jpg',
@@ -179,8 +179,8 @@ export default function Services() {
       logo: '/brand-logos/bluestar.svg',
       badge: 'Blue Star Precision Air',
       tagline: 'Precision Cooling, Perfectly Restored',
-      title: 'Blue Star Air Conditioner Repair & Jet Wash',
-      desc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and jet cleaning for maximum energy efficiency.',
+      title: 'Blue Star Air Conditioner Repair & General Service',
+      desc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and general service for maximum energy efficiency.',
       features: [
         'Original Blue Star Spares & Filter Elements',
       ],
@@ -197,7 +197,7 @@ export default function Services() {
       badge: 'Multi-Brand AC Specialist',
       tagline: 'Any Brand, Any AC, Expert Doorstep Fix',
       title: 'All Other Brand AC Repair & Servicing',
-      desc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, high-pressure jet cleaning, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
+      desc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, general service, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
       features: [
         'Genuine OEM-Grade Spare Parts',
       ],
@@ -217,7 +217,7 @@ export default function Services() {
       <section className="page-banner">
         <div className="container">
           <h1>Our AC Services</h1>
-          <p>Complete Air Conditioner Repair, Jet Cleaning &amp; Gas Refill in Hyderabad, Telangana 500023</p>
+          <p>Complete Air Conditioner Repair, General Service &amp; Gas Refill in Hyderabad, Telangana 500023</p>
         </div>
       </section>
 
@@ -318,68 +318,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service Cards */}
-      <section className="service-charges section-padding">
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: '#F0F7FF', border: '1px solid #D0E4FF', borderRadius: '30px', padding: '6px 16px' }}>
-              <img src="/logo-icon.png?v=5" alt="24x7 AC Repair Support" style={{ height: '24px', width: 'auto' }} />
-              <span style={{ fontSize: '13px', fontWeight: 700, color: '#023a6e' }}>24x7 AC REPAIR SUPPORT • ALL BRANDS SERVICING</span>
-            </div>
-          </div>
-          <div className="section-title">
-            <h2>AC <span className="red-text">Services</span> We Offer</h2>
-            <p>Expert servicing for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; all AC brands</p>
-          </div>
-
-          <div className="charges-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))' }}>
-            {/* Card 1: AC General Service */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-jet-wash.jpg" alt="AC General Service" />
-                <div className="icon-circle"><i className="fa-solid fa-soap"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC General<br />Service</h3>
-              </div>
-            </div>
-
-            {/* Card 2: AC Gas Refill */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-gas-charging.jpg" alt="AC Gas Refilling & Leak Repair" />
-                <div className="icon-circle"><i className="fa-solid fa-gauge-high"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC Gas Refilling<br />&amp; Leak Repair</h3>
-              </div>
-            </div>
-
-            {/* Card 3: Inverter PCB & Repair */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-repair-clean.jpg" alt="Inverter AC PCB & Electrical Repair" />
-                <div className="icon-circle"><i className="fa-solid fa-microchip"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC PCB Board<br />&amp; Sensor Repair</h3>
-              </div>
-            </div>
-
-            {/* Card 4: Installation / Relocation */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-installation.jpg" alt="AC Installation & Uninstallation" />
-                <div className="icon-circle"><i className="fa-solid fa-screwdriver-wrench"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC Installation<br />&amp; Relocation</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Brands We Service Section */}
       <section className="section-padding" style={{ background: '#f8fafc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container">
@@ -471,11 +409,11 @@ export default function Services() {
               <div className="appliance-info">
                 <h3>AC General Service</h3>
                 <p style={{ textAlign: 'left', marginTop: '15px' }}>
-                  Professional high-pressure power jet wash with antibacterial foam that removes stubborn dust, mold, and sludge from indoor and outdoor coils.
+                  Professional general service with antibacterial foam that removes stubborn dust, mold, and sludge from indoor and outdoor coils.
                 </p>
                 <ul className="check-list" style={{ textAlign: 'left', marginTop: '15px' }}>
                   <li><i className="fa-solid fa-circle-check"></i> 2X Cooling enhancement &amp; low power consumption</li>
-                  <li><i className="fa-solid fa-circle-check"></i> Indoor evaporator coil, blower &amp; filter jet wash</li>
+                  <li><i className="fa-solid fa-circle-check"></i> Indoor evaporator coil, blower &amp; filter general service</li>
                   <li><i className="fa-solid fa-circle-check"></i> Outdoor condenser coil deep pressure rinse</li>
                   <li><i className="fa-solid fa-circle-check"></i> Drain tray flush to eliminate water leakage &amp; bad odor</li>
                 </ul>

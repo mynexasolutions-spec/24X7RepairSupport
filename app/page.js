@@ -197,80 +197,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* AC Service Packages */}
-      <section className="service-charges section-padding">
-        <div className="container">
-          <div className="section-title text-center" style={{ textAlign: 'center' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#F0F7FF', border: '1px solid #D0E4FF', borderRadius: '30px', padding: '6px 16px', marginBottom: '14px' }}>
-              <img src="/logo-icon.png?v=5" alt="24x7 Repair Support" style={{ height: '22px', width: 'auto' }} />
-              <span style={{ fontSize: '13px', fontWeight: 800, color: '#023a6e', letterSpacing: '0.3px' }}>OUR SPECIALIZED AC SERVICES</span>
-            </div>
-            <h2>Professional <span className="red-text">AC Services</span></h2>
-            <p>Expert doorstep AC repair and servicing across Hyderabad, Telangana 500023</p>
-          </div>
-
-          <div className="charges-grid">
-            {/* Card 1: AC Jet Wash */}
-            <div className="charge-card">
-              <span className="ac-package-badge">Most Popular</span>
-              <div className="card-img">
-                <img src="/ac-jet-wash.jpg" alt="AC General Service" />
-                <div className="icon-circle"><i className="fa-solid fa-spray-can-sparkles"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC General<br />Service</h3>
-                <a href="https://wa.me/919014998582?text=Hello,%20I%20want%20to%20book%20AC%20Jet%20Pump%20Foam%20Wash%20for%20Rs%20249" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  <i className="fa-brands fa-whatsapp"></i> Book Jet Wash
-                </a>
-              </div>
-            </div>
-
-            {/* Card 2: Gas Charging */}
-            <div className="charge-card">
-              <span className="ac-package-badge" style={{ background: '#023a6e' }}>100% Cooling</span>
-              <div className="card-img">
-                <img src="/ac-gas-charging.jpg" alt="AC Gas Charging and Leak Fixing" />
-                <div className="icon-circle"><i className="fa-solid fa-gauge-high"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC Gas Refill<br />&amp; Leak Repair</h3>
-                <a href="https://wa.me/919014998582?text=Hello,%20I%20want%20to%20book%20AC%20Gas%20Charging%20Service" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  <i className="fa-brands fa-whatsapp"></i> Book Gas Refill
-                </a>
-              </div>
-            </div>
-
-            {/* Card 3: AC Cooling & Breakdown */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-repair-clean.jpg" alt="AC Breakdown and Cooling Repair" />
-                <div className="icon-circle"><i className="fa-solid fa-screwdriver-wrench"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC Breakdown<br />&amp; Diagnosis</h3>
-                <a href="https://wa.me/919014998582?text=Hello,%20my%20AC%20is%20not%20cooling,%20need%20diagnosis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  <i className="fa-brands fa-whatsapp"></i> Book Diagnosis
-                </a>
-              </div>
-            </div>
-
-            {/* Card 4: AC Installation */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-installation.jpg" alt="AC Installation and Uninstallation" />
-                <div className="icon-circle"><i className="fa-solid fa-wrench"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>AC Installation<br />&amp; Relocation</h3>
-                <a href="https://wa.me/919014998582?text=Hello,%20I%20need%20AC%20Installation%20or%20Uninstallation" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  <i className="fa-brands fa-whatsapp"></i> Book Install
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Common AC Problems Solved */}
       <section className="ac-problems-section section-padding bg-light">
         <div className="container">
@@ -337,11 +263,11 @@ export default function Home() {
                 <div className="problem-card-icon"><i className="fa-solid fa-wind"></i></div>
                 <div className="problem-card-info">
                   <h4>Bad Odor / Stale Airflow</h4>
-                  <p>Mold and mildew build-up inside the blower wheel requiring chemical jet cleaning.</p>
+                  <p>Mold and mildew build-up inside the blower wheel requiring a thorough general service.</p>
                 </div>
               </div>
               <a href="https://wa.me/919014998582?text=My%20AC%20has%20bad%20odor/smell,%20need%20deep%20cleaning" target="_blank" rel="noopener noreferrer" className="problem-card-btn">
-                <span>Book Jet Wash</span> <i className="fa-solid fa-arrow-right"></i>
+                <span>Book General Service</span> <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
 
@@ -380,7 +306,7 @@ export default function Home() {
               { brand: 'Daikin', slug: 'daikin', logo: '/brand-logos/daikin.svg', image: '/brands/daikin-ac.jpg', badge: 'Japanese Precision', desc: 'Streamer Inverter PCB repair & precision gas charging.' },
               { brand: 'Hitachi', slug: 'hitachi', logo: '/brand-logos/hitachi.svg', image: '/brands/hitachi-ac.jpg', badge: 'Rapid Chill Guarantee', desc: 'Quadricool & Yoshi Inverter AC repair & deep wash.' },
               { brand: 'O General', slug: 'o-general', logo: '/brand-logos/ogeneral.svg', image: '/brands/ogeneral-ac.jpg', badge: 'Tropical Cooling Care', desc: 'Heavy-duty compressor diagnostics & coil overhaul.' },
-              { brand: 'Samsung', slug: 'samsung', logo: '/brand-logos/samsung.svg', image: '/brands/samsung-ac.jpg', badge: 'WindFree Specialist', desc: 'WindFree micro-hole jet wash & 5-in-1 PCB repair.' },
+              { brand: 'Samsung', slug: 'samsung', logo: '/brand-logos/samsung.svg', image: '/brands/samsung-ac.jpg', badge: 'WindFree Specialist', desc: 'WindFree micro-hole cleaning & 5-in-1 PCB repair.' },
               { brand: 'Blue Star', slug: 'blue-star', logo: '/brand-logos/bluestar.svg', image: '/brands/bluestar-ac.jpg', badge: 'Precision Air Experts', desc: 'Precision residential & commercial cassette AC care.' },
               { brand: 'Mitsubishi Electric', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg', image: '/brands/mitsubishi-ac.jpg', badge: 'Japanese Precision Specialist', desc: 'Kirigamine & Hyper Inverter AC repair, PCB care & deep wash.' },
               { brand: 'Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg', image: '/brands/other-ac.jpg', badge: 'Multi-Brand Specialist', desc: 'Carrier, Lloyd, Panasonic & all other AC brands.' },
@@ -602,7 +528,7 @@ export default function Home() {
             <details className="faq-item">
               <summary>How often should I get my AC serviced?</summary>
               <div className="faq-content">
-                <p>In Hyderabad's climate and dust conditions, we recommend a deep foam jet cleaning every 3 to 4 months or at least before the peak summer season to ensure maximum cooling, low electricity bills, and clean indoor air.</p>
+                <p>In Hyderabad's climate and dust conditions, we recommend a general service every 3 to 4 months or at least before the peak summer season to ensure maximum cooling, low electricity bills, and clean indoor air.</p>
               </div>
             </details>
             <details className="faq-item">
@@ -660,7 +586,7 @@ export default function Home() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="waMessage">Message</label>
-                  <textarea id="waMessage" placeholder="AC issue (Not cooling, gas charging, water leak, jet wash...)" rows="4"></textarea>
+                  <textarea id="waMessage" placeholder="AC issue (Not cooling, gas charging, water leak, general service...)" rows="4"></textarea>
                 </div>
                 <button type="submit" className="btn btn-submit" style={{ width: '100%', border: 'none' }}><i className="fa-brands fa-whatsapp"></i> Book via WhatsApp</button>
               </form>

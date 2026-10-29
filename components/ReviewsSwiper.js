@@ -12,7 +12,7 @@ const reviews = [
   },
   {
     stars: 5,
-    text: '"Booked their AC General Service. The technician used a proper high-pressure water jet and catch bag, cleaned all mold from the blower wheel. AC air feels so crisp and cooling dropped to 18°C in minutes!"',
+    text: '"Booked their AC General Service. The technician used a proper cleaning setup and catch bag, cleaned all mold from the blower wheel. AC air feels so crisp and cooling dropped to 18°C in minutes!"',
     initials: 'SM',
     name: 'Sneha M.',
     service: 'AC General Service',
