@@ -111,10 +111,6 @@ export default function ServiceAreas() {
 
           <div className="area-features-strip">
             <div className="feature-item">
-              <i className="fa-solid fa-hand-holding-dollar red-text"></i>
-              <span>₹0 Visiting &amp; Inspection Fee</span>
-            </div>
-            <div className="feature-item">
               <i className="fa-solid fa-shield-check red-text"></i>
               <span>Genuine Spares with Warranty</span>
             </div>

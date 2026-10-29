@@ -48,7 +48,7 @@ export default function Services() {
       brand: 'LG',
       logo: '/brand-logos/lg.svg',
       badge: 'LG Dual Inverter Specialist',
-      tagline: 'AI Dual Inverter & Smart Diagnosis Repair',
+      tagline: 'Dual Inverter Care That Brings Back the Chill',
       title: 'LG Air Conditioner Repair & Jet Servicing',
       desc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
       features: [
@@ -57,7 +57,7 @@ export default function Services() {
       ],
       image: '/brands/lg-ac.jpg',
       imageAlt: 'LG Dual Inverter Split AC Servicing',
-      highlightBadge: 'Certified AC Engineers',
+      highlightBadge: 'Dual Inverter Experts',
       whatsappMsg: 'Hi, I need service/repair for my LG AC in Hyderabad. Please book a technician.',
     },
     {
@@ -66,18 +66,17 @@ export default function Services() {
       brand: 'Voltas',
       logo: '/brand-logos/voltas.svg',
       badge: 'Voltas All-Weather Expert',
-      tagline: 'Maha-Adjustable & Inverter AC Doorstep Care',
+      tagline: 'Beat the Hyderabad Heat with a Perfectly Tuned Voltas',
       title: 'Voltas Air Conditioner Doorstep Service & Repair',
       desc: 'Quick and reliable service for all Voltas Inverter, Split, and Window AC models. We resolve low cooling problems, noisy outdoor units, capacitor replacements, copper tube welding, and precision R32/R410A refrigerant charging with high cooling performance guaranteed.',
       features: [
-        'Zero Visiting Fee at Your Location',
         'Original Voltas Spare Parts with Warranty',
         'Same-Day Doorstep Technician Dispatch',
         'Jet Foam Wash for 2x Cooling Efficiency',
       ],
       image: '/brands/voltas-ac.jpg',
       imageAlt: 'Voltas Inverter AC Repair and Maintenance',
-      highlightBadge: 'Fast Doorstep Service',
+      highlightBadge: 'All-Weather Cooling Experts',
       whatsappMsg: 'Hi, I need service/repair for my Voltas AC in Hyderabad. Please book a technician.',
     },
     {
@@ -86,18 +85,17 @@ export default function Services() {
       brand: 'Daikin',
       logo: '/brand-logos/daikin.svg',
       badge: 'Daikin Japanese Precision',
-      tagline: 'Streamer Inverter & Heavy Duty Cooling Care',
+      tagline: 'Japanese Precision, Restored to Perfection',
       title: 'Daikin AC Inverter PCB & Gas Refilling Service',
       desc: 'Authorized-grade servicing for Daikin Streamer and Inverter series split AC units. Our specialists diagnose Daikin blink codes, electronic expansion valve issues, indoor coil ice buildup, and execute high-pressure jet pump wash without water spill.',
       features: [
-        'Zero Inspection Charge Across Hyderabad',
         'Daikin Certified Technicians with 10+ Yrs Exp',
         'Original Japanese Specification Spare Parts',
         '3-Month Assurance on Repaired Components',
       ],
       image: '/brands/daikin-ac.jpg',
       imageAlt: 'Daikin Inverter AC Service and Gas Refill',
-      highlightBadge: 'Certified Inverter Experts',
+      highlightBadge: 'Precision Inverter Experts',
       whatsappMsg: 'Hi, I need service/repair for my Daikin AC in Hyderabad. Please book a technician.',
     },
     {
@@ -106,7 +104,7 @@ export default function Services() {
       brand: 'Hitachi',
       logo: '/brand-logos/hitachi.svg',
       badge: 'Hitachi Rapid Chill Specialist',
-      tagline: 'Quadricool & Smart Inverter AC Solutions',
+      tagline: 'Bring Back the Rapid Chill',
       title: 'Hitachi Air Conditioner Repair & Maintenance',
       desc: 'Specialized maintenance for Hitachi Yoshi, Quadricool, and Toushi inverter air conditioners. From thermistor sensor faults and inverter PCB failures to fan motor replacement and complete coil descaling, we restore icy cooling fast.',
       features: [
@@ -116,7 +114,7 @@ export default function Services() {
       ],
       image: '/brands/hitachi-ac.jpg',
       imageAlt: 'Hitachi Split AC Servicing and Repair',
-      highlightBadge: 'Rapid Chill Guarantee',
+      highlightBadge: 'Rapid Chill Specialists',
       whatsappMsg: 'Hi, I need service/repair for my Hitachi AC in Hyderabad. Please book a technician.',
     },
     {
@@ -125,7 +123,7 @@ export default function Services() {
       brand: 'O General',
       logo: '/brand-logos/ogeneral.svg',
       badge: 'O General Heavy Duty Cooling',
-      tagline: 'Tropical Split & Heavy Duty Compressor Care',
+      tagline: 'Built for Tough Summers, Serviced by Experts',
       title: 'O General AC Tropical Repair & Overhaul',
       desc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep jet pump cleaning.',
       features: [
@@ -135,7 +133,7 @@ export default function Services() {
       ],
       image: '/brands/ogeneral-ac.jpg',
       imageAlt: 'O General Heavy Duty Air Conditioner Repair',
-      highlightBadge: 'Tropical Cooling Specialist',
+      highlightBadge: 'Tropical Heat Specialists',
       whatsappMsg: 'Hi, I need service/repair for my O General AC in Hyderabad. Please book a technician.',
     },
     {
@@ -144,7 +142,7 @@ export default function Services() {
       brand: 'Mitsubishi Electric',
       logo: '/brand-logos/mitsubishi.svg',
       badge: 'Mitsubishi Electric Japanese Precision',
-      tagline: 'Kirigamine Hyper Inverter & Premium Split AC Care',
+      tagline: 'Premium Cooling Deserves Premium Care',
       title: 'Mitsubishi Electric AC Repair & Servicing',
       desc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean jet pump foam washing.',
       features: [
@@ -155,7 +153,7 @@ export default function Services() {
       ],
       image: '/brands/mitsubishi-ac.jpg',
       imageAlt: 'Mitsubishi Electric Inverter Split AC Servicing',
-      highlightBadge: 'Japanese Precision Specialist',
+      highlightBadge: 'Premium Cooling Care',
       whatsappMsg: 'Hi, I need service/repair for my Mitsubishi Electric AC in Hyderabad. Please book a technician.',
     },
     {
@@ -164,7 +162,7 @@ export default function Services() {
       brand: 'Samsung',
       logo: '/brand-logos/samsung.svg',
       badge: 'Samsung WindFree Specialist',
-      tagline: 'WindFree & Convertible 5-in-1 AC Repair',
+      tagline: 'WindFree Comfort, Back in Full Flow',
       title: 'Samsung Air Conditioner Service & Smart Care',
       desc: 'Comprehensive repair service for Samsung WindFree, Convertible, and Digital Inverter models. Certified repair for clogged micro-holes, error codes (E1, E2, E4, C1), indoor blower servicing, motherboard replacement, and whisper-quiet cooling restoration.',
       features: [
@@ -175,7 +173,7 @@ export default function Services() {
       ],
       image: '/brands/samsung-ac.jpg',
       imageAlt: 'Samsung WindFree AC Repair and Servicing',
-      highlightBadge: 'Smart WindFree Care',
+      highlightBadge: 'WindFree Specialists',
       whatsappMsg: 'Hi, I need service/repair for my Samsung AC in Hyderabad. Please book a technician.',
     },
     {
@@ -184,7 +182,7 @@ export default function Services() {
       brand: 'Blue Star',
       logo: '/brand-logos/bluestar.svg',
       badge: 'Blue Star Precision Air',
-      tagline: 'Precision Cooling & Commercial Split AC Care',
+      tagline: 'Precision Cooling, Perfectly Restored',
       title: 'Blue Star Air Conditioner Repair & Jet Wash',
       desc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and jet cleaning for maximum energy efficiency.',
       features: [
@@ -193,7 +191,7 @@ export default function Services() {
       ],
       image: '/brands/bluestar-ac.jpg',
       imageAlt: 'Blue Star Inverter Split AC Service',
-      highlightBadge: 'Precision Air Experts',
+      highlightBadge: 'Precision Cooling Experts',
       whatsappMsg: 'Hi, I need service/repair for my Blue Star AC in Hyderabad. Please book a technician.',
     },
     {
@@ -202,7 +200,7 @@ export default function Services() {
       brand: 'Other Brand AC',
       logo: '/brand-logos/multibrand.svg',
       badge: 'Multi-Brand AC Specialist',
-      tagline: 'Carrier, Panasonic, Lloyd, Godrej, Mitsubishi & More',
+      tagline: 'Any Brand, Any AC, Expert Doorstep Fix',
       title: 'All Other Brand AC Repair & Servicing',
       desc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, high-pressure jet cleaning, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
       features: [
@@ -211,7 +209,7 @@ export default function Services() {
       ],
       image: '/brands/other-ac.jpg',
       imageAlt: 'All Other Brand AC Servicing and Repair',
-      highlightBadge: 'Multi-Brand Specialists',
+      highlightBadge: 'All-Brand Specialists',
       whatsappMsg: 'Hi, I need service/repair for my AC in Hyderabad. Please book a technician.',
     },
   ];

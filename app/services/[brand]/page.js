@@ -402,14 +402,6 @@ export default async function BrandServicePage({ params }) {
                     <p>Only authentic factory components with barcode verification and replacement warranty.</p>
                   </div>
                 </div>
-
-                <div className="feature-check-row">
-                  <div className="check-icon-circle"><i className="fa-solid fa-check"></i></div>
-                  <div>
-                    <h4>Zero Visiting &amp; Inspection Fee</h4>
-                    <p>Pay only for authorized services and parts after inspecting our upfront quote.</p>
-                  </div>
-                </div>
               </div>
             </div>
 

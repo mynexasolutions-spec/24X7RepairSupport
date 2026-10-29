@@ -257,7 +257,7 @@ export default function About() {
             
             <div>
               <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Transparent AC Service Rates</h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>No hidden charges. We believe in 100% upfront pricing with zero inspection fees across Hyderabad.</p>
+              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>No hidden charges. We believe in 100% upfront pricing across Hyderabad.</p>
               
               <div className="pricing-table-container">
                 <div className="pricing-row">
@@ -276,12 +276,7 @@ export default function About() {
                   <span className="pricing-item">AC Installation / Relocation</span>
                   <span className="pricing-cost">₹699</span>
                 </div>
-                <div className="pricing-row">
-                  <span className="pricing-item">Doorstep Visiting &amp; Inspection</span>
-                  <span className="pricing-cost">FREE</span>
-                </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>*Note: Visiting &amp; inspection are completely FREE. All repair spares carry guaranteed warranty.</p>
             </div>
 
             <div>
@@ -319,7 +314,7 @@ export default function About() {
             <details className="faq-item">
               <summary>Why is my AC not blowing cool air?</summary>
               <div className="faq-content">
-                <p>Common causes include low refrigerant gas due to coil leakage, a choked filter or condenser, failed compressor capacitor, or a faulty inverter PCB board. Our technician checks all 5 parameters on-site with zero visiting charge.</p>
+                <p>Common causes include low refrigerant gas due to coil leakage, a choked filter or condenser, failed compressor capacitor, or a faulty inverter PCB board. Our technician checks all 5 parameters on-site.</p>
               </div>
             </details>
             <details className="faq-item">

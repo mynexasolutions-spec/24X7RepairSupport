@@ -40,11 +40,6 @@ export default function ServiceAreasPage() {
           <div style={{ maxWidth: '800px', margin: '30px auto 0', textAlign: 'center', background: '#fff', padding: '30px', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: 'wrap', marginBottom: '20px' }}>
               <div>
-                <h3 style={{ color: '#FF5E00', fontSize: '28px', margin: 0, fontWeight: 800 }}>₹0</h3>
-                <p style={{ color: '#64748B', fontSize: '13px', margin: '4px 0 0' }}>Visiting &amp; Inspection Fee</p>
-              </div>
-              <div style={{ borderRight: '1px solid #e2e8f0' }}></div>
-              <div>
                 <h3 style={{ color: '#023a6e', fontSize: '28px', margin: 0, fontWeight: 800 }}>24/7</h3>
                 <p style={{ color: '#64748B', fontSize: '13px', margin: '4px 0 0' }}>Emergency Support</p>
               </div>
