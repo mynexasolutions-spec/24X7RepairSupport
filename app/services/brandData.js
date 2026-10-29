@@ -11,7 +11,6 @@ export const brandDetails = {
     heroDesc: 'AC not cooling, leaking or showing an error? Our certified engineers fix LG Dual Inverter, AI DUALCOOL and Smart ThinQ ACs right at your doorstep, with genuine LG parts and a clear upfront quote before any work begins.',
     shortDesc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
     features: [
-      'Free Doorstep Visiting & Diagnosis',
       '100% Genuine LG Compressor & PCB Parts',
     ],
     image: '/brands/lg-ac.jpg',
@@ -65,10 +64,6 @@ export const brandDetails = {
       {
         q: 'Which areas in Hyderabad do you serve?',
         a: 'Our doorstep technicians are stationed across 50+ areas in Hyderabad including Banjara Hills, Madhapur, Hitec City, Kukatpally, and Secunderabad.',
-      },
-      {
-        q: 'What is the visiting charge for LG AC inspection?',
-        a: 'Visiting and inspection are 100% FREE. You only pay for repairs or services once you approve our transparent upfront quote.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my LG AC in Hyderabad. Please book a technician.',
@@ -136,15 +131,11 @@ export const brandDetails = {
     faqs: [
       {
         q: 'Why is my Voltas AC blowing warm air?',
-        a: 'This usually indicates low refrigerant gas, a blown running capacitor, or a heavily choked outdoor condenser coil. Our technician diagnoses the exact root cause within 15 minutes for free.',
+        a: 'This usually indicates low refrigerant gas, a blown running capacitor, or a heavily choked outdoor condenser coil. Our technician diagnoses the exact root cause within 15 minutes.',
       },
       {
         q: 'Do you service older Voltas Window AC models?',
         a: 'Yes, we service all vintage and modern Voltas Window AC models including complete chemical wash, fan motor rebushing, and compressor servicing.',
-      },
-      {
-        q: 'What is the visiting charge for Voltas AC?',
-        a: 'Visiting is 100% FREE across all areas of Hyderabad. You only pay for service or parts if you decide to proceed.',
       },
       {
         q: 'Is there a warranty on gas refilling?',
@@ -246,7 +237,6 @@ export const brandDetails = {
     heroDesc: 'Flashing timer light or slow cooling? We repair Hitachi Yoshi, Quadricool, Toushi, Shizen and i-Connect inverter ACs at your doorstep, fixing PCB faults and sensors with 100% genuine spares.',
     shortDesc: 'Specialized maintenance for Hitachi Yoshi, Quadricool, and Toushi inverter air conditioners. From thermistor sensor faults and inverter PCB failures to fan motor replacement and complete coil descaling, we restore icy cooling fast.',
     features: [
-      'Free Visiting & Complete Health Checkup',
       'Genuine Hitachi Relays, Motors & Sensors',
       'Anti-Bacterial Foam Cleaning Included',
     ],
@@ -296,7 +286,7 @@ export const brandDetails = {
     faqs: [
       {
         q: 'Why is the timer light blinking on my Hitachi AC?',
-        a: 'A blinking timer light indicates an internal diagnostic safety cutoff—usually an ambient sensor mismatch, PCB communication drop, or low refrigerant pressure. Our technician tests it on-site for free.',
+        a: 'A blinking timer light indicates an internal diagnostic safety cutoff—usually an ambient sensor mismatch, PCB communication drop, or low refrigerant pressure. Our technician tests it on-site.',
       },
       {
         q: 'Do you service Hitachi Window AC units?',
@@ -304,7 +294,7 @@ export const brandDetails = {
       },
       {
         q: 'What is the cost of Hitachi AC jet foam wash?',
-        a: 'Our deep antibacterial jet foam wash is ₹499 with 100% FREE doorstep visiting and inspection across Hyderabad.',
+        a: 'Our deep antibacterial jet foam wash is ₹499 across Hyderabad.',
       },
       {
         q: 'Do you provide emergency same-day Hitachi AC service?',
@@ -326,7 +316,6 @@ export const brandDetails = {
     heroDesc: 'Powerful cooling needs powerful care. We service O General tropical split and window ACs with heavy-duty compressor diagnostics, copper flare sealing and deep jet cleaning, so your AC keeps up with the hottest days.',
     shortDesc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep jet pump cleaning.',
     features: [
-      '100% Free Doorstep Visiting Charge',
       'Heavy Duty Compressor Diagnostics',
       'Pure Gas Refill with Leak Pressure Testing',
     ],
@@ -381,10 +370,6 @@ export const brandDetails = {
       {
         q: 'Can you fix outdoor compressor humming without cooling?',
         a: 'Yes, this is typically a starting relay, potential capacitor, or terminal burnout issue. We repair it on-site in under 45 minutes.',
-      },
-      {
-        q: 'Is visiting free for O General AC inspection?',
-        a: 'Yes, visiting is 100% FREE across Hyderabad. You get a transparent estimate before any work starts.',
       },
       {
         q: 'Do you service commercial 2 Ton+ O General cassette ACs?',
@@ -487,7 +472,6 @@ export const brandDetails = {
     heroDesc: 'Clogged micro-holes, error codes or a dead PCB? Our engineers revive Samsung WindFree, 5-in-1 Convertible and Digital Inverter ACs at home with deep cleaning and 100% genuine spares.',
     shortDesc: 'Comprehensive repair service for Samsung WindFree, Convertible, and Digital Inverter models. Certified repair for clogged micro-holes, error codes (E1, E2, E4, C1), indoor blower servicing, motherboard replacement, and whisper-quiet cooling restoration.',
     features: [
-      'Free Doorstep Visiting in 50+ Hyderabad Localities',
       'Original Samsung Electronic Parts & Sensors',
       'Specialized WindFree Micro-Hole Jet Wash',
       'Verified Technicians with Transparent Pricing',
@@ -541,10 +525,6 @@ export const brandDetails = {
         a: 'We use a specialized soft foam applicator combined with controlled low-pressure water jet that dissolves stubborn dust and mold trapped inside the 23,000 micro-holes without touching the delicate louvre mechanisms.',
       },
       {
-        q: 'What is the visiting fee for Samsung AC repair in Hyderabad?',
-        a: 'Visiting is 100% FREE across all of Hyderabad. Our technician diagnoses the problem on-site and quotes transparent charges.',
-      },
-      {
         q: 'Do you repair Samsung digital inverter motherboard PCBs?',
         a: 'Yes, our micro-electronics technicians specialize in repairing Samsung inverter PCBs at component level, saving you up to 70% compared to purchasing a new board.',
       },
@@ -564,7 +544,6 @@ export const brandDetails = {
     heroDesc: 'Home split or commercial cassette, we bring your Blue Star back to peak cooling with nitrogen leak testing, coil care and original spares, handled by certified doorstep engineers across Hyderabad.',
     shortDesc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and jet cleaning for maximum energy efficiency.',
     features: [
-      'Free Visiting & Complete Leak Inspection',
       'Original Blue Star Spares & Filter Elements',
     ],
     image: '/brands/bluestar-ac.jpg',
@@ -619,10 +598,6 @@ export const brandDetails = {
         q: 'Do you service commercial Blue Star Cassette ACs in offices?',
         a: 'Yes, we service commercial cassette, tower, and ductable Blue Star ACs in offices, retail showrooms, clinics, and residences across Hyderabad.',
       },
-      {
-        q: 'What is the visiting charge for Blue Star AC?',
-        a: 'Visiting is 100% FREE across all 50+ localities in Hyderabad.',
-      },
     ],
     whatsappMsg: 'Hi, I need service/repair for my Blue Star AC in Hyderabad. Please book a technician.',
   },
@@ -639,7 +614,6 @@ export const brandDetails = {
     heroDesc: 'Carrier, Panasonic, Lloyd, Godrej, Whirlpool, IFB, Haier, Onida or Kelvinator, whichever AC you own, our certified engineers repair, service and install it at your doorstep in Hyderabad.',
     shortDesc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, high-pressure jet cleaning, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
     features: [
-      'Free Doorstep Visiting & Full Diagnostics',
       'Genuine OEM-Grade Spare Parts',
     ],
     image: '/brands/other-ac.jpg',
@@ -693,10 +667,6 @@ export const brandDetails = {
       {
         q: 'Can you service an AC whose brand is discontinued or imported?',
         a: 'Yes, our senior AC engineers have universal diagnostic training to troubleshoot refrigeration cycles and electrical circuits of any imported or vintage AC brand.',
-      },
-      {
-        q: 'Is visiting charge free for any brand of AC?',
-        a: 'Yes, 100% FREE visiting and inspection charge applies to all brands anywhere in Hyderabad.',
       },
       {
         q: 'How do I book an appointment for my brand?',

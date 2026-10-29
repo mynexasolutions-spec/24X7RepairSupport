@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: 'About 24x7 Repair Support | AC Service Center in Hyderabad',
-  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts, a free visit. Call 1234561232.",
+  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts. Call 1234561232.",
   path: '/about',
 });
 
@@ -55,8 +55,8 @@ export default function About() {
                 <li><i className="fa-solid fa-circle-check"></i> <div>Whether your AC is not cooling, leaking water inside, having error codes, or needing urgent gas refilling, our emergency AC technicians are just a phone call away 24x7.</div></li>
               </ul>
 
-              <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Expert Doorstep AC Service with FREE Visiting Charge</h3>
-              <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide free doorstep inspection across our service areas with zero hidden inspection fees.</p>
+              <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Expert Doorstep AC Service in Hyderabad</h3>
+              <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide doorstep service across our service areas with upfront pricing and no hidden charges.</p>
               
               <a href="tel:1234561232" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
                 <i className="fa-solid fa-phone"></i> Call 1234561232
@@ -147,7 +147,7 @@ export default function About() {
             </div>
             <div className="process-card">
               <h4>Transparent AC Charges</h4>
-              <p>Competitive rates starting at ₹499 for full jet foam wash and ₹0 completely FREE visiting charge across Greater Hyderabad.</p>
+              <p>Competitive rates starting at ₹499 for full jet foam wash across Greater Hyderabad.</p>
             </div>
             <div className="process-card">
               <h4>100% Genuine Spare Parts</h4>
@@ -318,12 +318,6 @@ export default function About() {
               </div>
             </details>
             <details className="faq-item">
-              <summary>Is the visiting and inspection charge really free?</summary>
-              <div className="faq-content">
-                <p>Yes! Our visiting and basic inspection charge is 100% FREE across all areas of Hyderabad and Telangana. You only pay for repairs or services you approve.</p>
-              </div>
-            </details>
-            <details className="faq-item">
               <summary>Where is 24x7 AC Repair Support located?</summary>
               <div className="faq-content">
                 <p>We are centrally located in Hyderabad, Telangana 500023, providing round-the-clock emergency AC repair across all Hyderabad neighborhoods.</p>
@@ -341,7 +335,7 @@ export default function About() {
             <div>
               <h3>Need Immediate AC Repair in Hyderabad?</h3>
               <h2>Book Your Certified AC Technician Today!</h2>
-              <p>Fast doorstep service from Hyderabad, Telangana 500023. Visiting Charge is 100% FREE.</p>
+              <p>Fast doorstep service from Hyderabad, Telangana 500023.</p>
             </div>
           </div>
           <div className="cta-buttons">

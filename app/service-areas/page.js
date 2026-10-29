@@ -4,7 +4,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: 'AC Service Areas in Hyderabad | Banjara Hills, Madhapur, Kukatpally',
-  description: '24x7 AC repair across Hyderabad - Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more. Technician at your door. Free visit.',
+  description: '24x7 AC repair across Hyderabad - Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more. Technician at your door.',
   path: '/service-areas',
 });
 
@@ -67,7 +67,7 @@ export default function ServiceAreasPage() {
             <div>
               <h3>Need Immediate Doorstep AC Repair?</h3>
               <h2>Technicians Available in Your Area Right Now!</h2>
-              <p>Covering Sanath Nagar, Banjara Hills, Hitec City, Kukatpally &amp; all Greater Hyderabad. 100% FREE visiting charge.</p>
+              <p>Covering Sanath Nagar, Banjara Hills, Hitec City, Kukatpally &amp; all Greater Hyderabad.</p>
             </div>
           </div>
           <div className="cta-buttons">

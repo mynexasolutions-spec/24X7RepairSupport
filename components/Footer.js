@@ -73,7 +73,7 @@ export default function Footer() {
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Gas Refill &amp; Leak Repair</Link></li>
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>Inverter PCB &amp; Cooling Repair</Link></li>
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Installation &amp; Relocation</Link></li>
-            <li><Link href={currentBrand ? `/services/${currentBrand.slug}#brand-booking-form` : '/services'}>{currentBrand ? `Book ${currentBrand.brand} Visit` : 'Doorstep Inspection (FREE)'}</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}#brand-booking-form` : '/services'}>{currentBrand ? `Book ${currentBrand.brand} Visit` : 'Doorstep AC Inspection'}</Link></li>
           </ul>
         </div>
         

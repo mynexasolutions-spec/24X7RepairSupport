@@ -25,10 +25,10 @@ export default function BrandBookingForm({ brand }) {
     'AC Gas Refill & Leak Repair (₹1499)',
     'Inverter PCB Board & Sensor Repair (₹799)',
     'AC Installation & Relocation (₹699)',
-    'AC Low Cooling / Not Cooling (Free Inspection)',
+    'AC Low Cooling / Not Cooling',
     'Water Dripping / Drainage Leak Fix',
     'Outdoor Unit Noise / Vibration Fix',
-    'Complete AC Health Checkup (Free Inspection)',
+    'Complete AC Health Checkup',
   ];
 
   const acTypes = [
@@ -289,7 +289,6 @@ export default function BrandBookingForm({ brand }) {
               </button>
 
               <div className="brand-form-guarantees">
-                <span><i className="fa-solid fa-check-double" style={{ color: '#0284c7' }}></i> 100% Free Inspection</span>
                 <span><i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i> Direct Call: <strong>1234561232</strong></span>
               </div>
             </div>

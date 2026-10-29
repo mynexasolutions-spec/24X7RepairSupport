@@ -33,7 +33,7 @@ const reviews = [
   },
   {
     stars: 5,
-    text: '"Very transparent pricing. No hidden charges whatsoever. They provided a free doorstep inspection, gave upfront repair quotation, and restored cooling on the same day. Truly professional AC service."',
+    text: '"Very transparent pricing. No hidden charges whatsoever. They gave an upfront repair quotation, and restored cooling on the same day. Truly professional AC service."',
     initials: 'PS',
     name: 'Priya S.',
     service: 'AC Cooling Breakdown Repair',

@@ -108,7 +108,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-modern-desc">
-              Certified doorstep technicians for Split, Inverter &amp; Window ACs in Hyderabad. Genuine spare parts and 100% FREE inspection.
+              Certified doorstep technicians for Split, Inverter &amp; Window ACs in Hyderabad. Genuine spare parts and expert doorstep service.
             </p>
 
             {/* CTAs matching reference button style */}
@@ -132,10 +132,6 @@ export default function Home() {
               <div className="modern-feature-item">
                 <i className="fa-solid fa-snowflake"></i>
                 <span>100% Cooling Fixed</span>
-              </div>
-              <div className="modern-feature-item">
-                <i className="fa-solid fa-tag"></i>
-                <span>Free Visiting Fee</span>
               </div>
             </div>
           </div>
@@ -210,7 +206,7 @@ export default function Home() {
               <span style={{ fontSize: '13px', fontWeight: 800, color: '#023a6e', letterSpacing: '0.3px' }}>OUR SPECIALIZED AC SERVICES</span>
             </div>
             <h2>Professional <span className="red-text">AC Services</span> &amp; Charges</h2>
-            <p>Upfront transparent rates with FREE doorstep inspection across Hyderabad, Telangana 500023</p>
+            <p>Upfront transparent rates across Hyderabad, Telangana 500023</p>
           </div>
 
           <div className="charges-grid">
@@ -537,7 +533,7 @@ export default function Home() {
               <div className="why-item">
                 <div className="why-icon"><i className="fa-solid fa-heart"></i></div>
                 <div>
-                  <h4>Affordable Pricing &amp; FREE Visiting</h4>
+                  <h4>Affordable Pricing</h4>
                   <p>Transparent pricing with zero hidden charges.</p>
                 </div>
               </div>
@@ -604,12 +600,6 @@ export default function Home() {
           </div>
           <div className="faq-list">
             <details className="faq-item">
-              <summary>Is there a visiting charge?</summary>
-              <div className="faq-content">
-                <p>No, we offer a completely FREE visiting charge for all our service areas in Hyderabad. You only pay for the actual repair and parts.</p>
-              </div>
-            </details>
-            <details className="faq-item">
               <summary>How often should I get my AC serviced?</summary>
               <div className="faq-content">
                 <p>In Hyderabad's climate and dust conditions, we recommend a deep foam jet cleaning every 3 to 4 months or at least before the peak summer season to ensure maximum cooling, low electricity bills, and clean indoor air.</p>
@@ -655,7 +645,7 @@ export default function Home() {
           <div className="contact-banner">
             <div className="contact-banner-text">
               <h2>Need Fast Doorstep AC Repair?</h2>
-              <p>Book your certified AC technician visit now and get quick doorstep cooling repair with 100% FREE inspection.</p>
+              <p>Book your certified AC technician visit now and get quick doorstep cooling repair.</p>
               <a href="tel:1234561232" className="btn btn-white call-btn"><i className="fa-solid fa-phone"></i> Call Now: 1234561232</a>
             </div>
             <div className="contact-banner-form">

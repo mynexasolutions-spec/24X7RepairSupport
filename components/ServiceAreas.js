@@ -27,7 +27,7 @@ export default function ServiceAreas() {
       title: 'Secunderabad & Kukatpally Region',
       badge: '25-45 Mins Arrival',
       icon: 'fa-solid fa-map-location-dot',
-      desc: 'Comprehensive AC repair and servicing coverage with 100% FREE inspection across Greater Hyderabad.',
+      desc: 'Comprehensive AC repair and servicing coverage across Greater Hyderabad.',
       areas: ['Kukatpally', 'KPHB Colony', 'Miyapur', 'Begumpet', 'Secunderabad', 'Bowenpally'],
     },
   ];
@@ -47,7 +47,7 @@ export default function ServiceAreas() {
         
         <div className="service-areas-header">
           <div className="service-area-pill">
-            <i className="fa-solid fa-location-dot"></i> Rapid Doorstep Coverage &bull; 100% FREE Visiting
+            <i className="fa-solid fa-location-dot"></i> Rapid Doorstep Coverage
           </div>
           <h2>Our <span className="red-text">Service Areas</span> Across Hyderabad &amp; Telangana</h2>
           <p>

@@ -6,7 +6,7 @@ import { brandDetails, SITE_URL } from './brandData';
 
 export const metadata = pageMetadata({
   title: 'AC Repair & Service Rates in Hyderabad | LG, Daikin, Hitachi, Voltas',
-  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Free visit. Call 1234561232.',
+  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 1234561232.',
   path: '/services',
 });
 
@@ -52,7 +52,6 @@ export default function Services() {
       title: 'LG Air Conditioner Repair & Jet Servicing',
       desc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
       features: [
-        'Free Doorstep Visiting & Diagnosis',
         '100% Genuine LG Compressor & PCB Parts',
       ],
       image: '/brands/lg-ac.jpg',
@@ -108,7 +107,6 @@ export default function Services() {
       title: 'Hitachi Air Conditioner Repair & Maintenance',
       desc: 'Specialized maintenance for Hitachi Yoshi, Quadricool, and Toushi inverter air conditioners. From thermistor sensor faults and inverter PCB failures to fan motor replacement and complete coil descaling, we restore icy cooling fast.',
       features: [
-        'Free Visiting & Complete Health Checkup',
         'Genuine Hitachi Relays, Motors & Sensors',
         'Anti-Bacterial Foam Cleaning Included',
       ],
@@ -127,7 +125,6 @@ export default function Services() {
       title: 'O General AC Tropical Repair & Overhaul',
       desc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep jet pump cleaning.',
       features: [
-        '100% Free Doorstep Visiting Charge',
         'Heavy Duty Compressor Diagnostics',
         'Pure Gas Refill with Leak Pressure Testing',
       ],
@@ -166,7 +163,6 @@ export default function Services() {
       title: 'Samsung Air Conditioner Service & Smart Care',
       desc: 'Comprehensive repair service for Samsung WindFree, Convertible, and Digital Inverter models. Certified repair for clogged micro-holes, error codes (E1, E2, E4, C1), indoor blower servicing, motherboard replacement, and whisper-quiet cooling restoration.',
       features: [
-        'Free Doorstep Visiting in 50+ Hyderabad Localities',
         'Original Samsung Electronic Parts & Sensors',
         'Specialized WindFree Micro-Hole Jet Wash',
         'Verified Technicians with Transparent Pricing',
@@ -186,7 +182,6 @@ export default function Services() {
       title: 'Blue Star Air Conditioner Repair & Jet Wash',
       desc: 'Expert maintenance for Blue Star residential split and commercial air conditioning units. We offer nitrogen pressure testing, copper coil brazing, capacitor replacement, PCB soldering, and jet cleaning for maximum energy efficiency.',
       features: [
-        'Free Visiting & Complete Leak Inspection',
         'Original Blue Star Spares & Filter Elements',
       ],
       image: '/brands/bluestar-ac.jpg',
@@ -204,7 +199,6 @@ export default function Services() {
       title: 'All Other Brand AC Repair & Servicing',
       desc: 'Don’t see your AC brand? We provide certified multi-brand doorstep repair, high-pressure jet cleaning, gas charging, and PCB circuit repair for Carrier, Panasonic, Lloyd, Godrej, Mitsubishi, Whirlpool, IFB, Onida, and all other air conditioner brands across Hyderabad.',
       features: [
-        'Free Doorstep Visiting & Full Diagnostics',
         'Genuine OEM-Grade Spare Parts',
       ],
       image: '/brands/other-ac.jpg',
@@ -563,7 +557,7 @@ export default function Services() {
             <div>
               <h3>Is Your AC Not Cooling Properly?</h3>
               <h2>Schedule a Doorstep AC Visit in Hyderabad!</h2>
-              <p>Experienced technicians for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; Mitsubishi Electric with 100% FREE visiting charge.</p>
+              <p>Experienced technicians for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; Mitsubishi Electric.</p>
             </div>
           </div>
           <div className="cta-buttons">
