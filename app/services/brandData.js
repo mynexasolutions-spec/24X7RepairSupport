@@ -722,8 +722,8 @@ export function getBrandSeo(brand) {
   const name = isMulti ? 'Carrier, Panasonic, Lloyd' : brand.brand;
   const title = isMulti
     ? 'Carrier, Panasonic, Lloyd AC Service in Hyderabad | 24x7 Repair Support'
-    : `${brand.brand} AC Service & Repair in Hyderabad | 24x7 Repair Support`;
-  const description = `${name} AC service & repair in Hyderabad - gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 1234561232.`;
+    : `${brand.brand} AC Service Center in Hyderabad | 24x7 Repair Support`;
+  const description = `${name} AC service center in Hyderabad - repair, gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 1234561232.`;
   const keywords = [
     `${name} AC service in Hyderabad`,
     `${name} AC service Hyderabad`,

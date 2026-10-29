@@ -101,22 +101,6 @@ export default async function BrandServicePage({ params }) {
       url: pageUrl,
       image: `${SITE_URL}${brand.image}`,
       areaServed: SERVICE_LOCALITIES.map((place) => ({ '@type': 'Place', name: `${place}, Hyderabad` })),
-      // the same starting prices shown in the "Service Charges" section of this page
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: `${seo.name} AC service prices`,
-        itemListElement: [
-          ['Jet Pump Foam Cleaning', '499'],
-          ['Gas Refill & Leak Repair', '1499'],
-          ['PCB Board & Sensor Repair', '799'],
-          ['Installation & Relocation', '699'],
-        ].map(([service, price]) => ({
-          '@type': 'Offer',
-          priceCurrency: 'INR',
-          price,
-          itemOffered: { '@type': 'Service', name: `${seo.name} ${service}` },
-        })),
-      },
       provider: {
         '@type': 'HomeAndConstructionBusiness',
         name: '24x7 Repair Support',
@@ -204,7 +188,7 @@ export default async function BrandServicePage({ params }) {
                 </div>
               </div>
 
-              <h1>{seo.name} AC Service &amp; Repair in Hyderabad</h1>
+              <h1>{seo.name} AC Service Center in Hyderabad</h1>
               <p className="brand-hero-tagline">{brand.tagline}</p>
               <p className="brand-hero-description">{brand.heroDesc}</p>
 
@@ -298,81 +282,6 @@ export default async function BrandServicePage({ params }) {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Brand Service Pricing */}
-      <section className="service-charges section-padding" style={{ background: '#f8fafc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="container">
-          <div className="section-title text-center">
-            <span style={{ color: '#FF5E00', fontWeight: 800, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
-              Transparent Rates
-            </span>
-            <h2 style={{ marginTop: '8px' }}>
-              {brand.brand} AC <span className="red-text">Service Charges</span>
-            </h2>
-            <p>
-              Standardized, transparent rates across all 50+ areas in Hyderabad.
-            </p>
-          </div>
-
-          <div className="charges-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))' }}>
-            {/* Card 1: AC Jet Foam Wash */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-jet-wash.jpg" alt={`${brand.brand} Jet Pump Foam Wash`} />
-                <div className="icon-circle"><i className="fa-solid fa-soap"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>{brand.brand} Jet Pump<br />Foam Cleaning</h3>
-              </div>
-            </div>
-
-            {/* Card 2: AC Gas Refill */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-gas-charging.jpg" alt={`${brand.brand} Gas Refilling & Leak Repair`} />
-                <div className="icon-circle"><i className="fa-solid fa-gauge-high"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>{brand.brand} Gas Refill<br />&amp; Leak Repair</h3>
-              </div>
-            </div>
-
-            {/* Card 3: Inverter PCB & Repair */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-repair-clean.jpg" alt={`${brand.brand} PCB Board & Sensor Repair`} />
-                <div className="icon-circle"><i className="fa-solid fa-microchip"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>{brand.brand} PCB Board<br />&amp; Sensor Repair</h3>
-              </div>
-            </div>
-
-            {/* Card 4: Installation / Relocation */}
-            <div className="charge-card">
-              <div className="card-img">
-                <img src="/ac-installation.jpg" alt={`${brand.brand} Installation & Relocation`} />
-                <div className="icon-circle"><i className="fa-solid fa-screwdriver-wrench"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>{brand.brand} Installation<br />&amp; Relocation</h3>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '36px' }}>
-            <a
-              href={`https://wa.me/911234561232?text=${encodeURIComponent(brand.whatsappMsg)}`}
-              className="btn btn-primary"
-              style={{ padding: '14px 34px', fontSize: '15px' }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-whatsapp"></i> Book {brand.brand} Service at These Rates
-            </a>
           </div>
         </div>
       </section>
