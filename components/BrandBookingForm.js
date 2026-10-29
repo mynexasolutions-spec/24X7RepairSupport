@@ -10,7 +10,7 @@ export default function BrandBookingForm({ brand }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    serviceType: 'Jet Pump Foam Cleaning (₹499)',
+    serviceType: 'General Service',
     acType: 'Split AC (1.5 Ton)',
     locality: 'Sanath Nagar',
     customLocality: '',
@@ -21,10 +21,10 @@ export default function BrandBookingForm({ brand }) {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   const serviceOptions = [
-    'Jet Pump Foam Cleaning (₹499)',
-    'AC Gas Refill & Leak Repair (₹1499)',
-    'Inverter PCB Board & Sensor Repair (₹799)',
-    'AC Installation & Relocation (₹699)',
+    'General Service',
+    'AC Gas Refill & Leak Repair',
+    'Inverter PCB Board & Sensor Repair',
+    'AC Installation & Relocation',
     'AC Low Cooling / Not Cooling',
     'Water Dripping / Drainage Leak Fix',
     'Outdoor Unit Noise / Vibration Fix',

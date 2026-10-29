@@ -8,8 +8,8 @@ export const brandDetails = {
     badge: 'LG Dual Inverter Specialist',
     tagline: 'Dual Inverter Care That Brings Back the Chill',
     title: 'LG Air Conditioner Repair & Jet Servicing in Hyderabad',
-    heroDesc: 'AC not cooling, leaking or showing an error? Our certified engineers fix LG Dual Inverter, AI DUALCOOL and Smart ThinQ ACs right at your doorstep, with genuine LG parts and a clear upfront quote before any work begins.',
-    shortDesc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
+    heroDesc: 'AC not cooling, leaking or showing an error? Our certified engineers fix LG Dual Inverter, AI DUALCOOL and Smart ThinQ ACs right at your doorstep, with genuine LG parts.',
+    shortDesc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean general servicing.',
     features: [
       '100% Genuine LG Compressor & PCB Parts',
     ],
@@ -42,8 +42,8 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Jet Foam Deep Wash & Odor Removal',
-        desc: 'Antibacterial high-pressure jet pump wash cleaning evaporator coils, blower fan, and outdoor condenser fins to revive ice-cool airflow.',
+        title: 'General Service & Odor Removal',
+        desc: 'Antibacterial general service cleaning evaporator coils, blower fan, and outdoor condenser fins to revive ice-cool airflow.',
       },
       {
         icon: 'fa-solid fa-droplet',
@@ -83,7 +83,7 @@ export const brandDetails = {
     features: [
       'Original Voltas Spare Parts with Warranty',
       'Same-Day Doorstep Technician Dispatch',
-      'Jet Foam Wash for 2x Cooling Efficiency',
+      'General Service for 2x Cooling Efficiency',
     ],
     image: '/brands/voltas-ac.jpg',
     imageAlt: 'Voltas Inverter AC Repair and Maintenance Hyderabad',
@@ -119,7 +119,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Power Jet Pump Wash Service',
+        title: 'General AC Service',
         desc: 'Thorough removal of mud, dust, and sludge from indoor cooling fins and outdoor condenser to boost cooling speed by 2X.',
       },
       {
@@ -154,8 +154,8 @@ export const brandDetails = {
     badge: 'Daikin Japanese Precision Care',
     tagline: 'Japanese Precision, Restored to Perfection',
     title: 'Daikin AC Inverter PCB & Gas Refilling Service in Hyderabad',
-    heroDesc: 'Your Daikin deserves expert hands. From Streamer and Coanda Airflow to VRV systems, we handle PCB repair, nitrogen leak testing and deep jet foam wash for the quiet, powerful cooling you paid for.',
-    shortDesc: 'Authorized-grade servicing for Daikin Streamer and Inverter series split AC units. Our specialists diagnose Daikin blink codes, electronic expansion valve issues, indoor coil ice buildup, and execute high-pressure jet pump wash without water spill.',
+    heroDesc: 'Your Daikin deserves expert hands. From Streamer and Coanda Airflow to VRV systems, we handle PCB repair, nitrogen leak testing and a deep general service for the quiet, powerful cooling you paid for.',
+    shortDesc: 'Authorized-grade servicing for Daikin Streamer and Inverter series split AC units. Our specialists diagnose Daikin blink codes, electronic expansion valve issues, indoor coil ice buildup, and execute a thorough general service without water spill.',
     features: [
       'Daikin Certified Technicians with 10+ Yrs Exp',
       'Original Japanese Specification Spare Parts',
@@ -190,7 +190,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Spill-Free Jet Pump Foam Wash',
+        title: 'Spill-Free General Service',
         desc: 'Professional AC jacket foam wash cleaning hydrophilic aluminum fins, Cross-Flow Fan (CFF), and antimicrobial drain channels.',
       },
       {
@@ -207,7 +207,7 @@ export const brandDetails = {
     faqs: [
       {
         q: 'Can you repair Daikin inverter PCB boards without replacing them?',
-        a: 'Yes, our certified micro-electronics engineers repair over 85% of faulty Daikin inverter PCBs at component level (replacing IPMs, diodes, capacitors) at a fraction of the cost of a new board.',
+        a: 'Yes, our certified micro-electronics engineers repair over 85% of faulty Daikin inverter PCBs at component level (replacing IPMs, diodes, capacitors).',
       },
       {
         q: 'How do I check error codes on my Daikin remote?',
@@ -293,10 +293,6 @@ export const brandDetails = {
         a: 'Yes, we provide full pull-out servicing, pressure jet wash, motor greasing, and gas charging for all Hitachi window AC models.',
       },
       {
-        q: 'What is the cost of Hitachi AC jet foam wash?',
-        a: 'Our deep antibacterial jet foam wash is ₹499 across Hyderabad.',
-      },
-      {
         q: 'Do you provide emergency same-day Hitachi AC service?',
         a: 'Yes, we operate 24x7 with doorstep technicians available in every major locality of Hyderabad.',
       },
@@ -314,7 +310,7 @@ export const brandDetails = {
     tagline: 'Built for Tough Summers, Serviced by Experts',
     title: 'O General AC Tropical Repair & Overhaul in Hyderabad',
     heroDesc: 'Powerful cooling needs powerful care. We service O General tropical split and window ACs with heavy-duty compressor diagnostics, copper flare sealing and deep jet cleaning, so your AC keeps up with the hottest days.',
-    shortDesc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep jet pump cleaning.',
+    shortDesc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep general servicing.',
     features: [
       'Heavy Duty Compressor Diagnostics',
       'Pure Gas Refill with Leak Pressure Testing',
@@ -343,7 +339,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Deep Sludge Jet Pump Chemical Rinse',
+        title: 'Deep Sludge Cleaning & Chemical Rinse',
         desc: 'Clearing dense Hyderabad airborne dust and sludge from O General’s thick multi-row condenser coils for 100% airflow restoration.',
       },
       {
@@ -389,12 +385,12 @@ export const brandDetails = {
     tagline: 'Premium Cooling Deserves Premium Care',
     title: 'Mitsubishi Electric AC Repair & Servicing in Hyderabad',
     heroDesc: 'Kirigamine, Hyper Inverter, cassette or ductable, we know how to handle Mitsubishi Electric systems with care. Certified engineers, genuine parts and careful diagnosis, right at your doorstep in Hyderabad.',
-    shortDesc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean jet pump foam washing.',
+    shortDesc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean general servicing.',
     features: [
       'Genuine Mitsubishi Electric Parts & Sensors',
       'Inverter PCB & Sensor Fault Diagnosis',
       'Pure Gas Refill with Leak Pressure Testing',
-      'Anti-Bacterial Jet Foam Cleaning',
+      'Anti-Bacterial Deep Cleaning',
     ],
     image: '/brands/mitsubishi-ac.jpg',
     imageAlt: 'Mitsubishi Electric Inverter Split AC Servicing Hyderabad',
@@ -425,7 +421,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Deep Jet Pump Foam Cleaning',
+        title: 'General Service & Deep Cleaning',
         desc: 'Pressure jet washing of the evaporator coil, blower and filters to restore airflow and remove bad odour.',
       },
       {
@@ -474,7 +470,7 @@ export const brandDetails = {
     features: [
       'Original Samsung Electronic Parts & Sensors',
       'Specialized WindFree Micro-Hole Jet Wash',
-      'Verified Technicians with Transparent Pricing',
+      'Verified & Certified Technicians',
     ],
     image: '/brands/samsung-ac.jpg',
     imageAlt: 'Samsung WindFree AC Repair and Servicing Hyderabad',
@@ -526,7 +522,7 @@ export const brandDetails = {
       },
       {
         q: 'Do you repair Samsung digital inverter motherboard PCBs?',
-        a: 'Yes, our micro-electronics technicians specialize in repairing Samsung inverter PCBs at component level, saving you up to 70% compared to purchasing a new board.',
+        a: 'Yes, our micro-electronics technicians specialize in repairing Samsung inverter PCBs at component level.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my Samsung AC in Hyderabad. Please book a technician.',
@@ -570,7 +566,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Commercial & Residential Jet Foam Wash',
+        title: 'Commercial & Residential General Service',
         desc: 'Heavy-duty antibacterial power wash removing packed grime from inner coils to restore Blue Star’s renowned rapid cooling.',
       },
       {
@@ -640,7 +636,7 @@ export const brandDetails = {
       },
       {
         icon: 'fa-solid fa-soap',
-        title: 'Deep High-Pressure Jet Foam Wash',
+        title: 'Deep General Service',
         desc: 'Complete antibacterial power rinse for indoor evaporator coils, drain troughs, and outdoor condenser fins.',
       },
       {

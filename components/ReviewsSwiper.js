@@ -12,10 +12,10 @@ const reviews = [
   },
   {
     stars: 5,
-    text: '"Booked their AC Jet Foam Wash for ₹249. The technician used a proper high-pressure water jet and catch bag, cleaned all mold from the blower wheel. AC air feels so crisp and cooling dropped to 18°C in minutes!"',
+    text: '"Booked their AC General Service. The technician used a proper high-pressure water jet and catch bag, cleaned all mold from the blower wheel. AC air feels so crisp and cooling dropped to 18°C in minutes!"',
     initials: 'SM',
     name: 'Sneha M.',
-    service: 'AC Jet Foam Wash & Deep Clean',
+    service: 'AC General Service',
   },
   {
     stars: 5,
@@ -33,7 +33,7 @@ const reviews = [
   },
   {
     stars: 5,
-    text: '"Very transparent pricing. No hidden charges whatsoever. They gave an upfront repair quotation, and restored cooling on the same day. Truly professional AC service."',
+    text: '"Very transparent and professional. They explained the issue clearly and restored cooling on the same day. Truly professional AC service."',
     initials: 'PS',
     name: 'Priya S.',
     service: 'AC Cooling Breakdown Repair',

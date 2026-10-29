@@ -205,8 +205,8 @@ export default function Home() {
               <img src="/logo-icon.png?v=5" alt="24x7 Repair Support" style={{ height: '22px', width: 'auto' }} />
               <span style={{ fontSize: '13px', fontWeight: 800, color: '#023a6e', letterSpacing: '0.3px' }}>OUR SPECIALIZED AC SERVICES</span>
             </div>
-            <h2>Professional <span className="red-text">AC Services</span> &amp; Charges</h2>
-            <p>Upfront transparent rates across Hyderabad, Telangana 500023</p>
+            <h2>Professional <span className="red-text">AC Services</span></h2>
+            <p>Expert doorstep AC repair and servicing across Hyderabad, Telangana 500023</p>
           </div>
 
           <div className="charges-grid">
@@ -214,11 +214,11 @@ export default function Home() {
             <div className="charge-card">
               <span className="ac-package-badge">Most Popular</span>
               <div className="card-img">
-                <img src="/ac-jet-wash.jpg" alt="AC Jet Pump Foam Cleaning Service" />
+                <img src="/ac-jet-wash.jpg" alt="AC General Service" />
                 <div className="icon-circle"><i className="fa-solid fa-spray-can-sparkles"></i></div>
               </div>
               <div className="card-content">
-                <h3>AC Jet Pump<br />Foam Wash</h3>
+                <h3>AC General<br />Service</h3>
                 <a href="https://wa.me/919014998582?text=Hello,%20I%20want%20to%20book%20AC%20Jet%20Pump%20Foam%20Wash%20for%20Rs%20249" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Jet Wash
                 </a>
@@ -533,8 +533,8 @@ export default function Home() {
               <div className="why-item">
                 <div className="why-icon"><i className="fa-solid fa-heart"></i></div>
                 <div>
-                  <h4>Affordable Pricing</h4>
-                  <p>Transparent pricing with zero hidden charges.</p>
+                  <h4>Honest &amp; Reliable Service</h4>
+                  <p>Clear communication and dependable work on every visit.</p>
                 </div>
               </div>
             </div>
@@ -606,9 +606,9 @@ export default function Home() {
               </div>
             </details>
             <details className="faq-item">
-              <summary>How much does AC gas charging cost and which gas do you use?</summary>
+              <summary>Which gas do you use for AC gas charging?</summary>
               <div className="faq-content">
-                <p>Our complete AC gas charging package starts at ₹1,499. We use 100% genuine, pure refrigerant gases (R32, R410A, and R22) with a full nitrogen pressure test to ensure zero leakage.</p>
+                <p>Our complete AC gas charging service uses 100% genuine, pure refrigerant gases (R32, R410A, and R22) with a full nitrogen pressure test to ensure zero leakage.</p>
               </div>
             </details>
             <details className="faq-item">

@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>{currentBrand ? `${currentBrand.brand} Services` : 'AC Services'}</h4>
           <ul>
-            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Jet Pump Foam Wash</Link></li>
+            <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC General Service</Link></li>
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Gas Refill &amp; Leak Repair</Link></li>
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>Inverter PCB &amp; Cooling Repair</Link></li>
             <li><Link href={currentBrand ? `/services/${currentBrand.slug}` : '/services'}>AC Installation &amp; Relocation</Link></li>

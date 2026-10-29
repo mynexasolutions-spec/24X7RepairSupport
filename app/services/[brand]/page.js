@@ -107,7 +107,6 @@ export default async function BrandServicePage({ params }) {
         url: SITE_URL,
         image: `${SITE_URL}/og-image.jpg`,
         logo: `${SITE_URL}/logo.png`,
-        priceRange: '₹₹',
         openingHours: 'Mo-Su 00:00-23:59',
         telephone: '+919014998582',
         address: {
@@ -386,7 +385,7 @@ export default async function BrandServicePage({ params }) {
             </h2>
             <p>
               Looking for {seo.name} AC service near you? Our certified technicians provide {seo.name} AC repair,
-              gas charging, jet foam wash and installation in {SERVICE_LOCALITIES.slice(0, 8).join(', ')} and
+              gas charging, general service and installation in {SERVICE_LOCALITIES.slice(0, 8).join(', ')} and
               across Hyderabad, Telangana 500023.
             </p>
           </div>

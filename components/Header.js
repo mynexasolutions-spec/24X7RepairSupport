@@ -125,13 +125,6 @@ export default function Header() {
                   <i className="fa-brands fa-whatsapp" style={{ color: '#25D366' }}></i>
                   <span>Book {currentBrand.name} via WhatsApp</span>
                 </Link>
-                <Link
-                  href={`/services/${currentBrand.slug}`}
-                  onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}
-                >
-                  <i className="fa-solid fa-tag" style={{ color: '#FF5E00' }}></i>
-                  <span>{currentBrand.name} Service Charges</span>
-                </Link>
                 <a
                   href="tel:9014998582"
                   onClick={() => { setMenuOpen(false); setBrandsOpen(false); }}

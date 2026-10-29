@@ -51,12 +51,12 @@ export default function About() {
                 <li><i className="fa-solid fa-circle-check"></i> <div>Welcome to <strong>24x7 AC Repair Support</strong>, your dedicated specialist center for all Split, Window, Inverter, and Cassette Air Conditioners across Hyderabad, Telangana.</div></li>
                 <li><i className="fa-solid fa-circle-check"></i> <div><strong>In sabhi companies ki AC ki servicing hoti hai yahan:</strong> Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric, Carrier, Lloyd, Panasonic, and many more.</div></li>
                 <li><i className="fa-solid fa-circle-check"></i> <div>Conveniently located in <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Hitec City, Gachibowli, Kukatpally, and surrounding areas.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>Our commitment is clear: <strong>accurate electronic diagnosis, upfront pricing, genuine factory spares, and 100% satisfaction guarantee.</strong></div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Our commitment is clear: <strong>accurate electronic diagnosis, genuine factory spares, and 100% satisfaction guarantee.</strong></div></li>
                 <li><i className="fa-solid fa-circle-check"></i> <div>Whether your AC is not cooling, leaking water inside, having error codes, or needing urgent gas refilling, our emergency AC technicians are just a phone call away 24x7.</div></li>
               </ul>
 
               <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'var(--dark-blue)' }}>Expert Doorstep AC Service in Hyderabad</h3>
-              <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide doorstep service across our service areas with upfront pricing and no hidden charges.</p>
+              <p>At 24x7 AC Repair Support, we believe cooling repairs should be transparent and fair. We provide doorstep service across our service areas.</p>
               
               <a href="tel:9014998582" className="btn btn-primary" style={{ padding: '12px 25px', fontSize: '15px', marginTop: '10px' }}>
                 <i className="fa-solid fa-phone"></i> Call 9014998582
@@ -69,7 +69,7 @@ export default function About() {
                 <img src="/ac-repair-clean.jpg" alt="24x7 AC Repair Support Service" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '30px' }}>
-                <img src="/ac-jet-wash.jpg" alt="AC Jet Pump Foam Cleaning in Hyderabad" />
+                <img src="/ac-jet-wash.jpg" alt="AC General Service in Hyderabad" />
               </div>
               <div className="about-img-wrap" style={{ marginTop: '-30px' }}>
                 <img src="/ac-gas-charging.jpg" alt="AC Gas Refill and Leak Repair" />
@@ -146,8 +146,8 @@ export default function About() {
               <p>Our technicians are factory-trained in handling Inverter technology, Dual-Inverter systems, and multi-split cooling circuits.</p>
             </div>
             <div className="process-card">
-              <h4>Transparent AC Charges</h4>
-              <p>Competitive rates starting at ₹499 for full jet foam wash across Greater Hyderabad.</p>
+              <h4>Honest &amp; Reliable Service</h4>
+              <p>Clear communication and dependable work on every visit across Greater Hyderabad.</p>
             </div>
             <div className="process-card">
               <h4>100% Genuine Spare Parts</h4>
@@ -167,7 +167,7 @@ export default function About() {
           
           {/* Category 1: Jet Wash */}
           <div className="about-content-section">
-            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Power Jet Foam AC Deep Servicing</h2>
+            <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>General AC Service & Deep Servicing</h2>
             <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Air quality and cooling speed drop drastically when indoor cooling fins and outdoor condenser coils get packed with dust. Our pressurized jet cleaning restores factory airflow.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
@@ -224,7 +224,7 @@ export default function About() {
           {/* Category 3: Inverter PCB */}
           <div className="about-content-section">
             <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Inverter AC PCB Circuit Board &amp; Electrical Repairs</h2>
-            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Modern 5-star inverter ACs use sophisticated electronic motherboards. Instead of recommending costly full replacements, our chip-level engineers repair existing boards.</p>
+            <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>Modern 5-star inverter ACs use sophisticated electronic motherboards. Instead of recommending full replacements, our chip-level engineers repair existing boards.</p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
               <div style={{ flex: '1 1 300px' }}>
@@ -250,35 +250,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* Pricing & Locations */}
+      {/* Locations */}
       <section className="section-padding">
         <div className="container">
-          <div className="about-section-grid">
+          <div className="about-section-grid" style={{ gridTemplateColumns: '1fr' }}>
             
-            <div>
-              <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Transparent AC Service Rates</h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>No hidden charges. We believe in 100% upfront pricing across Hyderabad.</p>
-              
-              <div className="pricing-table-container">
-                <div className="pricing-row">
-                  <span className="pricing-item">AC Jet Foam Deep Cleaning</span>
-                  <span className="pricing-cost">₹499</span>
-                </div>
-                <div className="pricing-row">
-                  <span className="pricing-item">AC Gas Refill &amp; Leak Repair</span>
-                  <span className="pricing-cost">₹1499</span>
-                </div>
-                <div className="pricing-row">
-                  <span className="pricing-item">Inverter AC PCB Circuit Repair</span>
-                  <span className="pricing-cost">₹799</span>
-                </div>
-                <div className="pricing-row">
-                  <span className="pricing-item">AC Installation / Relocation</span>
-                  <span className="pricing-cost">₹699</span>
-                </div>
-              </div>
-            </div>
-
             <div>
               <h2 style={{ color: 'var(--dark-blue)', marginBottom: '15px' }}>Doorstep AC Coverage in Hyderabad</h2>
               <p style={{ color: 'var(--text-gray)', marginBottom: '20px' }}>24x7 AC Repair Support is based in Hyderabad, Telangana 500023. Our rapid dispatch vans serve:</p>

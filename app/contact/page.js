@@ -66,7 +66,7 @@ export default function Contact() {
                   <label htmlFor="waService">AC Service / Brand Required</label>
                   <select id="waService" defaultValue="" style={{ width: '100%', padding: '12px 15px', border: '1px solid #e5e7eb', borderRadius: '6px', background: '#f9fafb', fontFamily: 'Inter', fontSize: '16px', color: 'var(--text-gray)' }} required>
                     <option value="" disabled>Select AC Service or Brand</option>
-                    <option value="AC Jet Foam Deep Cleaning">AC Jet Foam Deep Cleaning</option>
+                    <option value="AC General Service">AC General Service</option>
                     <option value="AC Gas Refill & Leak Fix">AC Gas Refill &amp; Leak Repair</option>
                     <option value="AC Not Cooling / Breakdown">AC Not Cooling / Breakdown Repair</option>
                     <option value="AC Installation & Uninstallation">AC Installation / Relocation</option>

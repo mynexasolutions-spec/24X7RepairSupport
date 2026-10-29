@@ -22,7 +22,7 @@ export const metadata = {
     "AC repair Hyderabad",
     "AC service Hyderabad",
     "AC gas charging",
-    "AC jet pump cleaning",
+    "AC general service",
     "AC PCB repair",
     "split AC repair",
     "24x7 AC repair near me",
@@ -80,7 +80,7 @@ const structuredData = {
     addressCountry: "IN",
   },
   areaServed: "Hyderabad",
-  serviceType: ["AC repair", "AC service", "AC gas charging", "AC jet pump cleaning", "AC PCB repair"],
+  serviceType: ["AC repair", "AC service", "AC gas charging", "AC general service", "AC PCB repair"],
 };
 
 export default function RootLayout({ children }) {

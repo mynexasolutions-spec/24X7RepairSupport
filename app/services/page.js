@@ -5,7 +5,7 @@ import { pageMetadata, breadcrumbSchema } from '@/lib/seo';
 import { brandDetails, SITE_URL } from './brandData';
 
 export const metadata = pageMetadata({
-  title: 'AC Repair & Service Rates in Hyderabad | LG, Daikin, Hitachi, Voltas',
+  title: 'AC Repair & Service in Hyderabad | LG, Daikin, Hitachi, Voltas',
   description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Call 9014998582.',
   path: '/services',
 });
@@ -50,7 +50,7 @@ export default function Services() {
       badge: 'LG Dual Inverter Specialist',
       tagline: 'Dual Inverter Care That Brings Back the Chill',
       title: 'LG Air Conditioner Repair & Jet Servicing',
-      desc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
+      desc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean general servicing.',
       features: [
         '100% Genuine LG Compressor & PCB Parts',
       ],
@@ -71,7 +71,7 @@ export default function Services() {
       features: [
         'Original Voltas Spare Parts with Warranty',
         'Same-Day Doorstep Technician Dispatch',
-        'Jet Foam Wash for 2x Cooling Efficiency',
+        'General Service for 2x Cooling Efficiency',
       ],
       image: '/brands/voltas-ac.jpg',
       imageAlt: 'Voltas Inverter AC Repair and Maintenance',
@@ -86,7 +86,7 @@ export default function Services() {
       badge: 'Daikin Japanese Precision',
       tagline: 'Japanese Precision, Restored to Perfection',
       title: 'Daikin AC Inverter PCB & Gas Refilling Service',
-      desc: 'Authorized-grade servicing for Daikin Streamer and Inverter series split AC units. Our specialists diagnose Daikin blink codes, electronic expansion valve issues, indoor coil ice buildup, and execute high-pressure jet pump wash without water spill.',
+      desc: 'Authorized-grade servicing for Daikin Streamer and Inverter series split AC units. Our specialists diagnose Daikin blink codes, electronic expansion valve issues, indoor coil ice buildup, and execute a thorough general service without water spill.',
       features: [
         'Daikin Certified Technicians with 10+ Yrs Exp',
         'Original Japanese Specification Spare Parts',
@@ -123,7 +123,7 @@ export default function Services() {
       badge: 'O General Heavy Duty Cooling',
       tagline: 'Built for Tough Summers, Serviced by Experts',
       title: 'O General AC Tropical Repair & Overhaul',
-      desc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep jet pump cleaning.',
+      desc: 'Dedicated heavy-duty repair solutions for O General tropical split and window AC systems. We handle tough compressor overhauls, vibration damping, copper pipe flaring, flare nut leak sealing, and heavy dust deep general servicing.',
       features: [
         'Heavy Duty Compressor Diagnostics',
         'Pure Gas Refill with Leak Pressure Testing',
@@ -141,12 +141,12 @@ export default function Services() {
       badge: 'Mitsubishi Electric Japanese Precision',
       tagline: 'Premium Cooling Deserves Premium Care',
       title: 'Mitsubishi Electric AC Repair & Servicing',
-      desc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean jet pump foam washing.',
+      desc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean general servicing.',
       features: [
         'Genuine Mitsubishi Electric Parts & Sensors',
         'Inverter PCB & Sensor Fault Diagnosis',
         'Pure Gas Refill with Leak Pressure Testing',
-        'Anti-Bacterial Jet Foam Cleaning',
+        'Anti-Bacterial Deep Cleaning',
       ],
       image: '/brands/mitsubishi-ac.jpg',
       imageAlt: 'Mitsubishi Electric Inverter Split AC Servicing',
@@ -165,7 +165,7 @@ export default function Services() {
       features: [
         'Original Samsung Electronic Parts & Sensors',
         'Specialized WindFree Micro-Hole Jet Wash',
-        'Verified Technicians with Transparent Pricing',
+        'Verified & Certified Technicians',
       ],
       image: '/brands/samsung-ac.jpg',
       imageAlt: 'Samsung WindFree AC Repair and Servicing',
@@ -230,7 +230,7 @@ export default function Services() {
             </div>
             <h2>Specialized AC Care for <span className="red-text">Top Brands</span></h2>
             <p>
-              Doorstep diagnostics, 100% original spare parts, and expert jet pump foam cleaning for all major air conditioner brands in Hyderabad.
+              Doorstep diagnostics, 100% original spare parts, and expert general service for all major air conditioner brands in Hyderabad.
             </p>
           </div>
 
@@ -318,7 +318,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Pricing / Charges Cards */}
+      {/* Service Cards */}
       <section className="service-charges section-padding">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '20px' }}>
@@ -328,19 +328,19 @@ export default function Services() {
             </div>
           </div>
           <div className="section-title">
-            <h2>AC <span className="red-text">Service</span> Charges</h2>
-            <p>Transparent rates for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; all AC brands</p>
+            <h2>AC <span className="red-text">Services</span> We Offer</h2>
+            <p>Expert servicing for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; all AC brands</p>
           </div>
 
           <div className="charges-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))' }}>
-            {/* Card 1: AC Jet Foam Wash */}
+            {/* Card 1: AC General Service */}
             <div className="charge-card">
               <div className="card-img">
-                <img src="/ac-jet-wash.jpg" alt="AC Jet Pump Foam Wash" />
+                <img src="/ac-jet-wash.jpg" alt="AC General Service" />
                 <div className="icon-circle"><i className="fa-solid fa-soap"></i></div>
               </div>
               <div className="card-content">
-                <h3>AC Jet Pump<br />Foam Cleaning</h3>
+                <h3>AC General<br />Service</h3>
               </div>
             </div>
 
@@ -466,10 +466,10 @@ export default function Services() {
           </div>
 
           <div className="appliances-grid">
-            {/* Box 1: AC Jet Foam Wash */}
+            {/* Box 1: AC General Service */}
             <div className="appliance-box">
               <div className="appliance-info">
-                <h3>AC Jet Foam Deep Cleaning &amp; Wash</h3>
+                <h3>AC General Service</h3>
                 <p style={{ textAlign: 'left', marginTop: '15px' }}>
                   Professional high-pressure power jet wash with antibacterial foam that removes stubborn dust, mold, and sludge from indoor and outdoor coils.
                 </p>
@@ -481,7 +481,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="appliance-img">
-                <img src="/ac-jet-wash.jpg" alt="AC Jet Foam Deep Cleaning" />
+                <img src="/ac-jet-wash.jpg" alt="AC General Service" />
               </div>
             </div>
 
