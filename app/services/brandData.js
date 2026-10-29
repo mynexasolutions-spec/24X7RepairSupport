@@ -8,17 +8,15 @@ export const brandDetails = {
     badge: 'LG Dual Inverter Specialist',
     tagline: 'AI Dual Inverter & Smart Diagnosis Repair',
     title: 'LG Air Conditioner Repair & Jet Servicing in Hyderabad',
-    heroDesc: 'Hyderabad’s premier doorstep service center for all LG Dual Inverter, Smart ThinQ, AI DUALCOOL, Split, and Window air conditioners. Certified engineers with genuine LG replacement parts, 60-minute arrival, and zero visiting fee.',
+    heroDesc: 'Hyderabad’s premier doorstep service center for all LG Dual Inverter, Smart ThinQ, AI DUALCOOL, Split, and Window air conditioners. Certified engineers with genuine LG replacement parts.',
     shortDesc: 'Expert doorstep diagnostics and rapid repairs for all LG Split, Window, and Dual Inverter ACs across Hyderabad. Our certified technicians specialize in PCB repair, gas leakage detection, error codes (CH05, CH10, CH21), compressor maintenance, and ultra-clean jet pump foam washing.',
     features: [
       'Free Doorstep Visiting & Diagnosis',
       '100% Genuine LG Compressor & PCB Parts',
-      '60-Minute Fast Arrival in Hyderabad',
-      '90-Day Post-Repair Service Guarantee',
     ],
     image: '/brands/lg-ac.jpg',
     imageAlt: 'LG Dual Inverter Split AC Servicing Hyderabad',
-    highlightBadge: '90-Day Service Warranty',
+    highlightBadge: 'Certified AC Engineers',
     models: [
       'LG Dual Inverter 1.5 Ton / 1 Ton / 2 Ton',
       'LG AI DUALCOOL 6-in-1 Convertible AC',
@@ -65,16 +63,12 @@ export const brandDetails = {
         a: 'Yes, 100%. We source OEM LG spare parts including Dual Inverter PCB boards, sensor probes, BLDC fan motors, capacitors, and contactor relays backed by warranty.',
       },
       {
-        q: 'How fast can a technician visit my home in Hyderabad?',
-        a: 'Our doorstep technicians are stationed across 50+ areas in Hyderabad including Banjara Hills, Madhapur, Hitec City, Kukatpally, and Secunderabad, reaching within 60 minutes.',
+        q: 'Which areas in Hyderabad do you serve?',
+        a: 'Our doorstep technicians are stationed across 50+ areas in Hyderabad including Banjara Hills, Madhapur, Hitec City, Kukatpally, and Secunderabad.',
       },
       {
         q: 'What is the visiting charge for LG AC inspection?',
         a: 'Visiting and inspection are 100% FREE. You only pay for repairs or services once you approve our transparent upfront quote.',
-      },
-      {
-        q: 'What warranty is provided on LG AC repairs?',
-        a: 'We provide an unconditional 90-day service warranty on all repair work and parts replaced during the service.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my LG AC in Hyderabad. Please book a technician.',
@@ -256,7 +250,6 @@ export const brandDetails = {
     features: [
       'Free Visiting & Complete Health Checkup',
       'Genuine Hitachi Relays, Motors & Sensors',
-      'Express 60-Minute Service Response',
       'Anti-Bacterial Foam Cleaning Included',
     ],
     image: '/brands/hitachi-ac.jpg',
@@ -317,7 +310,7 @@ export const brandDetails = {
       },
       {
         q: 'Do you provide emergency same-day Hitachi AC service?',
-        a: 'Yes, we operate 24x7 with doorstep technicians available in every major locality of Hyderabad, arriving within 60 minutes.',
+        a: 'Yes, we operate 24x7 with doorstep technicians available in every major locality of Hyderabad.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my Hitachi AC in Hyderabad. Please book a technician.',
@@ -338,7 +331,6 @@ export const brandDetails = {
       '100% Free Doorstep Visiting Charge',
       'Heavy Duty Compressor Diagnostics',
       'Pure Gas Refill with Leak Pressure Testing',
-      'Long-Lasting 90-Day Repair Guarantee',
     ],
     image: '/brands/ogeneral-ac.jpg',
     imageAlt: 'O General Heavy Duty Air Conditioner Repair Hyderabad',
@@ -402,6 +394,87 @@ export const brandDetails = {
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my O General AC in Hyderabad. Please book a technician.',
+  },
+
+  'mitsubishi': {
+    slug: 'mitsubishi',
+    aliases: ['mitsubishi', 'mitsubishi-electric', 'mitsubishi-ac', 'mitsubishi-electric-ac'],
+    brand: 'Mitsubishi Electric',
+    brandName: 'Mitsubishi Electric AC',
+    logo: '/brand-logos/mitsubishi.svg',
+    badge: 'Mitsubishi Electric Japanese Precision',
+    tagline: 'Kirigamine Hyper Inverter & Premium Split AC Care',
+    title: 'Mitsubishi Electric AC Repair & Servicing in Hyderabad',
+    heroDesc: 'Doorstep repair and servicing for Mitsubishi Electric Kirigamine, Hyper Inverter, Split, Cassette and Ductable air conditioners in Hyderabad. Certified engineers, genuine Mitsubishi Electric parts and careful handling of premium inverter systems.',
+    shortDesc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean jet pump foam washing.',
+    features: [
+      'Genuine Mitsubishi Electric Parts & Sensors',
+      'Inverter PCB & Sensor Fault Diagnosis',
+      'Pure Gas Refill with Leak Pressure Testing',
+      'Anti-Bacterial Jet Foam Cleaning',
+    ],
+    image: '/brands/mitsubishi-ac.jpg',
+    imageAlt: 'Mitsubishi Electric Inverter Split AC Servicing Hyderabad',
+    highlightBadge: 'Japanese Precision Specialist',
+    models: [
+      'Mitsubishi Electric Kirigamine Zen Inverter Split AC',
+      'Mitsubishi Electric Hyper Inverter Split AC (MSZ / MSY Series)',
+      'Mitsubishi Electric 5-Star Inverter High-Wall Series',
+      'Mitsubishi Electric Ceiling Cassette Units',
+      'Mitsubishi Electric Ductable & Floor-Standing Units',
+      'Mitsubishi Electric Multi-Split Systems',
+    ],
+    commonProblems: [
+      {
+        icon: 'fa-solid fa-snowflake',
+        title: 'AC Not Cooling Properly',
+        desc: 'Checking refrigerant pressure, thermistor sensors, condenser coils and the inverter compressor drive for weak cooling.',
+      },
+      {
+        icon: 'fa-solid fa-microchip',
+        title: 'Inverter PCB & Control Board Faults',
+        desc: 'Component-level repair of indoor and outdoor control boards, power modules and the blinking operation lamp error patterns.',
+      },
+      {
+        icon: 'fa-solid fa-droplet',
+        title: 'Indoor Unit Water Leakage',
+        desc: 'Flushing blocked drain pipes, cleaning the drain pan and correcting indoor unit mounting level.',
+      },
+      {
+        icon: 'fa-solid fa-soap',
+        title: 'Deep Jet Pump Foam Cleaning',
+        desc: 'Pressure jet washing of the evaporator coil, blower and filters to restore airflow and remove bad odour.',
+      },
+      {
+        icon: 'fa-solid fa-gauge-high',
+        title: 'R32 Refrigerant Gas Refill & Leak Repair',
+        desc: 'Nitrogen leak testing, brazing, vacuum evacuation and precise refrigerant charging.',
+      },
+      {
+        icon: 'fa-solid fa-screwdriver-wrench',
+        title: 'Installation, Uninstallation & Relocation',
+        desc: 'Professional wall mounting, copper piping, insulation and vacuum testing for Mitsubishi Electric split units.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do you repair Mitsubishi Electric Kirigamine and Hyper Inverter ACs?',
+        a: 'Yes. Our engineers service the full Mitsubishi Electric range, including Kirigamine, Hyper Inverter, cassette and ductable units, with proper diagnostic tools for inverter systems.',
+      },
+      {
+        q: 'Do you use genuine Mitsubishi Electric spare parts?',
+        a: 'Yes, we use genuine or OEM-grade sensors, fan motors, capacitors and PCB components suited to Mitsubishi Electric inverter systems.',
+      },
+      {
+        q: 'Which areas in Hyderabad do you serve?',
+        a: 'Our doorstep technicians cover 50+ areas in Hyderabad including Banjara Hills, Madhapur, Hitec City, Kukatpally, Secunderabad and Jubilee Hills.',
+      },
+      {
+        q: 'Can you fix a Mitsubishi Electric AC that is blinking an error but not cooling?',
+        a: 'Yes. The blinking operation lamp pattern points to a sensor, communication or power module fault. We read the pattern, test the board and repair or replace the faulty part on site wherever possible.',
+      },
+    ],
+    whatsappMsg: 'Hi, I need service/repair for my Mitsubishi Electric AC in Hyderabad. Please book a technician.',
   },
 
   'samsung': {
@@ -477,10 +550,6 @@ export const brandDetails = {
         q: 'Do you repair Samsung digital inverter motherboard PCBs?',
         a: 'Yes, our micro-electronics technicians specialize in repairing Samsung inverter PCBs at component level, saving you up to 70% compared to purchasing a new board.',
       },
-      {
-        q: 'Is there a warranty on Samsung AC service?',
-        a: 'Yes, we provide an unconditional 90-day warranty on all repairs and replaced spare parts.',
-      },
     ],
     whatsappMsg: 'Hi, I need service/repair for my Samsung AC in Hyderabad. Please book a technician.',
   },
@@ -499,8 +568,6 @@ export const brandDetails = {
     features: [
       'Free Visiting & Complete Leak Inspection',
       'Original Blue Star Spares & Filter Elements',
-      '60-Minute Prompt Technician Arrival',
-      'Full 90-Day Warranty on All Work',
     ],
     image: '/brands/bluestar-ac.jpg',
     imageAlt: 'Blue Star Inverter Split AC Service Hyderabad',
@@ -558,10 +625,6 @@ export const brandDetails = {
         q: 'What is the visiting charge for Blue Star AC?',
         a: 'Visiting is 100% FREE across all 50+ localities in Hyderabad.',
       },
-      {
-        q: 'What warranty is included on Blue Star repairs?',
-        a: 'We offer an unconditional 90-day post-service warranty on all repair work and parts replaced.',
-      },
     ],
     whatsappMsg: 'Hi, I need service/repair for my Blue Star AC in Hyderabad. Please book a technician.',
   },
@@ -580,8 +643,6 @@ export const brandDetails = {
     features: [
       'Free Doorstep Visiting & Full Diagnostics',
       'Genuine OEM-Grade Spare Parts',
-      '60-Minute Rapid Response in Hyderabad',
-      '90-Day Comprehensive Service Warranty',
     ],
     image: '/brands/other-ac.jpg',
     imageAlt: 'All Other Brand AC Servicing and Repair Hyderabad',
@@ -629,7 +690,7 @@ export const brandDetails = {
     faqs: [
       {
         q: 'Do you have spare parts for Carrier, Panasonic, and Lloyd ACs?',
-        a: 'Yes, our mobile service vans carry genuine OEM-compatible capacitors, fan motors, sensors, relays, and PCB components for Carrier, Panasonic, Lloyd, Godrej, and Mitsubishi.',
+        a: 'Yes, our mobile service vans carry genuine OEM-compatible capacitors, fan motors, sensors, relays, and PCB components for Carrier, Panasonic, Lloyd and Godrej.',
       },
       {
         q: 'Can you service an AC whose brand is discontinued or imported?',
@@ -641,7 +702,7 @@ export const brandDetails = {
       },
       {
         q: 'How do I book an appointment for my brand?',
-        a: 'Simply call 1234561232 or click the Book Service button to schedule an instant 60-minute doorstep visit.',
+        a: 'Simply call 1234561232 or click the Book Service button to schedule a doorstep visit.',
       },
     ],
     whatsappMsg: 'Hi, I need service/repair for my AC in Hyderabad. Please book a technician.',
@@ -694,10 +755,17 @@ export function getBrandSeo(brand) {
   const title = isMulti
     ? 'Carrier, Panasonic, Lloyd AC Service in Hyderabad | 24x7 Repair Support'
     : `${brand.brand} AC Service & Repair in Hyderabad | 24x7 Repair Support`;
-  const description = `${name} AC service & repair in Hyderabad - Banjara Hills, Madhapur, Kukatpally, Secunderabad & more. Free visit, 60-min arrival, 90-day warranty. Call 1234561232.`;
+  const description = `${name} AC service & repair in Hyderabad - gas refill, jet wash & PCB repair. Doorstep service near you in Banjara Hills, Kukatpally & 50+ areas. Call 1234561232.`;
   const keywords = [
+    `${name} AC service in Hyderabad`,
     `${name} AC service Hyderabad`,
     `${name} AC repair Hyderabad`,
+    `${name} AC repair near me`,
+    `${name} AC service center Hyderabad`,
+    `best ${name} AC service Hyderabad`,
+    `${name} split AC repair Hyderabad`,
+    `${name} inverter AC repair Hyderabad`,
+    `${name} AC installation Hyderabad`,
     `${name} AC service near me`,
     `${name} AC gas charging Hyderabad`,
     `${name} AC service center Hyderabad`,

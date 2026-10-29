@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const SITE_URL = "https://24-7-repair-support.vercel.app";
 const SITE_TITLE = "24x7 AC Repair & Service in Hyderabad | Doorstep Cooling Care";
 // kept under ~160 characters so Google and WhatsApp don't cut it off
-const SITE_DESCRIPTION = "24x7 doorstep AC repair & service in Hyderabad. Gas charging, jet wash, PCB repair with genuine spare parts, free inspection & 90-day warranty. Call 1234561232.";
+const SITE_DESCRIPTION = "24x7 doorstep AC repair & service in Hyderabad. Gas charging, jet wash, PCB repair with genuine spare parts, free inspection. Call 1234561232.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

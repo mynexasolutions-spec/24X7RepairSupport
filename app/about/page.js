@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: 'About 24x7 Repair Support | AC Service Center in Hyderabad',
-  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts, 90-day warranty and a free visit. Call 1234561232.",
+  description: "Meet 24x7 Repair Support, Hyderabad's doorstep AC service team: certified technicians, genuine parts, a free visit. Call 1234561232.",
   path: '/about',
 });
 
@@ -16,6 +16,7 @@ export default function About() {
     { name: 'Voltas AC', slug: 'voltas', logo: '/brand-logos/voltas.svg' },
     { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
     { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
+    { name: 'Mitsubishi Electric AC', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg' },
     { name: 'Carrier AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg' },
     { name: 'Lloyd AC', slug: 'other-brands', logo: '/brand-logos/lloyd.svg' },
     { name: 'Panasonic AC', slug: 'other-brands', logo: '/brand-logos/panasonic.svg' },
@@ -48,8 +49,8 @@ export default function About() {
               
               <ul className="check-list">
                 <li><i className="fa-solid fa-circle-check"></i> <div>Welcome to <strong>24x7 AC Repair Support</strong>, your dedicated specialist center for all Split, Window, Inverter, and Cassette Air Conditioners across Hyderabad, Telangana.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div><strong>In sabhi companies ki AC ki servicing hoti hai yahan:</strong> Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Carrier, Lloyd, Panasonic, and many more.</div></li>
-                <li><i className="fa-solid fa-circle-check"></i> <div>Conveniently located in <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Hitec City, Gachibowli, Kukatpally, and surrounding areas in 30 to 60 minutes.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div><strong>In sabhi companies ki AC ki servicing hoti hai yahan:</strong> Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric, Carrier, Lloyd, Panasonic, and many more.</div></li>
+                <li><i className="fa-solid fa-circle-check"></i> <div>Conveniently located in <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Hitec City, Gachibowli, Kukatpally, and surrounding areas.</div></li>
                 <li><i className="fa-solid fa-circle-check"></i> <div>Our commitment is clear: <strong>accurate electronic diagnosis, upfront pricing, genuine factory spares, and 100% satisfaction guarantee.</strong></div></li>
                 <li><i className="fa-solid fa-circle-check"></i> <div>Whether your AC is not cooling, leaking water inside, having error codes, or needing urgent gas refilling, our emergency AC technicians are just a phone call away 24x7.</div></li>
               </ul>
@@ -93,7 +94,7 @@ export default function About() {
               All Top AC Brands Serviced Under One Roof
             </h2>
             <p>
-              Hitachi • LG • Daikin • O General • Voltas • Samsung • Blue Star &amp; Many More
+              Hitachi • LG • Daikin • O General • Voltas • Samsung • Blue Star • Mitsubishi Electric &amp; Many More
             </p>
           </div>
 
@@ -149,16 +150,8 @@ export default function About() {
               <p>Competitive rates starting at ₹499 for full jet foam wash and ₹0 completely FREE visiting charge across Greater Hyderabad.</p>
             </div>
             <div className="process-card">
-              <h4>Rapid Arrival in 30-60 Mins</h4>
-              <p>Quick doorstep service dispatch from Hyderabad 500023. Our mobile vans carry essential gauges, brazing tools, and testing equipment.</p>
-            </div>
-            <div className="process-card">
               <h4>100% Genuine Spare Parts</h4>
               <p>Authentic brand compressors, fan motors, run capacitors, expansion valves, and copper pipes backed by replacement warranty.</p>
-            </div>
-            <div className="process-card">
-              <h4>90-Day Service Warranty</h4>
-              <p>We stand behind every repair and gas refill with warranty protection on labor and replaced components.</p>
             </div>
             <div className="process-card">
               <h4>24x7 Summer Emergency Care</h4>
@@ -333,12 +326,6 @@ export default function About() {
               <summary>Is the visiting and inspection charge really free?</summary>
               <div className="faq-content">
                 <p>Yes! Our visiting and basic inspection charge is 100% FREE across all areas of Hyderabad and Telangana. You only pay for repairs or services you approve.</p>
-              </div>
-            </details>
-            <details className="faq-item">
-              <summary>How fast can an AC technician reach my doorstep?</summary>
-              <div className="faq-content">
-                <p>Our average arrival time is 30 to 60 minutes across Greater Hyderabad, including Sanath Nagar, Ameerpet, Banjara Hills, Jubilee Hills, Madhapur, Hitec City, and Kukatpally.</p>
               </div>
             </details>
             <details className="faq-item">

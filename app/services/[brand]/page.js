@@ -4,7 +4,7 @@ import ServiceAreas from '@/components/ServiceAreas';
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { brandDetails, getBrandData, getBrandSeo, SERVICE_LOCALITIES, SITE_URL } from '../brandData';
 
-const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star', 'mitsubishi'];
 
 const isOtherBrand = (slug) =>
   !slug ||
@@ -95,7 +95,8 @@ export default async function BrandServicePage({ params }) {
       '@context': 'https://schema.org',
       '@type': 'Service',
       name: `${seo.name} AC Service & Repair in Hyderabad`,
-      serviceType: 'AC repair and service',
+      serviceType: `${seo.name} AC repair and service`,
+      brand: { '@type': 'Brand', name: brand.brand },
       description: seo.description,
       url: pageUrl,
       image: `${SITE_URL}${brand.image}`,
@@ -120,6 +121,10 @@ export default async function BrandServicePage({ params }) {
         '@type': 'HomeAndConstructionBusiness',
         name: '24x7 Repair Support',
         url: SITE_URL,
+        image: `${SITE_URL}/og-image.jpg`,
+        logo: `${SITE_URL}/logo.png`,
+        priceRange: '₹₹',
+        openingHours: 'Mo-Su 00:00-23:59',
         telephone: '+911234561232',
         address: {
           '@type': 'PostalAddress',
@@ -199,20 +204,12 @@ export default async function BrandServicePage({ params }) {
                 </div>
               </div>
 
-              <h1>{brand.title}</h1>
+              <h1>{seo.name} AC Service &amp; Repair in Hyderabad</h1>
               <p className="brand-hero-tagline">{brand.tagline}</p>
               <p className="brand-hero-description">{brand.heroDesc}</p>
 
               {/* Quick Trust Highlights */}
               <div className="brand-trust-badges">
-                <div className="trust-badge-item">
-                  <i className="fa-solid fa-bolt" style={{ color: '#FF5E00' }}></i>
-                  <span>60-Min Arrival</span>
-                </div>
-                <div className="trust-badge-item">
-                  <i className="fa-solid fa-shield-halved" style={{ color: '#10B981' }}></i>
-                  <span>90-Day Warranty</span>
-                </div>
                 <div className="trust-badge-item">
                   <i className="fa-solid fa-certificate" style={{ color: '#023a6e' }}></i>
                   <span>100% Genuine Spares</span>
@@ -316,7 +313,7 @@ export default async function BrandServicePage({ params }) {
               {brand.brand} AC <span className="red-text">Service Charges</span>
             </h2>
             <p>
-              Standardized, transparent rates across all 50+ areas in Hyderabad with 100% Free Doorstep Inspection.
+              Standardized, transparent rates across all 50+ areas in Hyderabad.
             </p>
           </div>
 
@@ -329,8 +326,6 @@ export default async function BrandServicePage({ params }) {
               </div>
               <div className="card-content">
                 <h3>{brand.brand} Jet Pump<br />Foam Cleaning</h3>
-                <div className="price">₹499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -342,8 +337,6 @@ export default async function BrandServicePage({ params }) {
               </div>
               <div className="card-content">
                 <h3>{brand.brand} Gas Refill<br />&amp; Leak Repair</h3>
-                <div className="price">₹1499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -355,8 +348,6 @@ export default async function BrandServicePage({ params }) {
               </div>
               <div className="card-content">
                 <h3>{brand.brand} PCB Board<br />&amp; Sensor Repair</h3>
-                <div className="price">₹799</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -368,21 +359,6 @@ export default async function BrandServicePage({ params }) {
               </div>
               <div className="card-content">
                 <h3>{brand.brand} Installation<br />&amp; Relocation</h3>
-                <div className="price">₹699</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
-              </div>
-            </div>
-
-            {/* Card 5: Free Visiting */}
-            <div className="charge-card visiting-card">
-              <div className="card-img">
-                <img src="/free-services.webp" alt="Free AC Inspection Visit" />
-                <div className="icon-circle"><i className="fa-solid fa-user-tie"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>Doorstep Visiting<br />&amp; Inspection</h3>
-                <div className="price">FREE</div>
-                <p className="free-text">Across All Hyderabad</p>
               </div>
             </div>
           </div>
@@ -415,7 +391,7 @@ export default async function BrandServicePage({ params }) {
                 </h2>
               </div>
               <p style={{ color: '#4A5568', fontSize: '15.5px', lineHeight: 1.7, marginBottom: '20px' }}>
-                Our technicians carry specialized diagnostic equipment and genuine factory spare parts in mobile service vans stationed across Hyderabad, providing 60-minute doorstep arrivals and unmatched service excellence.
+                Our technicians carry specialized diagnostic equipment and genuine factory spare parts in mobile service vans stationed across Hyderabad, delivering unmatched service excellence.
               </p>
 
               <div className="brand-feature-checklist">
@@ -424,22 +400,6 @@ export default async function BrandServicePage({ params }) {
                   <div>
                     <h4>100% Genuine {brand.brand} Replacement Parts</h4>
                     <p>Only authentic factory components with barcode verification and replacement warranty.</p>
-                  </div>
-                </div>
-
-                <div className="feature-check-row">
-                  <div className="check-icon-circle"><i className="fa-solid fa-check"></i></div>
-                  <div>
-                    <h4>60-Minute Rapid Doorstep Dispatch</h4>
-                    <p>Instant technician assignment covering all residential &amp; commercial zones in Hyderabad.</p>
-                  </div>
-                </div>
-
-                <div className="feature-check-row">
-                  <div className="check-icon-circle"><i className="fa-solid fa-check"></i></div>
-                  <div>
-                    <h4>Unconditional 90-Day Warranty</h4>
-                    <p>Complete peace of mind on all repairs, gas charging, and PCB circuit fixes.</p>
                   </div>
                 </div>
 
@@ -458,15 +418,9 @@ export default async function BrandServicePage({ params }) {
                 <div className="booking-box-header">
                   <i className="fa-solid fa-calendar-check" style={{ fontSize: '28px', color: '#FF5E00' }}></i>
                   <h3>Book {brand.brand} Service Now</h3>
-                  <p>Technician arrives within 60 minutes across Hyderabad</p>
+                  <p>Certified technicians across Hyderabad</p>
                 </div>
                 <div className="booking-box-body">
-                  <div className="booking-feature-pill">
-                    <i className="fa-solid fa-bolt" style={{ color: '#FF5E00' }}></i> Free Visiting Charge
-                  </div>
-                  <div className="booking-feature-pill">
-                    <i className="fa-solid fa-shield-check" style={{ color: '#10B981' }}></i> 90-Day Warranty
-                  </div>
                   <div className="booking-feature-pill">
                     <i className="fa-solid fa-star" style={{ color: '#F59E0B' }}></i> Verified AC Engineers
                   </div>
@@ -532,7 +486,7 @@ export default async function BrandServicePage({ params }) {
             <p>
               Looking for {seo.name} AC service near you? Our certified technicians provide {seo.name} AC repair,
               gas charging, jet foam wash and installation in {SERVICE_LOCALITIES.slice(0, 8).join(', ')} and
-              across Hyderabad, Telangana 500023 &mdash; with a free visit, 60-minute arrival and a 90-day warranty.
+              across Hyderabad, Telangana 500023.
             </p>
           </div>
           <div className="brand-models-tags brand-local-tags">
@@ -555,8 +509,8 @@ export default async function BrandServicePage({ params }) {
             <div className="cta-icon"><i className="fa-solid fa-snowflake"></i></div>
             <div>
               <h3>Need Immediate {brand.brand} AC Servicing?</h3>
-              <h2>Get 60-Minute Doorstep Service in Hyderabad!</h2>
-              <p>Specialized engineers for {brand.brand} with 100% FREE visiting charge &amp; 90-day warranty.</p>
+              <h2>Get Doorstep AC Service in Hyderabad!</h2>
+              <p>Specialized engineers for {brand.brand} AC repair &amp; servicing.</p>
             </div>
           </div>
           <div className="cta-buttons">

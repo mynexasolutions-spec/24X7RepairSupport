@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { getBrandData } from '@/app/services/brandData';
 
-const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star', 'mitsubishi'];
 
 export default function Footer() {
   const pathname = usePathname();
@@ -46,11 +46,11 @@ export default function Footer() {
           
           {currentBrand ? (
             <p className="brand-desc footer-desc" style={{ color: 'rgba(255, 255, 255, 0.88)', fontSize: '14px', lineHeight: '1.65', marginTop: '14px', maxWidth: '360px' }}>
-              Professional and certified 24x7 doorstep repair and servicing for {currentBrand.brand} Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. Fast 60-minute arrival with 100% genuine {currentBrand.brand} replacement parts, zero inspection fee, and 90-day warranty.
+              Professional and certified 24x7 doorstep repair and servicing for {currentBrand.brand} Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. 100% genuine {currentBrand.brand} replacement parts.
             </p>
           ) : (
             <p className="brand-desc footer-desc" style={{ color: 'rgba(255, 255, 255, 0.88)', fontSize: '14px', lineHeight: '1.65', marginTop: '14px', maxWidth: '360px' }}>
-              Professional and reliable 24x7 doorstep service and repair for Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023. Fast 60-minute arrival, zero visiting charge, and 90-day post-service warranty.
+              Professional and reliable 24x7 doorstep service and repair for Split, Inverter &amp; Window Air Conditioners across Hyderabad, Telangana 500023.
             </p>
           )}
         </div>
@@ -103,14 +103,6 @@ export default function Footer() {
                 </span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-                <span style={{ fontSize: '12.5px', color: '#10B981', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                  <i className="fa-solid fa-bolt"></i> 60-Min Arrival
-                </span>
-                <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
-                <span style={{ fontSize: '12.5px', color: '#FF5E00', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                  <i className="fa-solid fa-shield-halved"></i> 90-Day Warranty
-                </span>
-                <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
                 <span style={{ fontSize: '12.5px', color: '#38BDF8', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                   <i className="fa-solid fa-certificate"></i> 100% Genuine {currentBrand.brand} Spares
                 </span>
@@ -134,6 +126,7 @@ export default function Footer() {
                   { name: 'O General AC', slug: 'o-general', logo: '/brand-logos/ogeneral.svg' },
                   { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
                   { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
+                  { name: 'Mitsubishi Electric AC', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg' },
                   { name: 'Carrier AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg' },
                   { name: 'Lloyd AC', slug: 'other-brands', logo: '/brand-logos/lloyd.svg' },
                   { name: 'Panasonic AC', slug: 'other-brands', logo: '/brand-logos/panasonic.svg' },

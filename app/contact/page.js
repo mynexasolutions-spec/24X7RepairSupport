@@ -41,7 +41,7 @@ export default function Contact() {
           
           <div className="section-title text-center">
             <h2>Get In <span className="red-text">Touch</span></h2>
-            <p>Book certified AC repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; all brands</p>
+            <p>Book certified AC repair for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; all brands</p>
           </div>
 
           <div className="contact-page-grid">
@@ -49,7 +49,7 @@ export default function Contact() {
             {/* Form */}
             <div className="contact-banner-form" style={{ background: '#fff', border: '1px solid #eaeaea', boxShadow: '0 5px 20px rgba(0,0,0,0.05)' }}>
               <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px', fontSize: '24px' }}>Book AC Service</h3>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '30px', fontSize: '15px' }}>Send us a message via WhatsApp and our AC technician will arrive within 60 minutes.</p>
+              <p style={{ color: 'var(--text-gray)', marginBottom: '30px', fontSize: '15px' }}>Send us a message via WhatsApp and our AC technician will get in touch with you.</p>
               
               <form id="contactPageForm" onSubmit={handleWhatsAppSubmit}>
                 <div className="form-group">
@@ -78,6 +78,7 @@ export default function Contact() {
                     <option value="Voltas AC Service">Voltas AC Service &amp; Repair</option>
                     <option value="Samsung AC Service">Samsung AC Service &amp; Repair</option>
                     <option value="Blue Star AC Service">Blue Star AC Service &amp; Repair</option>
+                    <option value="Mitsubishi Electric AC Service">Mitsubishi Electric AC Service &amp; Repair</option>
                     <option value="Other AC Brand / AMC">Other Brand AC / Multi-Unit AMC</option>
                   </select>
                 </div>

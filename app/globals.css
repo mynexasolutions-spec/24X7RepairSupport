@@ -4511,6 +4511,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
 }
 
+/* keep the label on one line on larger screens (long names like Mitsubishi Electric) */
+@media (min-width: 640px) {
+    .btn-brand-whatsapp-submit {
+        max-width: 620px;
+        white-space: nowrap;
+    }
+}
+
 .btn-brand-whatsapp-submit:hover:not(:disabled) {
     background: #20bd5a;
     transform: translateY(-2px);
@@ -6869,6 +6877,581 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-page-o-general .area-cta-actions .btn-dark:hover {
+    background: #f3f4f6 !important;
+    color: #000000 !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   Mitsubishi Electric Brand Page Theme: #e60012 & White
+   ========================================================= */
+
+/* Header Theme for Mitsubishi Electric */
+.header-theme-mitsubishi .btn-enquiry {
+    background: #e60012 !important;
+    box-shadow: 0 4px 14px rgba(230, 0, 18, 0.35) !important;
+}
+
+.header-theme-mitsubishi .btn-enquiry:hover {
+    background: #b3000e !important;
+}
+
+.header-theme-mitsubishi .nav-links a.active,
+.header-theme-mitsubishi .nav-dropdown-head a.active {
+    color: #e60012 !important;
+}
+
+.header-theme-mitsubishi .header-phone-link i,
+.header-theme-mitsubishi .top-bar-phone-link i {
+    color: #e60012 !important;
+}
+
+/* Breadcrumb */
+.brand-page-mitsubishi .brand-breadcrumb-strip {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .brand-breadcrumb-strip .breadcrumb-nav a {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .brand-breadcrumb-strip .breadcrumb-nav a:hover,
+.brand-page-mitsubishi .brand-breadcrumb-strip .breadcrumb-nav .active {
+    color: #e60012 !important;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.brand-page-mitsubishi .brand-hero-section {
+    background: radial-gradient(circle at 85% 20%, rgba(230, 0, 18, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 12% 85%, rgba(0, 0, 0, 0.04) 0%, transparent 40%),
+                linear-gradient(135deg, #ffffff 0%, #fbfbfc 45%, #f4f4f5 100%) !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .brand-hero-badge {
+    background: #111111 !important;
+    border: 1px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-mitsubishi .brand-hero-badge i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .brand-hero-text h1 {
+    color: #111111 !important;
+    font-weight: 900 !important;
+}
+
+.brand-page-mitsubishi .brand-hero-tagline {
+    color: #e60012 !important;
+    font-weight: 800 !important;
+}
+
+.brand-page-mitsubishi .brand-hero-description {
+    color: #374151 !important;
+}
+
+.brand-page-mitsubishi .brand-trust-badges {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.brand-page-mitsubishi .trust-badge-item {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.brand-page-mitsubishi .trust-badge-item i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .btn-hero-book {
+    background-color: #e60012 !important;
+    border: 2px solid #e60012 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(230, 0, 18, 0.35) !important;
+}
+
+.brand-page-mitsubishi .btn-hero-book:hover {
+    background-color: #b3000e !important;
+    border-color: #b3000e !important;
+    box-shadow: 0 8px 26px rgba(230, 0, 18, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-mitsubishi .btn-hero-call {
+    background-color: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brand-page-mitsubishi .btn-hero-call:hover {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    transform: translateY(-2px);
+}
+
+.brand-page-mitsubishi .brand-hero-image-wrapper {
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+.brand-page-mitsubishi .brand-hero-floating-badge {
+    background: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .brand-hero-floating-badge i {
+    color: #e60012 !important;
+}
+
+/* Models Covered Strip */
+.brand-page-mitsubishi .brand-models-section {
+    background: #111111 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.brand-page-mitsubishi .brand-models-title {
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .brand-models-title i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .brand-model-tag {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .brand-model-tag i {
+    color: #e60012 !important;
+}
+
+/* Common Problems Section */
+.brand-page-mitsubishi .brand-problems-section {
+    background: #ffffff !important;
+}
+
+.brand-page-mitsubishi .section-title h2 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .section-title span[style*="color"],
+.brand-page-mitsubishi .section-title span.red-text,
+.brand-page-mitsubishi .red-text {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .brand-problem-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-mitsubishi .brand-problem-card:hover {
+    border-color: #e60012 !important;
+    box-shadow: 0 12px 30px rgba(230, 0, 18, 0.12) !important;
+}
+
+.brand-page-mitsubishi .brand-problem-card .problem-icon {
+    background: #fef2f2 !important;
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .brand-problem-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .brand-problem-card p {
+    color: #4b5563 !important;
+}
+
+/* Service Pricing Section */
+.brand-page-mitsubishi .service-charges {
+    background: #fafafa !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .charge-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .charge-card:hover {
+    border-color: #e60012 !important;
+    box-shadow: 0 12px 30px rgba(230, 0, 18, 0.12) !important;
+}
+
+.brand-page-mitsubishi .charge-card .icon-circle {
+    background: #111111 !important;
+    border-color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .charge-card .icon-circle i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .charge-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .charge-card .price {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .charge-card .free-text strong {
+    background: #e60012 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .service-charges .btn-primary {
+    background: #e60012 !important;
+    border: 2px solid #e60012 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(230, 0, 18, 0.35) !important;
+}
+
+.brand-page-mitsubishi .service-charges .btn-primary:hover {
+    background: #b3000e !important;
+    border-color: #b3000e !important;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us */
+.brand-page-mitsubishi .brand-why-choose {
+    background: #ffffff !important;
+}
+
+.brand-page-mitsubishi .check-icon-circle {
+    background: #fef2f2 !important;
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .feature-check-row h4 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .quick-booking-box {
+    background: #ffffff !important;
+    border: 2px solid #111111 !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-mitsubishi .booking-box-header i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .booking-box-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .booking-feature-pill {
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .booking-feature-pill i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .btn-booking-wa {
+    background: #e60012 !important;
+    border: 2px solid #e60012 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(230, 0, 18, 0.35) !important;
+}
+
+.brand-page-mitsubishi .btn-booking-wa:hover {
+    background: #b3000e !important;
+    border-color: #b3000e !important;
+}
+
+.brand-page-mitsubishi .btn-booking-call {
+    background: #111111 !important;
+    border: 2px solid #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .btn-booking-call:hover {
+    background: #000000 !important;
+}
+
+/* Brand Booking Form (WhatsApp Redirect) */
+.brand-page-mitsubishi .brand-booking-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #f4f4f5 100%) !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .booking-pill-badge {
+    background: #fef2f2 !important;
+    color: #e60012 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-mitsubishi .brand-form-card {
+    border: 2px solid #111111 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.brand-page-mitsubishi .brand-form-header {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-mitsubishi .brand-form-header-badge i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .form-group label {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .form-group label i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .form-group input:focus,
+.brand-page-mitsubishi .form-group select:focus,
+.brand-page-mitsubishi .form-group textarea:focus {
+    border-color: #e60012 !important;
+    box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.15) !important;
+}
+
+.brand-page-mitsubishi .btn-brand-whatsapp-submit {
+    background: #e60012 !important;
+    box-shadow: 0 8px 24px rgba(230, 0, 18, 0.35) !important;
+}
+
+.brand-page-mitsubishi .btn-brand-whatsapp-submit:hover:not(:disabled) {
+    background: #b3000e !important;
+    box-shadow: 0 12px 30px rgba(230, 0, 18, 0.45) !important;
+}
+
+.brand-page-mitsubishi .brand-form-guarantees i {
+    color: #e60012 !important;
+}
+
+/* FAQs Section */
+.brand-page-mitsubishi .brand-faqs-section {
+    background: #ffffff !important;
+}
+
+.brand-page-mitsubishi .brand-faq-item {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+}
+
+.brand-page-mitsubishi .brand-faq-item:hover {
+    border-color: #111111 !important;
+}
+
+.brand-page-mitsubishi .brand-faq-item h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .brand-faq-item h3 i {
+    color: #e60012 !important;
+}
+
+/* Locality Section */
+.brand-page-mitsubishi .brand-local-section {
+    background: #fafafa !important;
+}
+
+.brand-page-mitsubishi .brand-local-tags .brand-model-tag {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .brand-local-tags .brand-model-tag i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .brand-local-tags .brand-model-tag:hover {
+    border-color: #e60012 !important;
+    color: #e60012 !important;
+}
+
+/* Bottom CTA Banner */
+.brand-page-mitsubishi .cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+}
+
+.brand-page-mitsubishi .cta-icon {
+    background: #e60012 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .cta-buttons .btn-dark {
+    background: #e60012 !important;
+    border-color: #e60012 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .cta-buttons .btn-dark:hover {
+    background: #b3000e !important;
+    border-color: #b3000e !important;
+}
+
+/* Footer Theme for Mitsubishi Electric */
+.footer-theme-mitsubishi .footer-service-areas span[style*="#FF5E00"],
+.footer-theme-mitsubishi .footer-service-areas span[style*="#10B981"],
+.footer-theme-mitsubishi .footer-service-areas span[style*="#38BDF8"] {
+    color: #e60012 !important;
+}
+
+/* Service Areas Section under Mitsubishi Electric Page Theme */
+.brand-page-mitsubishi .service-areas {
+    background: #ffffff !important;
+}
+
+.brand-page-mitsubishi .service-areas .service-area-pill {
+    background: #fef2f2 !important;
+    color: #e60012 !important;
+    border: 1px solid #fecdd3 !important;
+}
+
+.brand-page-mitsubishi .service-areas .service-area-pill i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .service-areas-header h2 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .service-areas-header h2 span.red-text {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-hub-card {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+.brand-page-mitsubishi .area-hub-card:hover {
+    border-color: #e60012 !important;
+    box-shadow: 0 14px 35px rgba(230, 0, 18, 0.12) !important;
+}
+
+.brand-page-mitsubishi .area-hub-icon {
+    background: #fef2f2 !important;
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-hub-card h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-hub-tags .hub-tag {
+    background: #f3f4f6 !important;
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-hub-tags .hub-tag i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-cloud-box {
+    background: #ffffff !important;
+    border: 1.5px solid #e5e7eb !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.brand-page-mitsubishi .area-cloud-header h3 {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-cloud-header h3 i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-cloud-call-btn {
+    background: #111111 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .area-cloud-call-btn:hover {
+    background: #e60012 !important;
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .area-chip {
+    background: #f9fafb !important;
+    border: 1.5px solid #e5e7eb !important;
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-chip i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-chip:hover {
+    background: #e60012 !important;
+    border-color: #e60012 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(230, 0, 18, 0.3) !important;
+}
+
+.brand-page-mitsubishi .area-chip:hover i {
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .area-features-strip .feature-item {
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-features-strip .feature-item i {
+    color: #e60012 !important;
+}
+
+.brand-page-mitsubishi .area-cta-banner {
+    background: linear-gradient(135deg, #111111 0%, #1f2937 100%) !important;
+    border: 1px solid #374151 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.brand-page-mitsubishi .area-cta-text h4 {
+    color: #ffffff !important;
+}
+
+.brand-page-mitsubishi .area-cta-text p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.brand-page-mitsubishi .area-cta-actions .btn-primary {
+    background: #e60012 !important;
+    border: 2px solid #e60012 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(230, 0, 18, 0.35) !important;
+}
+
+.brand-page-mitsubishi .area-cta-actions .btn-primary:hover {
+    background: #b3000e !important;
+    border-color: #b3000e !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(230, 0, 18, 0.45) !important;
+}
+
+.brand-page-mitsubishi .area-cta-actions .btn-dark {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    color: #111111 !important;
+}
+
+.brand-page-mitsubishi .area-cta-actions .btn-dark:hover {
     background: #f3f4f6 !important;
     color: #000000 !important;
     transform: translateY(-2px);

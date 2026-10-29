@@ -4,7 +4,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: 'AC Service Areas in Hyderabad | Banjara Hills, Madhapur, Kukatpally',
-  description: '24x7 AC repair across Hyderabad - Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more. Technician at your door in 30-60 minutes. Free visit.',
+  description: '24x7 AC repair across Hyderabad - Banjara Hills, Hitec City, Gachibowli, Kukatpally, Ameerpet & more. Technician at your door. Free visit.',
   path: '/service-areas',
 });
 
@@ -33,17 +33,12 @@ export default function ServiceAreasPage() {
               All Brands AC Servicing at Your Doorstep
             </h2>
             <p>
-              In sabhi companies ki AC ki servicing hoti hai yahan: Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; many more.
+              In sabhi companies ki AC ki servicing hoti hai yahan: Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; many more.
             </p>
           </div>
 
           <div style={{ maxWidth: '800px', margin: '30px auto 0', textAlign: 'center', background: '#fff', padding: '30px', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.04)' }}>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: 'wrap', marginBottom: '20px' }}>
-              <div>
-                <h3 style={{ color: '#023a6e', fontSize: '28px', margin: 0, fontWeight: 800 }}>30-60</h3>
-                <p style={{ color: '#64748B', fontSize: '13px', margin: '4px 0 0' }}>Minutes Arrival Time</p>
-              </div>
-              <div style={{ borderRight: '1px solid #e2e8f0' }}></div>
               <div>
                 <h3 style={{ color: '#FF5E00', fontSize: '28px', margin: 0, fontWeight: 800 }}>₹0</h3>
                 <p style={{ color: '#64748B', fontSize: '13px', margin: '4px 0 0' }}>Visiting &amp; Inspection Fee</p>

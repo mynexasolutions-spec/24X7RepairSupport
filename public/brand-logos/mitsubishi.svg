@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 44" fill="none">
+  <!-- Mitsubishi Electric three-diamond mark -->
+  <g transform="translate(24, 28)" fill="#E60012">
+    <polygon points="0,0 -5.5,-9.53 0,-19.05 5.5,-9.53"/>
+    <polygon points="0,0 11,0 16.5,9.53 5.5,9.53"/>
+    <polygon points="0,0 -5.5,9.53 -16.5,9.53 -11,0"/>
+  </g>
+  <!-- Text -->
+  <text x="48" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="900" fill="#E60012" letter-spacing="0.8px">MITSUBISHI</text>
+  <text x="48" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="900" fill="#E60012" letter-spacing="2.2px">ELECTRIC</text>
+</svg>

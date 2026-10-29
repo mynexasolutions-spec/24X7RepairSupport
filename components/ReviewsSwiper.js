@@ -19,7 +19,7 @@ const reviews = [
   },
   {
     stars: 5,
-    text: '"Great experience with 24x7 Repair Support. The technician was punctual, knowledgeable, and diagnosed our Inverter AC PCB board error E6 on the spot. Replaced genuine sensors with 90 days warranty in Hyderabad!"',
+    text: '"Great experience with 24x7 Repair Support. The technician was punctual, knowledgeable, and diagnosed our Inverter AC PCB board error E6 on the spot. Replaced genuine sensors in Hyderabad!"',
     initials: 'VK',
     name: 'Vikram K.',
     service: 'Inverter AC PCB Board Repair',

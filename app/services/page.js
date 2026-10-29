@@ -6,7 +6,7 @@ import { brandDetails, SITE_URL } from './brandData';
 
 export const metadata = pageMetadata({
   title: 'AC Repair & Service Rates in Hyderabad | LG, Daikin, Hitachi, Voltas',
-  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung & Blue Star. Free visit. Call 1234561232.',
+  description: 'AC repair, jet wash, gas refilling & installation in Hyderabad for LG, Daikin, Hitachi, Voltas, O General, Samsung, Blue Star & Mitsubishi Electric. Free visit. Call 1234561232.',
   path: '/services',
 });
 
@@ -37,6 +37,7 @@ export default function Services() {
     { name: 'Voltas AC', slug: 'voltas', logo: '/brand-logos/voltas.svg', desc: 'All-weather & Inverter AC doorstep service' },
     { name: 'Samsung AC', slug: 'samsung', logo: '/brand-logos/samsung.svg', desc: 'WindFree & Digital Inverter solutions' },
     { name: 'Blue Star AC', slug: 'blue-star', logo: '/brand-logos/bluestar.svg', desc: 'Precision cooling & commercial cassette repair' },
+    { name: 'Mitsubishi Electric AC', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg', desc: 'Kirigamine & Hyper Inverter AC repair' },
     { name: 'Carrier & Lloyd AC', slug: 'other-brands', logo: '/brand-logos/carrier.svg', desc: 'Complete multi-brand service across Hyderabad' },
   ];
 
@@ -53,12 +54,10 @@ export default function Services() {
       features: [
         'Free Doorstep Visiting & Diagnosis',
         '100% Genuine LG Compressor & PCB Parts',
-        '60-Minute Fast Arrival in Hyderabad',
-        '90-Day Post-Repair Service Guarantee',
       ],
       image: '/brands/lg-ac.jpg',
       imageAlt: 'LG Dual Inverter Split AC Servicing',
-      highlightBadge: '90-Day Service Warranty',
+      highlightBadge: 'Certified AC Engineers',
       whatsappMsg: 'Hi, I need service/repair for my LG AC in Hyderabad. Please book a technician.',
     },
     {
@@ -113,7 +112,6 @@ export default function Services() {
       features: [
         'Free Visiting & Complete Health Checkup',
         'Genuine Hitachi Relays, Motors & Sensors',
-        'Express 60-Minute Service Response',
         'Anti-Bacterial Foam Cleaning Included',
       ],
       image: '/brands/hitachi-ac.jpg',
@@ -134,12 +132,31 @@ export default function Services() {
         '100% Free Doorstep Visiting Charge',
         'Heavy Duty Compressor Diagnostics',
         'Pure Gas Refill with Leak Pressure Testing',
-        'Long-Lasting 90-Day Repair Guarantee',
       ],
       image: '/brands/ogeneral-ac.jpg',
       imageAlt: 'O General Heavy Duty Air Conditioner Repair',
       highlightBadge: 'Tropical Cooling Specialist',
       whatsappMsg: 'Hi, I need service/repair for my O General AC in Hyderabad. Please book a technician.',
+    },
+    {
+      id: 'mitsubishi',
+      slug: 'mitsubishi',
+      brand: 'Mitsubishi Electric',
+      logo: '/brand-logos/mitsubishi.svg',
+      badge: 'Mitsubishi Electric Japanese Precision',
+      tagline: 'Kirigamine Hyper Inverter & Premium Split AC Care',
+      title: 'Mitsubishi Electric AC Repair & Servicing',
+      desc: 'Expert diagnostics and repair for Mitsubishi Electric Split, Hyper Inverter and Kirigamine ACs across Hyderabad. We handle inverter PCB repair, sensor faults, gas leakage detection, drain and filter cleaning, compressor care and ultra-clean jet pump foam washing.',
+      features: [
+        'Genuine Mitsubishi Electric Parts & Sensors',
+        'Inverter PCB & Sensor Fault Diagnosis',
+        'Pure Gas Refill with Leak Pressure Testing',
+        'Anti-Bacterial Jet Foam Cleaning',
+      ],
+      image: '/brands/mitsubishi-ac.jpg',
+      imageAlt: 'Mitsubishi Electric Inverter Split AC Servicing',
+      highlightBadge: 'Japanese Precision Specialist',
+      whatsappMsg: 'Hi, I need service/repair for my Mitsubishi Electric AC in Hyderabad. Please book a technician.',
     },
     {
       id: 'samsung',
@@ -173,8 +190,6 @@ export default function Services() {
       features: [
         'Free Visiting & Complete Leak Inspection',
         'Original Blue Star Spares & Filter Elements',
-        '60-Minute Prompt Technician Arrival',
-        'Full 90-Day Warranty on All Work',
       ],
       image: '/brands/bluestar-ac.jpg',
       imageAlt: 'Blue Star Inverter Split AC Service',
@@ -193,8 +208,6 @@ export default function Services() {
       features: [
         'Free Doorstep Visiting & Full Diagnostics',
         'Genuine OEM-Grade Spare Parts',
-        '60-Minute Rapid Response in Hyderabad',
-        '90-Day Comprehensive Service Warranty',
       ],
       image: '/brands/other-ac.jpg',
       imageAlt: 'All Other Brand AC Servicing and Repair',
@@ -324,7 +337,7 @@ export default function Services() {
           </div>
           <div className="section-title">
             <h2>AC <span className="red-text">Service</span> Charges</h2>
-            <p>Transparent rates for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; all AC brands</p>
+            <p>Transparent rates for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; all AC brands</p>
           </div>
 
           <div className="charges-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))' }}>
@@ -336,8 +349,6 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>AC Jet Pump<br />Foam Cleaning</h3>
-                <div className="price">₹499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -349,8 +360,6 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>AC Gas Refilling<br />&amp; Leak Repair</h3>
-                <div className="price">₹1499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -362,8 +371,6 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>AC PCB Board<br />&amp; Sensor Repair</h3>
-                <div className="price">₹799</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
               </div>
             </div>
 
@@ -375,21 +382,6 @@ export default function Services() {
               </div>
               <div className="card-content">
                 <h3>AC Installation<br />&amp; Relocation</h3>
-                <div className="price">₹699</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
-              </div>
-            </div>
-
-            {/* Card 5: Free Visiting */}
-            <div className="charge-card visiting-card">
-              <div className="card-img">
-                <img src="/free-services.webp" alt="Free AC Inspection Visit" />
-                <div className="icon-circle"><i className="fa-solid fa-user-tie"></i></div>
-              </div>
-              <div className="card-content">
-                <h3>Doorstep Visiting<br />&amp; Inspection</h3>
-                <div className="price">FREE</div>
-                <p className="free-text">Across All Hyderabad</p>
               </div>
             </div>
           </div>
@@ -407,7 +399,7 @@ export default function Services() {
               In Sabhi Companies Ki <span className="red-text">AC Ki Servicing</span> Hoti Hai Yahan
             </h2>
             <p>
-              We provide factory-grade servicing &amp; genuine spare parts for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Carrier &amp; more.
+              We provide factory-grade servicing &amp; genuine spare parts for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric, Carrier &amp; more.
             </p>
           </div>
 
@@ -573,7 +565,7 @@ export default function Services() {
             <div>
               <h3>Is Your AC Not Cooling Properly?</h3>
               <h2>Schedule a Doorstep AC Visit in Hyderabad!</h2>
-              <p>Experienced technicians for Hitachi, LG, Daikin, O General, Voltas, Samsung &amp; Blue Star with 100% FREE visiting charge.</p>
+              <p>Experienced technicians for Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; Mitsubishi Electric with 100% FREE visiting charge.</p>
             </div>
           </div>
           <div className="cta-buttons">

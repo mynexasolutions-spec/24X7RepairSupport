@@ -82,7 +82,7 @@ export default function BrandBookingForm({ brand }) {
       message += `• *Problem Description:* ${formData.issue.trim()}\n`;
     }
 
-    message += `\nPlease assign a verified ${brandName} technician for a 60-minute doorstep visit. (Free visiting charge)`;
+    message += `\nPlease assign a verified ${brandName} technician for a doorstep visit.`;
 
     const whatsappNumber = '911234561232';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -108,8 +108,7 @@ export default function BrandBookingForm({ brand }) {
             Book <span className="red-text">{brandName} AC</span> Service in Hyderabad
           </h2>
           <p>
-            Fill this quick form to dispatch a certified {brandName} technician to your doorstep in 60 minutes. 
-            100% FREE visiting charge across Hyderabad &amp; Telangana 500023.
+            Fill this quick form to dispatch a certified {brandName} technician to your doorstep across Hyderabad &amp; Telangana 500023.
           </p>
         </div>
 
@@ -124,11 +123,8 @@ export default function BrandBookingForm({ brand }) {
               )}
               <div>
                 <h3>{brandFullName} Doorstep Service Request</h3>
-                <p>Fast technician dispatch • Genuine {brandName} spares • 90-day warranty</p>
+                <p>Fast technician dispatch • Genuine {brandName} spares</p>
               </div>
-            </div>
-            <div className="brand-form-header-badge">
-              <i className="fa-solid fa-bolt"></i> 60-Min Arrival
             </div>
           </div>
 
@@ -293,8 +289,6 @@ export default function BrandBookingForm({ brand }) {
               </button>
 
               <div className="brand-form-guarantees">
-                <span><i className="fa-solid fa-bolt" style={{ color: '#FF5E00' }}></i> 60-Min Arrival</span>
-                <span><i className="fa-solid fa-shield-halved" style={{ color: '#10B981' }}></i> 90-Day Warranty</span>
                 <span><i className="fa-solid fa-check-double" style={{ color: '#0284c7' }}></i> 100% Free Inspection</span>
                 <span><i className="fa-solid fa-phone" style={{ color: '#023a6e' }}></i> Direct Call: <strong>1234561232</strong></span>
               </div>

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
-const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star', 'mitsubishi'];
 
 const NAV_BRANDS = [
   { name: 'Hitachi', slug: 'hitachi', logo: '/brand-logos/hitachi.svg' },
@@ -14,6 +14,7 @@ const NAV_BRANDS = [
   { name: 'Voltas', slug: 'voltas', logo: '/brand-logos/voltas.svg' },
   { name: 'Samsung', slug: 'samsung', logo: '/brand-logos/samsung.svg' },
   { name: 'Blue Star', slug: 'blue-star', logo: '/brand-logos/bluestar.svg' },
+  { name: 'Mitsubishi Electric', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg' },
   { name: 'Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg' },
 ];
 

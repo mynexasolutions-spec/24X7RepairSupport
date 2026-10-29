@@ -51,7 +51,7 @@ export default function ServiceAreas() {
           </div>
           <h2>Our <span className="red-text">Service Areas</span> Across Hyderabad &amp; Telangana</h2>
           <p>
-            Operating directly from <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach your doorstep within 30 to 60 minutes across all nearby neighborhoods with 24x7 emergency support.
+            Operating directly from <strong>Hyderabad, Telangana 500023</strong>, our certified technicians reach your doorstep across all nearby neighborhoods with 24x7 emergency support.
           </p>
         </div>
 
@@ -110,10 +110,6 @@ export default function ServiceAreas() {
           </div>
 
           <div className="area-features-strip">
-            <div className="feature-item">
-              <i className="fa-solid fa-clock red-text"></i>
-              <span>30 - 60 Min Rapid Arrival</span>
-            </div>
             <div className="feature-item">
               <i className="fa-solid fa-hand-holding-dollar red-text"></i>
               <span>₹0 Visiting &amp; Inspection Fee</span>

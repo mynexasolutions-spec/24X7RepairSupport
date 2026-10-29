@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import ReviewsSwiper from '@/components/ReviewsSwiper';
 import ServiceAreas from '@/components/ServiceAreas';
 
-const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star'];
+const SEVEN_BRANDS = ['hitachi', 'lg', 'daikin', 'o-general', 'voltas', 'samsung', 'blue-star', 'mitsubishi'];
 
 export default function Home() {
   const router = useRouter();
@@ -108,7 +108,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-modern-desc">
-              Certified doorstep technicians for Split, Inverter &amp; Window ACs in Hyderabad. Fast 60-minute arrival, genuine spare parts, and 100% FREE inspection.
+              Certified doorstep technicians for Split, Inverter &amp; Window ACs in Hyderabad. Genuine spare parts and 100% FREE inspection.
             </p>
 
             {/* CTAs matching reference button style */}
@@ -130,16 +130,8 @@ export default function Home() {
             {/* Trust feature pills */}
             <div className="hero-modern-features">
               <div className="modern-feature-item">
-                <i className="fa-solid fa-bolt"></i>
-                <span>60 Mins Arrival</span>
-              </div>
-              <div className="modern-feature-item">
                 <i className="fa-solid fa-snowflake"></i>
                 <span>100% Cooling Fixed</span>
-              </div>
-              <div className="modern-feature-item">
-                <i className="fa-solid fa-shield-halved"></i>
-                <span>90 Days Warranty</span>
               </div>
               <div className="modern-feature-item">
                 <i className="fa-solid fa-tag"></i>
@@ -185,6 +177,10 @@ export default function Home() {
               <img src="/brand-logos/bluestar.svg" alt="Blue Star AC" className="brand-pill-logo" />
               <span>Blue Star</span>
             </Link>
+            <Link href="/services/mitsubishi" className="brand-pill">
+              <img src="/brand-logos/mitsubishi.svg" alt="Mitsubishi Electric AC" className="brand-pill-logo" />
+              <span>Mitsubishi Electric</span>
+            </Link>
             <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="brand-pill">
               <img src="/brand-logos/carrier.svg" alt="Carrier AC" className="brand-pill-logo" />
               <span>Carrier</span>
@@ -227,8 +223,6 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Jet Pump<br />Foam Wash</h3>
-                <div className="price">₹249</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
                 <a href="https://wa.me/911234561232?text=Hello,%20I%20want%20to%20book%20AC%20Jet%20Pump%20Foam%20Wash%20for%20Rs%20249" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Jet Wash
                 </a>
@@ -244,8 +238,6 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Gas Refill<br />&amp; Leak Repair</h3>
-                <div className="price">₹1,499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
                 <a href="https://wa.me/911234561232?text=Hello,%20I%20want%20to%20book%20AC%20Gas%20Charging%20Service" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Gas Refill
                 </a>
@@ -260,8 +252,6 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Breakdown<br />&amp; Diagnosis</h3>
-                <div className="price">₹249</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
                 <a href="https://wa.me/911234561232?text=Hello,%20my%20AC%20is%20not%20cooling,%20need%20diagnosis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Diagnosis
                 </a>
@@ -276,8 +266,6 @@ export default function Home() {
               </div>
               <div className="card-content">
                 <h3>AC Installation<br />&amp; Relocation</h3>
-                <div className="price">₹499</div>
-                <p className="free-text">Visiting Charge <strong>FREE</strong></p>
                 <a href="https://wa.me/911234561232?text=Hello,%20I%20need%20AC%20Installation%20or%20Uninstallation" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fa-brands fa-whatsapp"></i> Book Install
                 </a>
@@ -291,7 +279,7 @@ export default function Home() {
       <section className="ac-problems-section section-padding bg-light">
         <div className="container">
           <div className="section-title text-center" style={{ textAlign: 'center' }}>
-            <h2>Common <span className="red-text">AC Problems</span> We Fix in 60 Mins</h2>
+            <h2>Common <span className="red-text">AC Problems</span> We Fix</h2>
             <p>Select your issue for instant technician dispatch across Hyderabad</p>
           </div>
 
@@ -386,7 +374,7 @@ export default function Home() {
               <span style={{ fontSize: '13px', fontWeight: 800, color: '#023a6e', letterSpacing: '0.3px' }}>MULTI-BRAND AC SPECIALISTS</span>
             </div>
             <h2>Specialized Doorstep Care For <span className="red-text">Top AC Brands</span></h2>
-            <p>Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star &amp; more — select your brand for factory-grade service in Hyderabad!</p>
+            <p>Hitachi, LG, Daikin, O General, Voltas, Samsung, Blue Star, Mitsubishi Electric &amp; more — select your brand for factory-grade service in Hyderabad!</p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '22px' }}>
@@ -398,6 +386,7 @@ export default function Home() {
               { brand: 'O General', slug: 'o-general', logo: '/brand-logos/ogeneral.svg', image: '/brands/ogeneral-ac.jpg', badge: 'Tropical Cooling Care', desc: 'Heavy-duty compressor diagnostics & coil overhaul.' },
               { brand: 'Samsung', slug: 'samsung', logo: '/brand-logos/samsung.svg', image: '/brands/samsung-ac.jpg', badge: 'WindFree Specialist', desc: 'WindFree micro-hole jet wash & 5-in-1 PCB repair.' },
               { brand: 'Blue Star', slug: 'blue-star', logo: '/brand-logos/bluestar.svg', image: '/brands/bluestar-ac.jpg', badge: 'Precision Air Experts', desc: 'Precision residential & commercial cassette AC care.' },
+              { brand: 'Mitsubishi Electric', slug: 'mitsubishi', logo: '/brand-logos/mitsubishi.svg', image: '/brands/mitsubishi-ac.jpg', badge: 'Japanese Precision Specialist', desc: 'Kirigamine & Hyper Inverter AC repair, PCB care & deep wash.' },
               { brand: 'Other Brands', slug: 'other-brands', logo: '/brand-logos/multibrand.svg', image: '/brands/other-ac.jpg', badge: 'Multi-Brand Specialist', desc: 'Carrier, Lloyd, Panasonic & all other AC brands.' },
             ].map((item, idx) => (
               <div
@@ -462,7 +451,7 @@ export default function Home() {
                 Carrier, Lloyd, Panasonic, Mitsubishi, Godrej, Whirlpool &amp; More
               </h4>
               <p style={{ margin: '4px 0 0', fontSize: '13px', color: '#64748B' }}>
-                Split, Window, Multi-Split, Inverter &amp; Cassette ACs of any brand serviced in 60 minutes across Hyderabad.
+                Split, Window, Multi-Split, Inverter &amp; Cassette ACs of any brand serviced across Hyderabad.
               </p>
             </div>
             <Link href="/services/other-brands" onClick={handleOtherBrandClick} className="btn btn-dark" style={{ whiteSpace: 'nowrap' }}>
@@ -534,7 +523,7 @@ export default function Home() {
               <div className="why-item">
                 <div className="why-icon"><i className="fa-solid fa-truck-fast"></i></div>
                 <div>
-                  <h4>Doorstep Service in 60 Mins</h4>
+                  <h4>Doorstep Service</h4>
                   <p>Fast local response from Hyderabad, Telangana 500023 across all central and suburban localities.</p>
                 </div>
               </div>
